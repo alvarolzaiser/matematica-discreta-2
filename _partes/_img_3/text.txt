@@ -1,0 +1,242 @@
+=== PAGE 1 ===
+­_  
+FUNCIONES
+BOOLEANAS 
+­_
+Al finalizar la clase los alumnos: 
+• Funciones Booleanas y su modo de 
+escribirlas.
+• Álgebra de Boole
+Matemática Discreta 2
+MD2
+UNIDAD
+CLASE
+
+=== PAGE 2 ===
+Pág. 2
+BIENVENIDOS
+FUNCIONES BOOLEANAS
+TABLAS DE VERDAD 
+PARA FUNCIONES 
+BOOLEANAS
+Ya estamos nuevamente disfrutando del Álgebra de Boole. En la clase 
+de hoy avanzaremos con las Funciones Booleanas y su modo de escri-
+birlas. Si no completó todos los ejercicios del desempeño de la clase 2 le 
+recomiendo que lo haga y también un repaso antes de comenzar con el 
+desarrollo de este nuevo tema.
+Ahora entonces sí, sigamos adelante.
+Así como vimos en la MD1, una función es una relación entre dos va-
+riables, para la que se debe cumplir que una variable independiente se 
+debe relacionar con una y solo una variable dependiente, en el Álgebra 
+de Boole también existen funciones, que llamamos justamente Boo-
+leanas, que resultan de combinar un número de variables mediante las 
+tres operaciones ya definidas.
+Un ejemplo de función como las que vimos en el cuatrimestre anterior se-
+ría f (x) = 2 x + 3 en ella decimos que si x toma el valor 1, la función vale 5, 
+f (1) = 5; si x toma el valor 4 la función vale 11, f (4) = 11; y así con cualquier 
+valor que le querramos dar a la variable x será otro valor el de la función.
+La gran diferencia entre estas funciones y las Booleanas es que, como 
+ya lo dijimos desde el principio, las variables solo pueden tomar el va-
+lor 0 ó 1. Entonces si una variable vale 0, la función podría ser 0 ó 1, y si 
+la variable fuera 1, la función podría ser solo 0 ó 1.
+Un ejemplo de función Booleana con una sola variable puede ser: F (B) = B 
+Para esta función, si B toma el valor 0, la función vale 1, y viceversa, es 
+decir: F (0) = 1 y F (1) = 0
+ 
+Pero lo más común no es que las funciones sean de una sola variable 
+sino dos o más. Por ejemplo la siguiente: F (A, B) = A . B 
+En este caso entonces, ya no solo es una variable la que puede tomar 
+los valores 0 ó 1, sino dos, por lo que las posibles combinaciones que se 
+pueden dar para los valores de las variables son 4. Por ejemplo si A vale 
+0 y B vale 0, la función valdría 0, es decir F (0,0) = 0 . 0 = 0 . 1 = 0.
+Si A vale 1 y B vale 0, la función valdría 1, es decir: F (1,0) = 1 . 0 = 1 . 1 = 1
+Le dejo como actividad para resolver ahora mismo, encuentre el valor 
+de la función anterior para las dos posibles combinaciones que faltan.
+Así mismo podemos seguir escribiendo funciones Booleanas con tres, 
+cuatro, cinco o más variables, como por ejemplo: 
+F (A, B, C) = (A + C) . B + Ā  
+F (A, B, C, D) = D . B + C + A . B
+Encuentre el valor las funciones arriba escritas, para los siguientes 
+valores de las variables: 
+F (1,1,0) y F (0,1,0) 
+F (0,1,0,1) y F (1,0,1,1)
+Así como las funciones toman un valor dependiendo el valor 0 o 1 que 
+tome cada variable que interviene en ella, a los fines de conocer el 
+resultado para todas las posibles combinaciones resulta mucho más 
+
+=== PAGE 3 ===
+Pág. 3
+práctico la confección de tablas, denominadas Tablas de verdad, que 
+nos mostrarán todos los resultados.
+Para confeccionarlas, se deberán colocar las variables que intervie-
+nen, una por columna y debajo de ellas todas las combinaciones de 0 
+y 1 posibles. Deberá tener en cuenta que la cantidad de posibilidades 
+será siempre 2n donde n es la cantidad de variables. Así por ejemplo si 
+en la función hay 2 variables serán 22 es decir 4 combinaciones, si en la 
+función intervienen 3 variables la cantidad de combinaciones será 8, ya 
+que 23 = 8, y así para cualquier cantidad.
+A partir de allí, en columnas siguientes se irán completando los re-
+sultados parciales según las operaciones que vinculan a las variables. 
+La última columna debería indicar el valor de la función, para cada 
+combinación de entrada. Esto es muy similar a lo que realizábamos en 
+MD 1, al hacer las tablas de verdad para las fórmulas bien formadas…
+se acuerdan? Igual creo que con un ejemplo, se podrá comprender un 
+poco mejor:
+A partir de la función F (A, B, C) = B . C + A realizaremos su tabla de 
+verdad.
+Entonces en esta tabla podemos ver todos los resultados de la función 
+a partir de las diferentes entradas (valores de las variables). Así por 
+ejemplo si A = 1, B = 1 y C = 0, la función toma el valor 0. Si lo miramos 
+de derecha a izquierda, podemos ver que la función es 1, si A = 0, B = 0 y 
+C = 0, entre otras posibilidades.
+Actividad para el alumno: Realice la tabla de verdad de la siguiente fun-
+ción Booleana, utilizando una columna para cada operación que inter-
+venga, y que la última sea la correspondiente al resultado de la función.
+F (A, B, C) = (A + C + B) . C 
+ 
+COMPUERTAS LÓGICAS
+Así como pudimos asociar a las diferentes operaciones, de suma, pro-
+ducto y complemento con algunos circuitos eléctricos, existe otra ma-
+nera de representar las funciones Booleanas, por medio de los circui-
+tos lógicos, los que se realizan empleando las llamadas “compuertas 
+A
+B
+C
+B . C
+Ā
+B . C + Ā
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+1
+1
+0
+1
+0
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+1
+1
+0
+0
+0
+0
+1
+1
+1
+1
+0
+1
+Recuerde que en el 
+producto si hay un 0 el 
+resultado será 0
+Recuerde que el 
+complemento es lo 
+contrario
+Y por último no olvide 
+que en la suma si hay 
+un 1 el resultado es 1
+
+=== PAGE 4 ===
+Pág. 4
+lógicas”. Cada compuerta lógica es un símbolo que representa a una 
+operación, hay tres que corresponden a las tres operaciones definidas y 
+dos que corresponden al complemento de la suma y del producto.
+Las compuertas lógicas para cada operación son las siguientes:
+ 
+Función                               Compuerta                               Símbolo
+F(A,B) = A + B                                    OR
+F(A,B) = A • B                                   AND
+F(A) = Ā                                              NOT
+F(A,B) = A + B                                  NOR
+F(A,B) = A · B                                 NAND
+Si observas bien podrás notar que en casi todos los casos puede haber más 
+de una entrada, pero siempre habrá una sola salida. Veamos entonces un 
+ejemplo, en el que debamos hacer el circuito lógico para una función.
+Tomemos la función F (A, B, C) = Ā + B + B . C
+Entonces a partir de las tres variables de entrada armamos el siguiente 
+circuito:
+Entrada
+                A   B     C
+Salida
+B . C
+B . C + Ā + B 
+Ā
+De esta manera hemos llegado a poder escribir o representar una fun-
+ción Booleana de tres modos diferentes, mediante su expresión alge-
+braica, su tabla de verdad y su circuito lógico. Es por esto que si hay tres 
+maneras de escribir la misma función, seguramente se puede pasar de 
+una a otra, es decir si tengo la expresión algebraica poder hacer el circui-
+to y la tabla, o si tengo la tabla hacer el circuito y la expresión algebraica, 
+y lo mismo si tengo el circuito lógico. Para poder escribir la expresión 
+algebraica a partir de los resultados de la tabla de verdad, necesitamos 
+ver un modo especial de escribir una función Booleana, que llamamos 
+forma canónica de ella...pero ese será tema de la próxima clase.
+
+=== PAGE 5 ===
+Pág. 5
+Desempeño 7
+• Implementa con compuertas lógicas las siguientes funciones, que es lo mismo que decir realice 
+el circuito lógico correspondiente:
+a- F (A,B,C) = ABC + A B C
+b- F (A,B,C) = (A + B C) + C
+c- F (A,B,C) = (Ā + C) • (Ā • B + A • C)
+d- G (A,B,C,D) = A + A • B • C + Ā • B• C + D • A + D • A
+Desempeño 8
+• Teniendo en cuenta el circuito presentado, obtenga la función correspondiente, y simplificarla 
+en caso de ser posible:
+a-     A       B     C                                                                    b-     A   B
+Desempeño 9
+• Con las siguientes funciones te invito a que hagas lo siguiente: 
+1| Simplifica cada expresión. 
+2| Realiza la tabla de verdad de la función original y la simplificada. 
+3| Realiza el circuito de las dos funciones. 
+4| Analiza los resultados de tabla y circuito. Compáralos.
+a- F (A,B) = A . B + Ā . B 
+b- F (A,B) = (A . B + B) . (Ā . B)
+c- F (a,b,c) = a + b . (a + c)
+d- F (a,b,c) = ā + b . c . (b . c)
+e- F (a,b,c) = (a + b) . (a + b + c)
+f- F (a,b) = (ā . b + b) . (ā . b) . ā
+g- F (A,B,C) = A + B + A . B . C
+
+=== PAGE 6 ===
+Pág. 6
+En esta clase que terminamos hemos avanzado  
+mucho, y visto varios nuevos conceptos, es por ello  
+que le recomendamos que haga un buen repaso  
+de todo, y anote las dudas que pudieran surgir.  
+Y, por supuesto realice todos los ejercicios  
+propuestos en el siguiente desempeño.
+¡Hasta entonces!
+Si detectás un error del tipo que fuere (falta un punto, un acento, 
+una palabra mal escrita, un error en código, etc.), por favor comu-
+nicate con nosotros a correcciones@issd.edu.ar e indicanos por 
+cada error que detectes la página y el párrafo. 
+MUCHAS GRACIAS POR TU APORTE.

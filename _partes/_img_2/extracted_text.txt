@@ -1,0 +1,199 @@
+=== PAGE 1 ===
+­_  
+ÁLGEBRA  
+DE BOOLE 
+­_
+Al finalizar la clase los alumnos: 
+• Conocerán los Teoremas del Álgebra de 
+Boole.
+• Realizarán demostraciones lógicas de 
+los distintos teoremas.
+• Construirán Tablas de Verdad.
+• Aplicarán los axiomas y teoremas del 
+Álgebra de Boole en la resolución de 
+ejercicios.
+• Teoremas del Álgebra de Boole
+Matemática Discreta 2
+MD2
+UNIDAD
+CLASE
+
+
+=== PAGE 2 ===
+Pág. 2
+BIENVENIDOS
+LOS TEOREMAS
+Acá estamos de regreso con nuestro Álgebra de Boole. ¿Cómo les fue 
+con los ejercicios que le propusimos la clase pasada? Imagino que ya 
+sabe de memoria y puede contar de qué trata cada uno de los axiomas, 
+¡sí… muy bien!
+En esta clase le propondremos profundizar un poco más sobre las pro-
+piedades, pero esta vez no solo axiomáticas sino también los teoremas 
+y sus diferentes modos de demostración.
+Recordemos que los teoremas también son propiedades, pero a dife-
+rencia de los axiomas Sí necesitan de una demostración para que sean 
+tomados como válidos.
+Teorema 1: Ley de Acotación 
+Esta ley establece que:  
+A + 1 = 1  
+A • 0 = 0
+Teorema 2: Ley de Idempotencia 
+Este teorema establece que:  
+A + A = A  
+A • A = A
+Teorema 3: Ley de Absorción 
+Este teorema establece que:  
+A + (A • B) = A  
+A • (A + B) = A
+Teorema 4: Ley de Asociatividad 
+Tanto la suma como el producto lógico gozan de esta propiedad. 
+A + (B + C) = (A + B) + C = A + B + C  
+A . (B . C) = (A . B) . C = A . B . C
+Teorema 5: Ley de Involución 
+Establece que negar dos veces un elemento es igual al mismo elemento: 
+Ā = A
+Teorema 6: Ley de De Morgan 
+Establece que:  
+A + B = Ā • B  
+A • B = Ā + B
+Como les dije hace un rato, las primeras propiedades, axiomas, no se 
+demuestran, por el contrario, los teoremas sí. A continuación veamos 
+un ejemplo de cómo se puede hacer una demostración algebraica de un 
+teorema.
+
+
+=== PAGE 3 ===
+Pág. 3
+Tomemos el Teorema de Acotación, que dice A + 1 = 1. Hacer una de-
+mostración algebraica significa, como lo explicamos la clase anterior, 
+que, partiendo de una de las expresiones, sea el primer miembro o el 
+segundo de la igualdad, se debe ir escribiendo de otra manera hasta lle-
+gar al otro miembro, en este caso podríamos partir del A + 1 y llegar a 
+qué es lo mismo que 1, ó partir del 1 y llegar a escribirlo como A + 1.
+Partamos del 1:  
+Por el Ax 4 podemos escribir: 1 = A + Ā  
+Por el Ax 3 podemos escribir: 1 = A + ( Ā . 1)  
+Por el Ax 2 podemos escribir: 1 = A + Ā . A + 1    
+Por el Ax 4 quedaría: 1 = 1 . A + 1
+ Y Por axioma 3 quedará: 1 = A + 1
+De este modo quedaría demostrado en forma algebraica que el teorema 
+es válido.
+POR TABLAS 
+DE VERDAD
+Desempeño 3
+1| Realice la demostración algebraica del teorema A. 0 = 0 (tenga en cuenta que puede comenzar 
+del 0 o de A .0, para ello puede guiarse con el ejemplo demostrado).
+2| Realice la demostración algebraica de los teoremas 2 y 3.
+Además de la demostración algebraica de un teorema o de cualquier 
+igualdad, también se puede llevar a cabo utilizando las tablas de ver-
+dad. ¿Y cómo es ésto? Simplemente se realiza la tabla de verdad, te-
+niendo en cuenta la definición de las operaciones, como lo hacíamos 
+en MD 1 y recordamos en la clase anterior, para cada miembro de la 
+igualdad y si la distribución de valores de verdad coincide es porque las 
+expresiones son iguales. Veamos un ejemplo para alguno de los teore-
+mas enunciados.
+Tomemos el Teorema de Absorción.
+A
+B
+A . B
+A + A . B
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+1
+1
+1
+1
+1
+Teorema de Absorción
+A + A . B = A
+Aquí podemos ver entonces, que la distribución de valores de verdad de 
+A, y de A + A.B (0 0 1 1) es exactamente la misma, lo que nos asegura que 
+son expresiones iguales.
+Muy bien, hemos seguido avanzando con nuestro estudio del Algebra 
+de Boole, pero por hoy llegaremos hasta aquí. Claro, con el desarrollo, 
+pero ahora le tocará a usted afianzar los conceptos y practicar con los 
+ejercicios que se proponen.
+
+
+=== PAGE 4 ===
+Pág. 4
+Como le pedimos en la clase 1, que trate de comprender los axiomas 
+más allá de las letras o símbolos que se utilicen, se lo recomendamos 
+para que también lo haga con los teoremas. Aprenda y fije todas las 
+propiedades y luego póngalas a prueba en el siguiente desempeño.
+Desempeño 4
+| Las siguientes igualdades están demostradas, es decir está justificada que una expresión es 
+igual a la otra que puede ser mucho más simple. Se le solicita a usted, que en cada paso determi-
+ne e indique que axiomas y/o teoremas se han aplicado, al pasar del renglón superior al inferior:
+a-
+                                x. z . x . y . x . z . x . y = x . y . z
+_________x . z . (x + y) . (x + z) . (x + y)
+_________x . z . (x + z) . (x + y) . (x + y)
+_________(x . z . x + x . z . z) . (y + (x . x))
+_________(x . z + 0) . (y + 0)
+_________x .z . y
+b-
+                               (x . z + y . x + y . z) . (y + z) = (z + x ) . (y + z)
+_________x . z . y + y . x + y . z + x . z + y . x . z + y . z
+_________x . z . y + y . x + y . z + x . z + y . x . z
+_________y . z (x + x) + y . x + y . z + x . z
+_________y . z + y . x + x . z + 0
+_________y . z + y . x + x . z + x . x
+_________y . (z + x ) + x . (z + x)
+_________(z + x ) . (y + x)
+c-
+                                (Ā + B) . (A + B) = A . B + Ā . B
+_________(Ā + B) + (A + B)
+_________(A . B) + (Ā . B)
+_________(A . B + Ā) . (A. B + B)
+_________(A + Ā) . (B + Ā) . (A + B) . (B + B)
+_________(B + Ā) . (A + B)
+                                B . A + Ā . A + B . B + Ā . B
+                                B . A + Ā . B
+                                A . B + Ā . B
+
+
+=== PAGE 5 ===
+Pág. 5
+Desempeño 5
+| Ahora le toca a usted poner a prueba su intuición, y por supuesto su comprensión y aplicación 
+de los axiomas y teoremas.
+Le planteamos algunas igualdades simples, y lo que deberá hacer usted es demostrarlas me-
+diante la aplicación de las propiedades. Recuerde que puede partir del primer miembro de la 
+igualdad y llegar a la segunda o partir de la segunda y llegar a la primera o desarrollar las dos 
+hasta llegar a expresiones idénticas.
+En estas igualdades, primero Verifica por tabla su validez, y en caso de ser verdaderas demués-
+tralas algebraicamente:
+a- (Ā + B) . (Ā + B) = Ā
+b- (X + Y + Z) . (X + Y + Z) = X . Y + Z + Y . X
+c- Ā . B . C + Ā . B . C + A . B = Ā . C + B . C
+d- Y . X + X . Y = (X + Y) . (X + Y)
+e- (X + Y) . (X + Y) = X . Y + X . Y
+Desempeño 6
+| Utilizando axiomas y teoremas del Álgebra de Boole demuestre cada una de las siguientes 
+igualdades, indicando paso a paso la propiedad empleada:
+a- A + Ā • B • C = A + B • C
+b- A • B + Ā • B + A • B = (A + B) • (Ā + B)
+c- A • B + Ā • C + B • C = A • B + Ā • C
+Muy bien, hemos seguido avanzando con nuestro 
+estudio del Algebra de Boole, pero por hoy llegaremos 
+hasta aquí. Claro, con el desarrollo, pero ahora  
+le tocará a usted afianzar los conceptos y practicar  
+con los ejercicios que se proponen.
+Como le pedimos en la clase 1, que trate de comprender 
+los axiomas más allá de las letras o símbolos que se 
+utilicen, se lo recomendamos para que también lo haga 
+con los teoremas. Aprenda y fije todas las propiedades y 
+luego póngalas a prueba en el siguiente desempeño.
+¡Hasta entonces!
+
+

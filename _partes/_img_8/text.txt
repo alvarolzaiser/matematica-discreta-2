@@ -1,0 +1,875 @@
+
+=====PAGE 1=====
+­_  
+MATRICES  
+Y DETERMINANTES 
+­_
+Al finalizar la clase los alumnos: 
+• Conocer el concepto de determinante 
+• Aplicar las propiedades al cálculo de 
+determinantes. 
+• Calcular determinantes de matrices de 
+orden 2, de orden 3 y de cualquier orden. 
+• Encontrar la matriz inversa de una matriz.
+• Determinantes y Matriz Inversa
+Matemática Discreta 2
+MD2
+UNIDAD
+CLASE
+UNIDAD
+
+=====PAGE 2=====
+Pág. 2
+INTRODUCCIÓN
+CLAVES DE ESTUDIO
+DETERMINANTE
+De todas las matrices que podemos crear, en la clase de hoy solo traba-
+jaremos con aquellas cuyo número de filas y columnas es el mismo, es 
+decir con matrices cuadradas, ya que los conceptos de determinante e 
+inversa de una matriz, se definen para ellas solamente.
+• Leer detenidamente el material de trabajo, tratando de entender paso 
+a paso lo que se va explicando. 
+• Resolver las actividades y desempeños en el orden propuesto. 
+• Tener siempre presente que determinante se define “solo para ma-
+trices cuadradas”. 
+• Identificar los métodos de cálculo de determinantes según el orden 
+de la matriz. 
+• Para el cálculo de matriz inversa además de la aplicación de operacio-
+nes elementales, puedes hacerlo mediante la matriz adjunta como se 
+explica en uno de los anexos.
+• Cualquier duda o consulta, no dudes en utilizar el campus.
+En esta sección no se dará una definición rigurosa de determinantes ya 
+que no se cuentan con los elementos necesarios para hacerlo. Se verán, 
+si, distintos métodos y propiedades para calcularlos.
+Las aplicaciones prácticas de este tema se dan principalmente en la 
+misma Matemática.
+El determinante nos permitirá decir si una matriz tiene o no inversa 
+(elemento neutro multiplicativo). En la unidad siguiente utilizamos a 
+los determinantes para saber si los sistemas de ecuaciones cuadrados 
+tienen solución única.
+Concepto 
+Se llama DETERMINANTE de una matriz cuadrada de orden n al número 
+que se obtiene al sumar algebraicamente* todos los productos posibles 
+entre n elementos de la matriz que pertenezcan a distinta fila y columna.
+Observaciones del concepto: 
+• El determinante sólo se calcula a matrices cuadradas. 
+• El determinante es un número, por lo tanto no debe confundirse el 
+determinante de una matriz con ella. No olvidemos que una matriz es 
+un conjunto de números. 
+• Como consecuencia del segundo punto, simbolizaremos el determi-
+nante de una matriz con barras del siguiente modo:
+Dada
+          a11   a12   ...   a1n
+          a21   a22  ...  a2n
+A =     :                     :
+            :                     :
+          an1   an2  ...  ann
+                              
+
+=====PAGE 3=====
+Pág. 3
+Su determinante lo simbolizaremos:
+               a11   a12   ...   a1n
+               a21   a22  ...  a2n
+|A| ó       :                     :
+                 :                      :
+               an1   an2  ...  ann
+Y lo llamaremos determinante de enésimo orden.
+Suma algebraica indica adición y/o sustracción.
+MÉTODOS PARTICULARES 
+A continuación describiremos dos métodos para calcular determinan-
+tes, el primero para matrices de orden 2 solamente y el segundo para 
+matrices de orden 3 solamente.
+A• Cálculo del determinante de una matriz cuadrada de orden 2 
+En este caso el determinante se calcula multiplicando entre sí los ele-
+mentos de la diagonal principal, y restándole el producto de los ele-
+mentos de la diagonal secundaria, o sea:
+Si:
+           a11   a12
+A =    a21   a22
+Entonces su determinante es:
+              a11   a12
+|A| =    a21   a22     = A11 . A22 - A12 . A21
+Ejemplo 1:
+Si:
+           5 -2
+A =    4   3
+               5 -2
+|A| =     4   3     = 5 . 3 - (-2) = 15 + 8 = 23
+    
+CÁLCULO DE 
+DETERMINANTES
+                              
+             
+             
+          
+          
+Desempeño 47
+• Calcula el determinante de la matriz A.
+            2 -5
+A =     3 -1
+          
+
+=====PAGE 4=====
+Pág. 4
+B• Cálculo del determinante de una matriz de orden tres: 
+Una matriz genérica de orden 3 es:
+           a11   a12   a13
+A =    a21   a22   a23
+           a31   a32   a33
+Armando todos los productos posibles con elementos de distintas filas 
+y columnas, y realizando posteriormente su suma algebraica obtene-
+mos que el determinante de A es:
+|A| = (a11 . a22 . a33 + a21 . a32 . a13 + a31 . a12 . a23) – (a13 . a22 . a31 – a23 . a32 . a11 
+– a33 . a12 . a21) [1]
+Me imagino, que no es fácil darse cuenta que es lo que se hizo para cal-
+cular estos productos. Para que te sea más sencillo, (ya vas a ver que 
+si) vamos a ver un método que visualmente es fácil de recordar y para 
+poder calcular el determinante. Este método se llama Regla de Sarrus. 
+Consiste en lo siguiente:
+• Repitamos en la matriz genérica las dos primeras filas del siguiente 
+modo:
+           a11   a12   a13
+           a21   a22   a23
+A =    a31   a32   a33
+           a11   a12   a13
+           a21   a22   a23
+Observemos que los productos de la expresión [1] lo forman:
+• Los elementos de la diagonal principal y sus paralelas. 
+• Los elementos de la diagonal secundaria y sus paralelas.
+Gráficamente:
+Términos positivos:
+          a11   a12   a13
+          a21   a22   a23
+A =    a31   a32   a33               Factores del 1er término de [1]
+          a11   a12   a13                 Factores del 2do término de [1]
+          a21   a22   a23                Factores del 3er término de [1]
+Términos negativos:
+          a11   a12   a13
+          a21   a22   a23
+A =    a31   a32   a33               Factores del 4to término de [1]
+          a11   a12   a13                 Factores del 5to término de [1]
+          a21   a22   a23                Factores del 6to término de [1]
+Con un ejemplo quedará más claro:
+Ejemplo 2:
+Dada la matriz
+                      
+                       
+                       
+                       
+
+=====PAGE 5=====
+Pág. 5
+         -2   3   5
+A =    0   1   4
+         -1   2   2
+Para calcular el determinante repetimos las dos primeras filas y luego en-
+cerramos la diagonal principal y a continuación las diagonales “parale-
+las” a la diagonal principal. El esquema siguiente creo que aclara la idea:
+          -2   3   5
+A =     0   1   4
+          -1   2   2
+          -2   3   5
+            0 -1   4
+Estas diagonales principales, nos darán los primeros productos siendo 
+los primeros cálculos:
+= (-2) . 1 . 2 + 0 . 2 . 5 + (-1) . 3 . 4 - (...el cálculo se explica a continuación)
+Luego hacemos lo mismo, pero con la diagonal secundaria y sus paralelas:
+          -2  3   5
+A =     0   1   4
+          -1   2   2
+          -2   3   5
+            0 -1   4
+|A| = (-2) . 1 . 2 + 0 . 2 . 5 + (-1) . 3 . 4 - ((-1) . 1 . 5 + (-2) . 2 . 4 + 0 . 3 . 2)
+               Producto con los elementos             Producto con los elementos
+                   de la diagonal principal                    de la diagonal secundaria
+                            y sus paralelas.                                      y sus paralelas.
+|A| = -4 + 0 - 12 – ( -5 + 16 – 0) 
+|A| = 5
+Si te gusta leer y buscar otra manera de calcular el determinante de una 
+matriz de orden 3, hay otra forma de la Regla de Sarrus, es la siguiente: 
+               
+               
+               
+               
+               
+Sumamos: el producto de los elementos de la 
+diagonal principal, el producto de una paralela 
+a la diagonal principal con el vértice opuesto 
+y el producto de la otra paralela a la diagonal 
+principal con el otro vértice.
+A todo esto le restamos: el producto de los 
+elementos de la diagonal secundaria, el 
+producto de los elementos de una paralela a la 
+diagonal secundaria con el vértice opuesto y el 
+producto de la secundaria con el otro vértice.
+a11     a12     a13
+a21     a22    a23
+a31     a32    a33
+a11     a12     a13
+a21     a22    a23
+a31     a32    a33
+De las dos formas de Sarrus, puedes optar  
+por una, la que te resulta más fácil.
+
+=====PAGE 6=====
+Pág. 6
+Seguidamente enunciaremos propiedades, algunas de las cuales nos 
+permitirán calcular determinantes en forma muy sencilla y otras servi-
+rán de fundamento en otros métodos. Agruparemos estas propiedades 
+en dos bloques para que resulte más fácil recordarlas. Estos son:
+• Referidas a operaciones elementales. 
+• Cuando un determinante vale cero.
+• Referidas a las operaciones elementales: Para que las propiedades no 
+queden en el olvido, las vamos a ir descubriendo de a poco.
+Actividad 1. Dada la matriz
+            1   4
+A =     2   3
+Aplica la siguiente operación elemental: H1,2. A la matriz equivalente 
+obtenida la llamaremos B. A continuación, calcula el determinante de A 
+y el de B. Si tus cálculos fueron correctos, los resultados serían: 
+|A| = -5     y     |B| = 5
+No es casualidad que los resultados sean números opuestos, o sea, el 
+mismo valor y diferente signo. Si lo pruebas hacer con cualquier matriz 
+y con otra a la que se le aplicó un cambio de fila, vas a obtener un resul-
+tado similar. Números opuestos. Eso da lugar a una propiedad:
+1º PROPIEDAD: “Si se intercambian entre sí, dos filas, el determinante 
+cambia de signo pero no de valor absoluto”.
+En símbolos Si: A ~ B → |A| = - |B|
+                                    Hij
+Actividad 2. Dada la matriz
+            1   4
+A =     2   3
+Aplica la siguiente operación elemental: H1(2). A la matriz equivalente 
+obtenida la llamaremos B. A continuación, calcula el determinante de A 
+y el de B. Si tus cálculos fueron correctos, los resultados serían: 
+|A| = - 5    y     |B| = -10
+No es casualidad que el determinante de la matriz B, sea el resultado de 
+la multiplicación entre el valor de la constante por la que se multiplicó 
+la fila y el determinante de A Si lo pruebas hacer con cualquier matriz y 
+con otra a la que se multiplicó una fila por una constante, vas a obtener 
+un resultado similar. Números que son múltiplos escalares. Eso da lu-
+gar a una propiedad:
+Desempeño 48
+• Calcula el |B| aplicando la Regla de Sarrus.
+            3   2 -1
+B =     0   4 -3
+          -2   1   5
+               
+PROPIEDADES DE LOS 
+DETERMINANTES
+         
+         
+
+=====PAGE 7=====
+Pág. 7
+2º PROPIEDAD: “ Si se multiplican los elementos de una fila por un núme-
+ro distinto de cero, el determinante queda multiplicado por ese número”.
+En símbolos. Si: A = A ~ B → |B| = k . |A| 
+                                           Hi(k)
+Esta es la propiedad más importante que 
+tiene un determinante, y que permite abreviar 
+considerablemente el trabajo de calcularlos.
+La columna de control SE OBTIENE sumando los elementos de cada fila 
+de la matriz. Lo que resulta que:
+1+2+3 = 6 
+4+5+6 = 15 
+5+7+8 = 20
+A partir de este paso, la columna de control se trabaja de la misma ma-
+nera que el resto de la matriz, como si fuese una columna más, aplican-
+do las operaciones propias de cada fila.
+En el paso 1*, el -9 se obtiene aplicando la operación 1*.
+Para corroborar si se aplicó bien la operación por fila, la suma de los 
+elementos de cada fila, debe seguir dando igual, al elemento de la co-
+lumna de control correspondiente. En este caso 0 + (-3) + (-6) = -9. 
+Al dar el mismo resultado, quiere decir que la operación se ha resuelto 
+correctamente. En el caso que no diera el mismo resultado, hay que re-
+visar solo ese paso, ya que se supone que el resto está bien resuelto. Es 
+un proceso que lleva más cálculos, pero garantiza que la matriz a la que 
+se llega, sea la correcta.
+En el paso 2*, se aplica la operación para anular el elemento de la ter-
+cera fila, y también se le aplica al elemento de la columna de control (o 
+sea al 20). Como se podrá comprobar, el resultado de -3 + (-7) = -10, lo 
+que indica que el procedimiento se ha realizado ¡correctamente!
+Así se debería realizar en todos los pasos, comprobando 
+uno a uno que los cálculos están bien hechos. Te invito 
+a que lo apliques en la matriz resuelta anteriormente, y 
+verás que es posible realizar dichas operaciones con un 
+alto porcentaje de exactitud.
+Actividad 3. Dada la matriz
+            1   4
+A =     2   3
+Aplica la siguiente operación elemental: H1,2(-3). A la matriz equivalente 
+obtenida la llamaremos B. A continuación, calcula el determinante de A 
+y el de B. Si tus cálculos fueron correctos, los resultados serían: 
+|A| = - 5    y     |B| = -5 
+No es casualidad que el determinante de la matriz A y B sean los mis-
+mos números. Si lo pruebas hacer con cualquier matriz obtendrás que 
+los determinantes son iguales. Eso da lugar a una propiedad:
+3º PROPIEDAD: “Si a una fila de una matriz se le suma otra previamente 
+multiplicada por una constante distinta de cero, el determinante no varía”.
+         
+
+=====PAGE 8=====
+Pág. 8
+En símbolos. Si: A ~ B → |A| = |B|
+                                   Hi,j(k)
+Cuando un determinante vale cero
+Actividad 4. Dada la matriz
+            3   4 -1
+A =     0   0   0
+            2   5 -7
+Calcula el determinante de A utilizando la Regla de Sarrus. 
+Si tu resultado es correcto, tienes que haber obtenido… ¡A calcularlo! 
+Sin trampas… Mientras tanto… una pregunta… ¿Qué característica par-
+ticular le encuentras a esta matriz?
+Vamos a calcular también el determinante de:
+            1   4
+B =     0   0
+Esta matriz también tiene una característica particular. Para saber cuál 
+es la propiedad que sigue, si la lees, puedes comprobar tus resultados 
+anteriores.
+4º PROPIEDAD: “Si todos los elementos de una línea (fila o columna) 
+son nulos, el determinante de la matriz es nulo”.
+Quedó claro? Sí, si una matriz tiene una fila o columna nula, no es ne-
+cesario calcular el determinante, sea del orden que sea, ya que siempre 
+nos va a dar 0.
+Actividad 5. Dada la matriz
+            3   4   4
+A =     2   5   5
+            2   5   5
+Calcula el determinante de A utilizando la Regla de Sarrus. (Sin trampas) 
+Otra pregunta, ¿Qué característica particular le encuentras a esta matriz?
+Vamos a calcular también el determinante de:
+            1   4
+B =     4   4
+Esta matriz también tiene una característica particular. Al leer la pro-
+piedad, junto a tus resultados, podrás saber de qué se trata…
+5º PROPIEDAD: “Si una matriz tiene dos líneas paralelas iguales, su 
+determinante es nulo”.
+Exacto! Si una matriz, sea del orden que sea, tiene una fila o columna 
+nula, su determinante siempre vale 0.
+               
+         
+               
+         
+
+=====PAGE 9=====
+Pág. 9
+Actividad 6. Dada la matriz
+            5  15                                          3   4 -1
+A =     2   6     y la matriz     B =     1   4   3
+                                                               5  20  15
+Calcula el determinante de ambas matrices. Analiza cada matriz para 
+ver si encuentras algo particular en cada una de ellas. Ayuda: fijate en 
+las filas. Analizando...
+Si calculaste los determinantes de ambas, tienes que haber obtenido 
+el mismo resultado. Por otro lado las filas de ambas matrices tienen 
+algo particular. Una fila es múltiplo escalar de otra fila. Es decir, una 
+fila se puede obtener a partir de multiplicar una fila por un escalar. Por 
+ejemplo, para la matriz A la columna 2 se puede obtener de multiplicar 
+la columna 1 por 3.
+En el caso de la matriz B, la fila 3 se puede obtener a partir de multipli-
+car la fila 2 por el escalar 5.
+Simplificando, así sería la próxima propiedad…
+6º PROPIEDAD: "Si dos líneas paralelas son proporcionales*, el deter-
+minante es nulo". En general:
+Referencia. Dos líneas son proporcionales, cuando una de ellas es la 
+otra multiplicada por un cierto número.
+Si una matriz tiene el determinante no nulo se dice que 
+la matriz es REGULAR o NO SINGULAR.
+A continuación veremos un método que permite calcular el determi-
+nante a matrices cuadradas de cualquier orden, inclusive de orden 2 y 
+3. Este es la Regla de Chio:
+Regla de Chio 
+El primer paso de este método consiste en aplicar una serie de opera-
+ciones elementales en la matriz con el fin de conseguir que una colum-
+na (cualquiera) tenga todos sus elementos nulos excepto uno.
+Una vez logrado esto, hacemos la multiplicación de los siguientes tres 
+factores: 
+• El elemento no nulo de la columna elegida. 
+• El (-1)i + j, donde i,j corresponden a la posición del elemento no nulo 
+elegido.
+• El determinante de la matriz que surge al sacar la fila y la columna del 
+elemento elegido en el primer paso.
+El resultado de la multiplicación, es el determinante buscado, previa-
+mente verificando, si es necesario aplicar las propiedades correspon-
+dientes (1, 2 o 3) según las operaciones usadas para lograr los ceros.
+                 
+         
+MÉTODO GENERAL
+
+=====PAGE 10=====
+Pág. 10
+En resumen:
+La Regla de Chio consta de tres pasos:
+1er| Aplicamos operaciones elementales hasta lograr que una columna 
+(cualquiera) tenga nulos todos sus elementos excepto uno.
+2do| Realizamos la multiplicación de los factores indicados.
+3er| Aplicamos las propiedades correspondientes (1, 2 o 3) según las 
+operaciones usadas para lograr los ceros, si es necesario.
+Ejemplo Nº3: Vamos a calcular el determinante a A por Regla de Chio:
+            2   4   2
+A =     2   7   8
+            3   5   8
+1| Aplicamos operaciones elementales sobre A para lograr anular los 
+elementos de alguna de las columnas. En este caso elegimos el elemen-
+to 2, de la fila 1, columna1. Por lo tanto hay que anular los elementos 
+restantes de la columna 1:
+            2   4   2            2   4   2              2   4   2
+A =     2   7   8     ~     0   3   6     ~     0   3   6     = B
+            3   5   8             3   5   8             0 -1   5
+                           H2,1(-1)              H3,1(-3/2)
+Aquí hemos logrado una columna con todos sus elementos nulos ex-
+cepto uno.
+2| A la matriz resultante (B) le calculamos el determinante multipli-
+cando los factores correspondientes:
+           2   4   2
+B =    0   3   6
+           0 -1   5
+                              Factores
+                                                               3   6                    2   4   2 
+|B| =     2     .     (-1)     1+1     =        -1   5                   0   3   6
+                                                                                           0 -1   5  
+      Elemento          Posición        Determinante que surge de sacar la fila
+                                                          y la columna del elemento (2, en este caso)
+|B| = 2 . 1 . 21 = 42
+|B| = 42
+3| Aplicamos las propiedades correspondientes:
+Hemos aplicado la tercer operación dos veces. Esta operación, según la 
+propiedad 3, no cambia el determinante de A. Entonces el determinante 
+de A es igual al de B. 
+Por lo tanto el resultado es: |A| = 42
+               
+               
+               
+               
+               
+             
+               
+
+=====PAGE 11=====
+Pág. 11
+Vamos a ver ahora como se puede encontrar la matriz inversa. Esto nos va 
+a servir para resolver sistemas de ecuaciones (ya falta poco, en la próxi-
+ma unidad lo vamos a aplicar) Como ya se dijo anteriormente (propiedad 
+6 del producto de matrices), las únicas matrices que pueden tener inversa 
+son las matrices cuadradas; y podemos asegurar que la tienen si la matriz 
+cuadrada es REGULAR (es decir que tiene determinante no nulo).
+O sea: UNA MATRIZ TIENE INVERSA SI ES REGULAR.
+Veremos un método para calcular la inversa de una matriz:
+Por operaciones elementales. Con la matriz cuadrada a la que le quere-
+mos calcular la inversa y con la matriz identidad de orden adecuado, 
+formamos una matriz rectangular.
+Luego aplicamos a esta matriz rectangular operaciones elementales (o 
+el método de Gauss-Jordan) hasta obtener una matriz canónica. Vol-
+vemos a pensar a la matriz rectangular como dos matrices cuadradas, 
+una va a ser la Identidad, la otra (a la derecha) la inversa buscada.
+Puede usarse el método de Gauss-Jordan  
+para calcular la inversa de una matriz.
+Ejemplo Nº 4: Sea A la matriz a la que le queremos calcular la inversa.
+            1    2   3
+A =     4   5   6     A -1 = ?
+            5   7   8
+Primero calculamos el determinante (si es distinto de cero sabemos 
+que tiene inversa. Si es igual a cero la inversa no existe y no se continúa 
+el ejercicio).
+Calcula el determinante de A. Si tu resultado fue correcto, el resultado 
+del determinante te tiene que haber dado 3, por lo tanto existe inversa.
+Formamos la matriz rectangular con A y la Identidad de orden 3: [1]
+Desempeño 49
+• Calcular |E| aplicando la Regla de Chio.
+            2 -1   1   1
+E =     0   1 -1   2
+            0   0   1  2
+            1 -2 -1   0
+Ayuda: ya tienes la primera columna casi lista… Elige uno de los elementos y sigue el procedi-
+miento explicado anteriormente.
+                     
+CÁLCULO 
+DE LA INVERSA 
+DE UNA MATRIZ
+               
+
+=====PAGE 12=====
+Pág. 12
+Llegamos a la canónica. A la izquierda de la línea de puntos está la 
+Identidad, a la derecha la inversa de A. Entonces:
+                -2/3  5/3 -1
+A -1 =     -2/3  -7/3  2
+                  1     1   -1
+Podemos verificar que el resultado es correcto haciendo A . A-1, este 
+producto debe dar la Identidad:
+                     1   2   3            -2/3  5/3 -1              1   0   0
+A . A -1 =     4   5   6     ∙    -2/3  -7/3  2     =     0   1   0
+                     5   7   8              1     1   -1             0   0   1
+Desempeño 50
+• Obtiene la matriz inversa y verifica el resultado.
+            5   3
+B =     3   2
+1
+[    A       :       I    ]
+ 1   2   3      1   2   3  
+4   5   6     4   5   6
+5   7   8     5   7   8
+(Matriz rectangular que se forma con A y la 
+identidad)
+A esta le aplicamos las operaciones 
+elementales (o Gauss-Jordan) hasta llegar a 
+canónica:
+1   2   3     1   0   0              1   2   3        1   0   0
+4   5   6    0   1   0     ~     0 -3 -6     -4   1   0     ~
+5   7   8    0   0   1             0 -3 -7      -5   0   1
+                                H2,1(-4)                                     H2(-1/3)
+                                H3,1(-5)
+1   2   3       1    0    0             1   0 -1      -5/3  ⅔   0
+0   1   2     4/3 -1/3   0     ~     0   1   2      ⁴/3  -1/3   0     ~
+0 -3 -7     0    0  -1             0   0 -1      -1   -1    1
+                                    H1,2(-2)                                      H3(-1)
+                                    H3,2(3)
+1   0 -1     -5/3  ⅔  0               1   0   0      -2/3  5/3 -1
+0   1   2     ⁴/3  -1/3   0      ~     0   1   0      -2/3  -7/3  2     ~
+0   0   1      1     1   -1               0   0   1        1     1   -1
+                                    H1,3(1)          [   A   :   I   ]
+                                    H2,3(-2)
+                                 
+                               
+                                  
+                                   
+                                       
+                                      
+                                     
+                    
+               
+               
+                   
+         
+
+=====PAGE 13=====
+Pág. 13
+Desempeño 51
+• Calcula el determinante de las siguientes matrices. Antes de comenzar analiza cada matriz, 
+piensa si cumple alguna de las propiedades vistas. Te darás cuenta que es mucho más sencillo de 
+lo que parece. En caso de no ser posible, explica porque.
+a-                                                             b-                                                            c-                                               
+            4   0   0   0   0   0                                  -5   1 -5   2   3   6
+            3    1   0   0   0   0                                    3   3   3   8   0   8                                  2   8 -2   0   5
+A =     8   3   8   0   0   0                       B =     -2   2 -2   1   0   3                      C =     3   4 -3   0   1 
+            1   9   8   4   0   0                                     2   4   2   3   4   1                                  1   7  -1   4 -5
+           5   2    1    1   0   0                                     2   6   2   4   2   3                                 4   4  -4   1   5
+                                                                               0   1   0   2   0   9
+d-                                                            e-                                                             f-                                                
+            2   0   0                                                    4   1   1   2                                               0   0   0   8
+D =     0   2   0                                        E =     0   0   0   0                                  F =     0   0   5   0
+            0   0   1                                                    3   5   1   1                                                0   0   0   0 
+                                                                              1   1   1   2                                                3   0   0   0
+g-                       
+              3 -6   2 -1
+G =     -2  4   1   3
+              0   0   1   1
+              1 -2   1   0
+Desempeño 52
+• Sabiendo que |B| = -18 y que A ~ B a través de:
+H2,3 ⇒ H1(3) ⇒ H3(2) ⇒ H3,1 ⇒ H3,2(6) ⇒ H2,3(5)
+¿Cuál es el determinante de A?
+Desempeño 53
+• Sabiendo que |A| = 4 y que A ~ B con las mismas operaciones del ejercicio anterior. ¿Cuál es el 
+determinante de B?
+               
+                     
+                     
+                     
+                          
+                                  
+                                  
+
+=====PAGE 14=====
+Pág. 14
+Desempeño 54
+• Calcula el determinante de cada matriz.
+a-                                                            b-                                                             c-
+            0   0   1   1                                               3   4   5  6                                               4   3   2   0   1
+A =     2  -4   1   3                                    B =   1   0   2   1                                    C =     5   4   3   0   2
+           3 -6   2 -1                                              3   4   1   0                                               11   6  4    1   3
+           1  -2   1   0                                               1   1   3   2                                              -2 -2 -1   0   1
+                                                                                                                                               2   1   1   4   2
+Desempeño 55
+• Analiza y/o calcula, si las siguientes matrices son regulares; en caso afirmativo, determina su 
+inversa.
+           4   5/2                                                         1   1   1                                                      1 -2
+A =     3   5/2                                            B =     0   0   3                                        C =    -2   4
+                                                                            -1   1   0
+            1   1   3                                                      3 -1   0                                                     ⅔   ¹/6  -1/3
+E =     2   1 -4                                         F =     0   4   2                                        F-1 =      1    ½   -1
+           4   3   2                                                     3   0    1                                                     -2   -1/2   2
+Desempeño 56
+• Como en las otras clases, te invito a que después que leas, trabajes, resuelvas y tengas todo 
+comprendido, trates de responder las siguientes preguntas que servirán para afianzar los con-
+tenidos teóricos y prácticos desarrollados hasta aquí.
+a- ¿Qué es el determinante de una matriz?
+b- ¿A qué tipo de matrices se le puede calcular el determinante?
+c- ¿Cómo se calcula el determinante de matrices de orden 2?
+d- ¿Cómo se calcula el determinante de matrices de orden 3?
+e- ¿Cómo se calcula el determinante de matrices de orden n?
+f- ¿El método utilizado en el cálculo de un determinante, varía su resultado?
+g- ¿Cuál será el determinante de matriz identidad?
+h- ¿A qué se llama matriz regular?
+i- ¿Qué se debe tener en cuenta al momento de aplicar la regla de Chío a una matriz para calcular 
+su determinante?
+j- ¿Cuándo una matriz tiene inversa?
+k- ¿Cómo se puede calcular la inversa de una matriz?
+l- ¿Para qué se utiliza aplicar las operaciones elementales a una matriz?
+m- ¿Cómo se calcula el determinante de una matriz de orden 6?
+n- ¿En qué casos el determinante de una matriz da cero?
+o- ¿Cuál es la operación elemental por fila que no modifica el valor del determinante?
+                      
+                     
+                            
+               
+               
+                     
+               
+            
+            
+
+=====PAGE 15=====
+Pág. 15
+Respuestas de los desempeños de la clase n° 8
+• Desempeño n° 47
+|A| = 13
+• Desempeño n° 48 
+|B| = 73
+• Desempeño n° 49
+|E| = 17
+• Desempeño n° 50
+ 
+                 2 -5
+B-1 =    -3   5
+• Desempeño n° 51
+|A| no existe,
+|B| = 0,
+|C| no existe,
+|D| = 4,
+|E| = 0,
+|F| = 0,
+|G| = 0
+• Desempeño n° 52
+|A| = -3
+• Desempeño n° 53
+|B| = 24
+• Desempeño n° 54
+|A| = 0, 
+|B| = -26, 
+|C| = -8
+• Desempeño n° 55
+                  1    -1                                     ½  -1/6  -1/2                            -11   2   2                              ⅔   1/6  -1/3
+A-1 =    -6/5   8/5                    B-1 =     ½  -1/6   ½            D-1 =     -4   0   2                F-1 =      1   ½   -1
+                                                                   0   ¹/3    0                                6 -1 -1                              -2  -1/2   2
+• Desempeño n° 56
+Respuesta al desempeño 56: Las respuestas, las encontraras en la clase n° 8!
+Desempeños finales
+• Una vez que tengas las 4 clases de la unidad n° 2 vistas (o sea clase 5, 6, 7 y 8), estudiadas, tra-
+bajadas y con las dudas aclaradas, te invito a que resuelvas estos desempeños finales. Algunos 
+sirven para repasar, otros sirven para pensar y otros para interpretar.
+A vencer los desafíos! 
+                      
+                     
+               
+                 
+
+=====PAGE 16=====
+Pág. 16
+Las respuestas de estos desempeños las subiremos al foro, con una actividad determinada que 
+voy a plantear en su momento.
+DF 1. Dadas las matrices
+           3   2                                        -4   5                                       1 -2
+A =     1  -1                              B =     0   1                            C =     2   1
+Resuelve en caso de ser posible. En caso de no serlo, explique porque.
+a- A + B - C = 
+b- 3B + 2A = 
+c- 3 A + (B - C) =
+      2
+d- C2 =
+DF 2. Multiplica en el orden posible:
+           1   2 -2   6                                                                                2 -4   3
+E =     0   1 -4 -1                                                                    F =     0   5   2
+           5   2   3   0
+DF 3. Determina el rango de:
+           2 -1 -1   0
+G =     1   3   4 -5
+           4   5   7 -10
+DF 4.
+a- ¿Qué puedes decir sobre dos matrices, si sabes que sumadas dan la matriz nula?
+b- ¿Qué puedes decir sobre dos matrices, si sabes que multiplicadas dan la matriz identidad?
+c- ¿Qué operación representa # si sabes que la siguiente igualdad entre matrices es válida?
+A # B = B # A
+d- La matriz D representa cantidad de productos a, b y c vendidos a distintos negocios (Neg. A, 
+B y C):
+            a   b   c
+            2   3   2               Neg A
+D =     1   4   7               Neg B
+            3   0   4              Neg C
+Si A = [1 1 1] es un vector fila de orden 1x3, ¿qué representan los elementos de la matriz que se 
+obtiene de multiplicar A.D?
+DF 5. Completa el siguiente cuadro:
+         
+         
+         
+                     
+                      
+               
+               
+Operaciones
+¿Cuándo puede realizarse?
+¿Cuál es el orden del resultado?
+Adición
+Producto por número
+Producto entre matrices
+
+=====PAGE 17=====
+Pág. 17
+DF 6. Calcula el determinante de las siguientes matrices, cuando sea posible:
+            1   3   4                         1  0   0   0                     1   3 -1                         1   3   4
+A =     5   3   1              C =     3   2   1   2         D =     4   1   3             E =     2   3   1
+            1   0   1                          1  4   3   1                      5   2   3
+                                                  2  2   2   0
+DF 7. Determina cual de las matrices del ejercicio anterior son regulares (JUSTIFICA cada caso) 
+y halla la inversa de una de ellas.
+DF 8. Coloca V (verdadero) o F (falso) y JUSTIFICA en cada caso:
+a- Si dos matrices pueden multiplicarse y sumarse, podemos asegurar que son cuadradas.
+b- La inversa de una matriz mxn es una matriz mxn.
+c- Si dos matrices son conformables entonces se pueden sumar.
+d- Tanto en la Adición como en la Multiplicación de matrices se cumplen las propiedades aso-
+ciativa y conmutativa.
+e- A una matriz se le puede calcular el determinante o no, según la cantidad de elementos que tenga.
+DF 9. En un hospital hay cuatro pacientes diabéticos a los que debe inyectarse dos tipos de insu-
+lina. Las dosis diarias (en mg) que necesitan son:
+               
+               
+                     
+               
+Paciente
+1
+2
+3
+4
+Insulina retardada
+15
+20
+0
+10
+Insulina normal
+30
+20
+50
+30
+D1
+D2
+D3
+D4
+F1
+1245
+995
+0
+1540
+F2
+820
+768
+530
+500
+F3
+2500
+1200
+1800
+1000
+Los pacientes permanecen en el hospital, 8, 15, 12 y 25 días respectivamente. Determina, la can-
+tidad de insulina de cada tipo que se precisará para tratarlos.
+DF 10. Una empresa que produce autopartes psee 3 fabricas (F1, F2 y F3) y 4 centros de distri-
+bución (D1, D2, D3 y D4). Envía por semana productos de cada fabrica a los distintos centros de 
+distribución según lo indica la siguiente tabla:
+a- Representa los datos de la tabla en una matriz B, cuyas columnas sean los centros de distribución.
+b- Indica el orden (o dimensión) de la matriz planteada.
+c- ¿Se puede afirmar que B es una matriz cuadrada? Justifica.
+d- Nombra el elemento b23 ¿Qué representa dicho elemento?
+e- Escribe los elementos bii. ¿Dichos elementos están sobre la diagonal principal? Justifica.
+f- ¿Qué información contiene la fila 3? ¿y la columna 2?
+g- ¿Cuál es la ubicación del elemento 0 en la matriz?
+h- ¿Cuántos elementos envía la fábrica 2 al centro de distribución 3?
+
+=====PAGE 18=====
+Pág. 18
+DF 11. Una empresa que vende 3 productos A, B y C, lo realiza desde 4 sucursales ( I, II, III y IV) 
+distribuidas en todo el país. Las cantidades vendidas de cada uno de los productos en las distin-
+tas sucursales durante los últimos dos años (V1 y V2) se representan en las siguientes matrices.
+            120   123   200   401          Producto A
+V1 =     140   150   203   380         Producto B
+            130   212   307   500          Producto C
+               I       II      III      IV            Sucursales
+             110   213   220   371          Producto A
+V2 =     145   165   197   350         Producto B
+             132   194   217   480         Producto C
+                I       II      III      IV          Sucursales
+Encuentra:
+a- ¿Cuántos productos del tipo A vendió la empresa durante año (1) en la sucursal IV?
+b- ¿Cuántos productos del tipo B vendió la empresa durante año (12) en la sucursal III?
+c- ¿Cuántos productos del tipo C vendió la empresa durante los últimos dos años en la sucursal II?
+d- Realiza la suma de las dos matrices dadas. ¿Qué significado tendría el resultado?
+e- ¿Qué sucursal vendió más productos A en los dos años?
+f- En estos últimos dos años ¿Cuál de los tres productos tuvo mayor venta en la sucursal III?
+g- Si hacemos la diferencia de V2 y V1. ¿Qué nos indicaría el resultado?
+DF 12. La matriz M muestra los consumos promedios anuales de gas (m3), luz (en kwh) y teléfo-
+no (pulsos) de dos familias estándar. La matriz N muestra los costos, por unidad, de los servicios 
+en los últimos 4 años.
+              Luz       Gas    Teléfono
+             1953     2084     3400        Familia 1
+M =     1800     1950      3200        Familia 2
+            Año1   Año2  Año3  Año4
+             0.10     0.12     0.13    0.15        Luz
+N =      0.11      0.11     0.13    0.14        Gas
+            0.06    0.08    0.07    0.07       Teléfono
+De las siguientes consignas, resuelve lo que sea posible o válido. Lo que no lo sea, explica.
+a- Encuentra M+N e interpreta los resultados obtenidos.
+b- Encuentra M-N e interpreta los resultados obtenidos.
+c- Encuentra M.N e interpreta los resultados obtenidos.
+d- Encuentra N.M e interpreta los resultados obtenidos.
+e- Si se multiplicara 0,05 x N ¿Cómo expresarías con palabras lo que sucedió? Inventa el enun-
+ciado. (ayuda… 0,05 = 5%)
+                                       
+                                       
+                                                  
+                                           
+
+=====PAGE 19=====
+Pág. 19
+DF 13. Una agencia encargada de la distribución y mantenimiento de los automóviles de una 
+marca determinada, ha atendido al número de vehículos mostrados en la matriz A, clasifica-
+dos según el tipo de vehículo y área de residencia del cliente. Para satisfacer las necesidades de 
+repuestos más usuales, cuenta con la información de años anteriores, respecto del número de 
+repuestos (expresados en miles) que se necesitan anualmente por tipo de coche. Tales datos se 
+muestran en la matriz. Calcula el número de piezas de repuesto que se requieren en la zona ur-
+bana y rural, a fin de cubrir la demanda previsible para el recambio.
+            Turismo     Utilitario     Todo terreno
+                 715                1050                  412                   Rural
+A =          920               2130                   112                    Urbana
+           Mangueras     Lamparitas     Correas
+                    1.3                      2.1                    1.4                Turismo
+B =             0.9                       2                     0.5                Utilitario
+                   2.2                      0.7                   0.7                Todo terreno
+                                                                
+                                                            
+Si detectás un error del tipo que fuere (falta un punto, un acento, 
+una palabra mal escrita, un error en código, etc.), por favor comu-
+nicate con nosotros a correcciones@issd.edu.ar e indicanos por 
+cada error que detectes la página y el párrafo. 
+MUCHAS GRACIAS POR TU APORTE.
+Damos por concluida esta clase. No te quedes  
+con dudas. Si algo no se ha entendido, consulta  
+en el foro de dudas de la unidad n° 2 que hay  
+en el campus, y trata de no pasar a la siguiente  
+clase, sin haber entendido y ejercitado ésta.
+¡Nos vemos!
+BIBLIOGRAFÍA
+• Ferreyra, Silvia Cristina - Lerda, Graciela Beatriz. Matematica 
+(ejercicios y aplicaciones).
+Editorial Aique. Carpeta de Matematica 1 (Nueva edición amplaida y 
+actualizada). Ediciones Eudecor.

@@ -1,0 +1,22 @@
+{
+  "concepts": [
+    "Esquema de la Unidad 3 (Método General usando matriz canónica y rango; Método Particular: Regla de Cramer usando determinante)",
+    "Cuadrado Mágico y Constante Mágica (Cuadrado Mágico del río Amarillo de orden 3 y Cuadrado Mágico de Durero de orden 4)",
+    "Ecuación (igualdad entre dos expresiones algebraicas que sólo se satisface para determinados valores de la parte literal)",
+    "Parte literal de una ecuación (la o las incógnitas) y Parte literal de un término (la letra junto a su exponente)",
+    "Raíces o soluciones de una ecuación y objetivo de Resolver una ecuación (encontrar, si tiene, sus raíces o soluciones)",
+    "Ecuaciones lineales (aquellas en las que la suma de los exponentes de la parte literal es a lo sumo 1, en cada término) vs. Ecuaciones no lineales",
+    "Sistema de ecuaciones lineales, reescritura/acomodamiento (incógnitas en el primer miembro y términos independientes en el segundo) y Sistemas equivalentes",
+    "Resolver un sistema de ecuaciones (encontrar un conjunto de valores para sus incógnitas que satisfagan todas las ecuaciones simultáneamente)",
+    "Clasificación según los términos independientes: Sistema Homogéneo (todos los términos independientes nulos) y Sistema No Homogéneo (existe por lo menos un término independiente distinto de cero)",
+    "Clasificación según las soluciones obtenidas: Sistema Compatible (tiene solución: Determinado si tiene única solución, Indeterminado si tiene infinitas soluciones) y Sistema Incompatible (no tiene solución)",
+    "Método de comprobación/verificación de soluciones por reemplazo simultáneo en todas las ecuaciones del sistema"
+  ],
+  "connections": [
+    "Unidad 2 (Matrices y Determinantes): uso de operaciones elementales, matriz canónica y rango para el método de resolución general, y cálculo de determinantes para el método particular (Regla de Cramer)",
+    "Clase 10 (Método General de Resolución): representación en forma matricial A·X = B, matriz ampliada A° = [A : B], obtención de un sistema equivalente llevando A° a su matriz canónica, y clasificación por rangos (Teorema de Rouché-Frobenius)",
+    "Clases 11 y 12: resolución completa de sistemas compatibles determinados, compatibles indeterminados, incompatibles, sistemas homogéneos y Regla de Cramer"
+  ],
+  "notes": "Se extrajo y verificó la totalidad de las 10 páginas de 9.pdf (texto e imágenes renderizadas a 130 DPI en _partes/_img_9/). Todas las definiciones, tablas y observaciones teóricas fueron incluidas con citas textuales exactas palabra por palabra, sin LaTeX ni HTML, empleando únicamente notación Unicode limpia. Se documentaron además las trampas de ordenamiento previo en sistemas homogéneos (Desempeño 2), la pregunta sobre sistemas equivalentes (Desempeño 1g) y las dos erratas tipográficas del solucionario del PDF (Desempeños 2 y 5).",
+  "title": "Clase 9 — Sistemas de Ecuaciones"
+}

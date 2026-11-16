@@ -1,0 +1,33 @@
+{
+  "concepts": [
+    "Matriz (disposición rectangular de números en filas y columnas)",
+    "Matriz n x m (conjunto de n.m números dispuestos en n filas y m columnas)",
+    "Orden de una matriz (n x m, leído 'ene por eme')",
+    "Notación matricial (corchetes, paréntesis, doble barra, letras mayúsculas A_nxm)",
+    "Posición de un elemento y subíndices a_ij (i = N° de fila, j = N° de columna)",
+    "Vector (matriz de orden n x 1 ó 1 x n)",
+    "Vector columna (orden n x 1) y Vector fila (orden 1 x n)",
+    "Matriz como conjunto ordenado de vectores filas ó conjunto ordenado de vectores columnas",
+    "Clasificación de matrices especiales (según su forma y según los elementos que tengan)",
+    "Matriz rectangular (caso general)",
+    "Matriz nula (0, a_ij = 0 para todo i,j; no necesita ser cuadrada)",
+    "Matriz cuadrada (mismo número de filas que de columnas, de orden n)",
+    "Diagonal principal y Diagonal secundaria (válidas sólo para matrices cuadradas)",
+    "Matriz diagonal (cuadrada con elementos fuera de la diagonal principal iguales a 0)",
+    "Matriz escalar (matriz diagonal con todos sus elementos de la diagonal iguales)",
+    "Matriz identidad o matriz unidad (I_n: cuadrada con a_ij = 1 cuando i = j y a_ij = 0 cuando i ≠ j)",
+    "Matriz triangular: Triangular Superior (nulos por debajo de la diagonal principal, i > j) y Triangular Inferior (nulos por encima de la diagonal principal, a_ij = 0 para todo i < j)",
+    "Matriz canónica o escalonada (presentación preliminar)",
+    "Elementos correspondientes (aquellos que tienen igual par de subíndices ij)",
+    "Igualdad de matrices (A = B si son del mismo orden y a_ij = b_ij para todo i,j)"
+  ],
+  "connections": [
+    "La libertad al elegir qué representan las filas y las columnas al organizar información anticipa el concepto de matriz traspuesta y la condición de conformabilidad para el producto de matrices (Clase 6).",
+    "La igualdad de matrices y el concepto de elementos correspondientes (igual par de subíndices ij) son la base directa para definir la adición y sustracción de matrices del mismo orden en la Clase 6.",
+    "La matriz nula (0) actuará como elemento neutro de la adición de matrices y la matriz identidad o unidad (I_n) como elemento neutro de la multiplicación de matrices y base para la matriz inversa.",
+    "La definición alternativa de matriz como conjunto ordenado de vectores filas o columnas fundamenta las operaciones elementales entre filas/columnas para obtener la matriz canónica o escalonada (Clases 6 y 7).",
+    "El concepto de matriz cuadrada de orden n y sus diagonales (principal y secundaria), junto con las matrices triangulares, son prerrequisitos directos para la segunda sección de la Unidad 2: Determinantes (Clases 7 y 8)."
+  ],
+  "notes": "Se extrajeron y renderizaron las 16 páginas de 5.pdf en _partes/_img_5/ (incluyendo los cuadros gráficos insertados como imágenes en las páginas 11, 12 y 13 que no salían completos en texto plano). Se documentó y advirtió expresamente la errata tipográfica de la página 12 del PDF en la definición simbólica de Matriz Triangular Superior ('a_ij > j' donde el material omitió '= 0 para todo i', en contraste con 'a_ij = 0 para todo i < j' de Triangular Inferior), así como el detalle de subíndices del vector fila general en la página 8. Cero signos de pesos/LaTeX ($), cero comandos LaTeX y cero etiquetas HTML verificados por script.",
+  "title": "Clase 5 — Matrices y Determinantes"
+}

@@ -1,0 +1,285 @@
+=== PAGE 1 ===
+­_  
+ÁLGEBRA  
+DE BOOLE 
+­_
+Al finalizar la clase los alumnos: 
+• Conocerán de qué trata el Álgebra de Boole. 
+• Identificarán las variables lógicas, 
+operaciones lógicas y propiedades 
+Axiomáticas.
+• Resolver ejercicios simples.
+• Axiomas del Álgebra de Boole
+Matemática Discreta 2
+MD2
+CLASE
+UNIDAD
+
+
+=== PAGE 2 ===
+Pág. 2
+En las situaciones planteadas [1], podemos observar que según sea el 
+estado de dos elementos, el resultado cambia. Además que el estado de 
+esos elementos solo tiene dos posibilidades (en este caso abierta o ce-
+rrada), como así también el resultado. Estos elementos que pueden aso-
+ciarse a dos estados podemos relacionarlos al sistema de numeración 
+binario, en el que basó Boole su esquema, para formalizar su Álgebra.
+BIENVENIDOS
+ÁLGEBRA DE BOOLE
+Hoy damos comienzo a nuestra Matemática Discreta 2, que como uste-
+des recordarán recibe ese nombre ya que trabaja con conjuntos discre-
+tos, es decir conjuntos finitos o infinitos pero numerables.
+Y para comenzar con el estudio de esta Matemática, lo haremos conti-
+nuando o ampliando, los conceptos que vimos en la unidad 3 de nuestra 
+Matemática Discreta 1, es decir la lógica simbólica proposicional, en la 
+que nuestras variables eran las proposiciones, sentencias que son ver-
+daderas o son falsas. 
+Nuestra primer unidad entonces será continuación de aquella tercera, 
+y corresponde a un nuevo Álgebra que al principio podrá parecernos 
+algo compleja, pero solo es porque no estamos tan familiarizados como 
+con la clásica, éste será el Álgebra de Boole. Luego en la unidad 2 es-
+tudiaremos álgebra de Matrices, y en la unidad 3 las aplicaremos a la 
+resolución de sistemas de ecuaciones lineales.
+Entonces vamos con el Algebra de Boole…  Antes de comenzar con el 
+desarrollo de estos nuevos conceptos, les planteo que puedan resolver 
+las siguientes situaciones de nuestra vida cotidiana. 
+Teniendo en cuenta los siguientes dibujos responda las preguntas aba-
+jo planteadas: [1]
+a| En el circuito de tuberías 1, 
+diga en cuál de las situaciones 
+el agua llegaría al recipiente 
+inferior: 
+A1. Llave A cerrada y llave B 
+cerrada. 
+A2. Llave A cerrada y llave B 
+abierta.
+A3. Llave A o llave B abierta.
+A4. Llave A y llave B abiertas.
+b| En el circuito de tuberías 2, 
+diga en cuál de las situaciones 
+el agua llegaría al recipiente 
+inferior: 
+A1. Llave A cerrada y llave B 
+cerrada. 
+A2. Llave A cerrada y llave B 
+abierta. 
+A3. Llave A o llave B abierta.
+A4. Llave A y llave B abiertas.
+                         1
+A                      B
+                 2
+A
+B
+1
+
+
+=== PAGE 3 ===
+Pág. 3
+Las computadoras usan codificación binaria, entonces una unidad ele-
+mental de información puede tomar solamente dos valores, 0 ó 1, por 
+lo que la base de las computadoras son los circuitos lógicos como el que 
+se muestra en la figura, los cuales son analizados mediante el Álgebra 
+de Boole.
+En esta figura [2] podemos considerar al circuito como un sistema que 
+transforma las señales de entrada, que serían la posición de los inte-
+rruptores A B y C, en señales de salida, que sería el estado de la lámpara.
+2
+L
+A
+B
+A + B
+0
+0
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+A
+Fuente
+Interruptor
+Lámpara
+A
+B
+C
+B
+C
+L
+Operaciones, Propiedades y Compuertas Lógicas del Álgebra de Boole 
+A continuación definiremos los elementos básicos con los que se define 
+el Álgebra de Boole, es decir las variables y las operaciones.
+· Variables lógicas: solo pueden tomar un valor entre dos opciones ex-
+cluyentes, 0 ó 1. En una tubería una llave puede estar abierta (1) o ce-
+rrada (0), en un circuito eléctrico un interruptor puede estar abierto 
+(0) o cerrado (1), y una lámpara en el mismo puede estar apagada (0) 
+o encendida (1). Por lo tanto el estado de los distintos elementos de un 
+circuito, se describe usando variables lógicas.
+· Operaciones lógicas: las operaciones lógicas permiten combinar va-
+riables para poder obtener otras variables. Si bien podrás ver que re-
+ciben nombres similares o iguales a algunas operaciones del Álgebra 
+clásica, debes tener en cuenta que no tienen nada que ver con ellas, así 
+que en esta parte deberás hacer un pequeño gran esfuerzo para abrir 
+un poco más la mente y poder formar nuevas estructuras, o también 
+podría decirse desestructurar las que ya tienes. Las operaciones son, 
+suma lógica, producto lógico y negación.
+- Suma Lógica (+): esta operación la podemos relacionar con el conector 
+lógico “∨” (disyunción) que estudiamos en lógica proposicional de la MD1. 
+En el Álgebra de Boole esta operación se define de la siguiente manera:
+
+
+=== PAGE 4 ===
+Pág. 4
+Y lo podemos asociar a una situación de un circuito eléctrico como el 
+siguiente.
+F = A + B
+F = A . B
+En este circuito podemos observar que el estado encendido (1) de la lám-
+para, se dará cuando al menos uno de los interruptores esté cerrado (1).
+La suma lógica tendrá un valor de 1 cuando al menos una de las varia-
+bles tenga el valor 1, es decir que será 0, solo cuando todas las variables 
+sumadas sean 0.
+- Producto lógico ( . ): si la relacionamos con lo visto en lógica propo-
+sicional de MD1, esta operación sería el conector lógico “∧” (conjun-
+ción). En el Álgebra de Boole esta operación producto se define de la 
+siguiente manera:
+A
+B
+A + B
+0
+0
+0
+0
+1
+0
+1
+0
+0
+1
+1
+1
+Y lo podemos asociar a una situación de un circuito eléctrico como el 
+siguiente.
+En este circuito podemos observar que el estado encendido (1) de la 
+lámpara, se dará cuando los dos interruptores estén cerrados (1).
+El producto lógico tendrá un valor de 1 sólo cuando todas las variables 
+tengan el valor 1, es decir que siempre que en el producto haya un valor 
+0, sin importar la cantidad de 1, el resultado será 0.
+- Negación o Complemento ( _ ): si la relacionamos con lo estudiado en 
+lógica proposicional de MD 1, correspondería al conector “¬” esta ope-
+ración se aplica sobre una sola variable, y lo que hace es invertir el valor 
+de la misma. En Álgebra de Boole se la define del siguiente modo [3].
+
+
+=== PAGE 5 ===
+Pág. 5
+Y lo podemos asociar a una situación de un circuito eléctrico como el 
+siguiente.
+A
+Ā
+0
+0
+1
+1
+3
+F = Ā
+En este circuito podemos observar que el estado encendido (1) de la 
+lámpara, se dá cuando el estado del (0).
+· Propiedades del Álgebra de Boole. Dentro de las propiedades del Ál-
+gebra de Boole haremos la distinción en dos grandes grupos, aquellas 
+a las que llamamos Axiomas, que son la base de las demás, ya que ellas 
+se toman como válidas o ciertas sin la necesidad de demostrar nada; y 
+el otro grupo serán aquellas a las que llamamos Teoremas, que no se 
+toman como válidas hasta haberlas demostrado lógicamente.
+Veamos entonces cuales son los axiomas que constituyen la base de 
+este Algebra:  
+· A1: PROPIEDAD CONMUTATIVA  
+Para cualesquiera dos elementos, A y B pertenecientes a M, se cumple: 
+a- A + B = B + A  
+b- A • B = B • A
+· A2: PROPIEDAD DISTRIBUTIVA  
+Para cualesquiera elementos, A, B y C pertenecientes a M, se cumple:  
+a- A • (B + C) = (A • B) + (A • C)  
+b- A + (B • C) = (A + B) • (A + C)
+ 
+ 
+· A3: ELEMENTO NEUTRO  
+Existen para cada una de las operaciones un elemento neutro que 
+cumple con la propiedad de identidad, esto es:  
+a- A + 0 = A  
+b- A • 1 = A
+· A4: COMPLEMENTO  
+Para cada elemento A de M existe otro que oficia de negación o com-
+plemento del mismo (Ā), es decir, que cumpla lo siguiente:  
+a- A + Ā = 1 
+b- A • Ā = 0
+
+
+=== PAGE 6 ===
+Pág. 6
+Desempeño 1
+· Esta actividad propone verificar si hemos aprendido los axiomas, y si podemos distinguirlos 
+cuando se los aplica. Le recomendamos que trate de hacerlo sin mirar el apunte, sino que lo más 
+apropiado sería aprenderse las propiedades (axiomas) y luego hacer el ejercicio.
+Las siguientes igualdades están demostradas, es decir está justificada que una expresión es igual 
+a la otra que puede ser mucho más simple. Se le solicita a usted, que en cada paso determine e 
+indique que axiomas se han aplicado, al pasar del renglón superior al inferior:
+a-                                                                                             b-
+                                M + N . N = M                                                                      X . (Y + Y) = X
+_________M + 0                                                       _________X . (Y + Y) =
+_________M                                                              _________X . 1 =
+                                                                                                  _________X
+c-
+                                 J . K + K . J = J
+_________ J . K + J . K
+_________ J . (K + K)
+_________ J . 1
+_________ J
+Desempeño 2
+· Ahora le toca a usted poner a prueba su intuición, y por supuesto su comprensión y aplicación 
+de los axiomas.
+Le planteamos algunas igualdades simples, y lo que deberá hacer usted es demostrarlas me-
+diante la aplicación de las propiedades. Tenga en cuenta que puede partir del primer miembro 
+de la igualdad y llegar a la segunda o partir de la segunda y llegar a la primera o desarrollar las 
+dos hasta llegar a expresiones idénticas.
+a- (Ā + B) (Ā + B) = Ā
+b- A + Ā • B • C = A + B • C
+
+
+=== PAGE 7 ===
+Pág. 7
+Muy bien!!! Hasta aquí llegamos hoy, espero que esta 
+primer clase haya sido de su agrado y no los haya 
+aburrido mucho, pero es que necesitamos definir 
+algunos conceptos básicos para poder luego aplicarlos.
+Ahora antes de saludarlos hasta la próxima clase  
+les daré una recomendación simple y sencilla, ésta  
+es la siguiente: Para que podamos aplicar el Algebra 
+de Boole en la resolución de ejercicios es de gran 
+importancia conocer e incorporar los axiomas que  
+se han enunciado hoy. Debe recordarlos y tratar  
+de comprender sus enunciados más allá de las letras  
+que se utilicen. ¿Qué le quiero decir con eso?  
+Con un ejemplo intentaré explicarlo.
+El axioma de la propiedad distributiva dice  
+A + B . C = (A + B) . (A + C), eso mismo lo podría  
+decir así, 1 + 2 . 3 = (1 + 2) . (1 + 3) , o también podría  
+ser $ + & . % = ($ + &) . ($ + %) Es decir, trate de 
+entender el enunciado más allá de los símbolos 
+empleados.
+Por último, les dejo otra tarea, y es la de realizar  
+el desempeño de síntesis muy sencillo que se plantea  
+a continuación, cualquier duda que pudiera surgir no 
+deje de consultar a su profesor. Hasta la próxima clase!
+¡Hasta entonces!
+Si detectás un error del tipo que fuere (falta un punto, un acento, 
+una palabra mal escrita, un error en código, etc.), por favor comu-
+nicate con nosotros a correcciones@issd.edu.ar e indicanos por 
+cada error que detectes la página y el párrafo. 
+MUCHAS GRACIAS POR TU APORTE.
+
+

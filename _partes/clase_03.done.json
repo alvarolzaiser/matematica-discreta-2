@@ -1,0 +1,24 @@
+{
+  "concepts": [
+    "Función (relación funcional entre variable independiente y una única variable dependiente)",
+    "Función Booleana (combinación de variables booleanas en {0, 1} mediante suma, producto y complemento)",
+    "Evaluación de Funciones Booleanas de una, dos o más variables",
+    "Tabla de verdad para Funciones Booleanas (lectura directa de entradas a salida y lectura inversa de salida a entradas)",
+    "Regla de la cantidad de combinaciones posibles en una tabla de verdad (2ⁿ, donde n es la cantidad de variables)",
+    "Método de confección de una Tabla de verdad (columnas de variables, columnas de resultados parciales y columna final de la función)",
+    "Reglas operativas para tablas de verdad (producto con un 0 da 0; complemento es lo contrario; suma con un 1 da 1)",
+    "Circuito lógico y Compuerta lógica (definición, entradas múltiples salvo en NOT y salida única en todas)",
+    "Clasificación de las 5 Compuertas Lógicas: OR (suma), AND (producto), NOT (complemento), NOR (complemento de la suma), NAND (complemento del producto)",
+    "Implementación de funciones con compuertas lógicas (de expresión algebraica a circuito lógico) y lectura inversa (de circuito lógico a expresión algebraica)",
+    "Los tres modos de escribir o representar una función Booleana (expresión algebraica, tabla de verdad y circuito lógico) y su conversión mutua",
+    "Forma canónica (concepto introductorio para obtener la expresión algebraica desde los resultados de la tabla de verdad)",
+    "Relación entre simplificación algebraica, equivalencia de tablas de verdad y optimización de circuitos lógicos (Desempeño 9)"
+  ],
+  "connections": [
+    "Con Matemática Discreta 1: definición de función (unicidad de imagen para cada valor de la variable independiente), tablas de verdad para fórmulas bien formadas (FBF) y principio multiplicativo del conteo (2ⁿ combinaciones).",
+    "Con Clases 1 y 2 de MD2 (Álgebra de Boole): las tres operaciones definidas (suma, producto, complemento), transición desde circuitos eléctricos (llaves en serie/paralelo) hacia circuitos lógicos (compuertas AND, OR, NOT, NOR, NAND), Leyes de De Morgan aplicadas a compuertas NOR/NAND y simplificación algebraica de expresiones.",
+    "Con Clase 4 de MD2 (Formas Canónicas): el pasaje pendiente de la tabla de verdad hacia la expresión algebraica se resuelve mediante la forma canónica (minitérminos y maxitérminos) leyendo las filas donde la función vale 1 ó 0."
+  ],
+  "notes": "Se extrajo y verificó visualmente la totalidad de las 6 páginas de 3.pdf (incluyendo la inspección en PNG de todas las barras superiores de complemento en funciones, tablas de verdad y símbolos gráficos de compuertas y circuitos). Se documentó además la errata tipográfica de la página 3 donde el texto previo a la tabla omite la barra sobre A en F(A,B,C) = B . C + Ā mientras que la tabla desarrolla Ā y B . C + Ā. El archivo _partes/clase_03.md cumple estrictamente con la plantilla, citas literales, Unicode limpio sin LaTeX ni HTML.",
+  "title": "Clase 3 — Funciones Booleanas"
+}

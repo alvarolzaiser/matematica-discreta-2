@@ -1,0 +1,26 @@
+{
+  "concepts": [
+    "Adición de matrices (Suma de matrices): condición de igual orden y suma de elementos correspondientes",
+    "Sustracción de matrices (Resta de matrices): procedimiento y no conmutatividad",
+    "Propiedades de la suma de matrices: Conmutativa, Asociativa, Elemento neutro aditivo (matriz nula 0) y Elemento inverso aditivo (matriz opuesta -A)",
+    "Definiciones generales de Elemento neutro y Elemento inverso de una operación",
+    "Producto de una matriz por un número (Multiplicación por un escalar kA)",
+    "Propiedades de la multiplicación de una matriz por un número (distributivas, asociativa respecto a los números y existencia del elemento neutro 1) y convención notacional (letras griegas para números, alfabeto latino para matrices)",
+    "Método general de 4 pasos para resolver problemas con matrices (Entender, Planificar, Resolver, Revisar)",
+    "Producto escalar entre un vector fila y un vector columna y sus 3 observaciones fundamentales",
+    "Multiplicación de matrices (Producto entre matrices) y obtención del elemento ij-ésimo",
+    "Matrices conformables (número de columnas de la primera igual al número de filas de la segunda) y orden de la matriz producto (m × p)",
+    "Propiedades asociativa y distributiva (a derecha) de la multiplicación de matrices",
+    "No conmutatividad del producto matricial y definición de Matrices permutables (A . B = B . A)",
+    "No cumplimiento de la Propiedad cancelativa en el producto de matrices y existencia de matrices no nulas cuyo producto es la matriz nula",
+    "Elemento neutro multiplicativo en matrices (Matriz Identidad I: I . A = A . I = A)",
+    "Elemento inverso multiplicativo en matrices (Matriz Inversa A⁻¹: A . A⁻¹ = A⁻¹ . A = I, existente sólo para matrices cuadradas y no en todos los casos)"
+  ],
+  "connections": [
+    "Conecta con la Clase 5 (definición de matriz, orden m × n, elementos correspondientes a_ij, vectores fila y columna, matriz cuadrada, matriz nula, matriz opuesta y matriz identidad)",
+    "Conecta con las Clases 7 y 8 (determinantes y cálculo de la matriz inversa: condición exacta de existencia y obtención de A⁻¹)",
+    "Contrasta el álgebra de matrices con el álgebra clásica de números reales (pérdida de la conmutatividad del producto, pérdida de la propiedad cancelativa y aparición de divisores de cero matriciales)"
+  ],
+  "notes": "Se extrajo y verificó visualmente la totalidad de las 16 páginas de 6.pdf (en _partes/_img_6/). Se redactó _partes/clase_06.md con citas textuales exactas palabra por palabra, incluyendo la advertencia sobre las erratas tipográficas del PDF original (como 'aditivito' en Pág. 3 y las dos erratas de la tabla de propiedades del producto por un número en Pág. 4) y respondiendo las 14 preguntas teóricas del Desempeño 40. Verificado sin signos $, sin LaTeX y sin etiquetas HTML.",
+  "title": "Clase 6 — Matrices y Determinantes: Operaciones con matrices"
+}

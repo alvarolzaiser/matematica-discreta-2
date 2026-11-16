@@ -1,0 +1,417 @@
+=== PAGE 1 ===
+­_  
+SISTEMAS  
+DE ECUACIONES 
+­_
+Al finalizar la clase los alumnos: 
+• Buscar soluciones a problemas y validar 
+su respuesta. 
+• Clasificar los sistemas de ecuaciones de 
+acuerdo a las soluciones obtenidas.
+• Ecuaciones y Sistemas de ecuaciones
+• Clasificación de los Sistemas  
+de ecuaciones
+Matemática Discreta 2
+MD2
+CLASE
+UNIDAD
+
+=== PAGE 2 ===
+Pág. 2
+INTRODUCCIÓN
+INTRODUCCIÓN
+ECUACIONES Y 
+SISTEMAS DE 
+ECUACIONES
+Hoy vamos a comenzar con nuevas aplicaciones de lo que aprendimos 
+sobre las matrices. Veremos que nos pueden ser de gran utilidad en la 
+resolución de sistemas de ecuaciones sobre todo cuando las ecuaciones 
+son varias al igual que las incógnitas. No es que no se puedan resolver 
+de otras formas, pero con las matrices es muchísimo más práctico.
+Muchos problemas técnicos y científicos involucran en su resolución 
+sistemas que contienen un número elevado de ecuaciones y de incóg-
+nitas, por lo que estudiar dichos sistemas y los métodos adecuados de 
+resolución, es fundamental para cualquier disciplina que utiliza a la 
+matemática como una herramienta.
+ESQUEMA DE UNIDAD
+En esta unidad veremos una aplicación de Matrices y Determinantes 
+para la resolución de sistemas de ecuaciones.
+En primera instancia recordaremos que es una ecuación para poste-
+riormente definir sistemas de ecuaciones.
+Luego estudiaremos un método de resolución general, en el cual se 
+usan elementos de la unidad anterior como matriz canónica y rango; y 
+un método particular: Regla de Cramer, utilizando de la unidad ante-
+rior, el cálculo de determinantes.
+Queda claro, entonces, la importancia que tiene en esta unidad el co-
+rrecto manejo de los temas de la unidad anterior.
+Ecuaciones
+Sistemas de Ecuaciones
+Definición          Métodos
+General             Particular
+  Usando               Usando
+canónica        determinante
+El primer registro de un Cuadrado Mágico aparece en la historia al-
+rededor del tercer milenio AC. Cuenta la leyenda que el emperador de 
+China estaba en la orilla del río Amarillo cuando una tortuga salió de las 
+aguas. Sobre su caparazón, la tortuga llevaba impresos extraños sím-
+bolos, que el emperador se encargó de descifrar. Eral los números del 
+1 al 9 dispuestos armoniosamente en forma de cuadrado: al sumar los 
+tres números de cada fila, de cada columna o de cada diagonal e resul-
+tado siempre era quince.
+
+=== PAGE 3 ===
+Pág. 3
+ 4   9   2
+3   5   7
+8   1   6 
+A estos cuadrados se le atribuyeron inicialmente propiedades religio-
+sas y mágicas. Con el paso de los siglos, atrajeron la atención de los 
+matemáticos que se dedicaron al estudio, ya no de sus propiedades 
+mágicas, sino de sus propiedades matemáticas, que son muchas.
+Cabe mencionar que Benjamin Franklin (norteamericano, 1706-1790) 
+dedicó varias horas de su vida a estudiar y crear muy diversos cuadra-
+dos mágicos.
+Los cuadrados mágicos son distribuciones de números que se dispo-
+nen en una matriz cuadrada de forma que la suma de cualquiera de las 
+filas, de cualquiera de las columnas y de las dos diagonales da siempre 
+el mismo resultado. Al número resultante se le denomina “constante 
+mágica”. Usualmente se utilizan números consecutivos, comenzando 
+en el 1, para completar la matriz. Un ejemplo muy conocido es el Cua-
+drado Mágico de Durero (alemán 1471-1528). Es de orden 4 y la cons-
+tante mágica es 34.
+ 16   3   2   13
+ 5   10   11   8
+9   6   7   12
+4   15   14   1
+Te propongo que construyas, si es posible un cuadrado mágico de or-
+den 2. Si no lo consigues, no te desesperes, al final de la unidad podre-
+mos explicar la respuesta.
+Muchos problemas de tipo práctico conducen a la resolución de ecua-
+ciones y sistemas de ecuaciones.
+Si nos preguntamos:
+Ejemplo Nº1: ¿Cuál es la cantidad de dinero que tenía si gasté un tercio 
+y aún me quedan $600?
+Si llamamos x a la cantidad de dinero total que tenía podríamos pensar que:
+Si gasté: 1/3 de lo que tenía, en realidad gasté 1/3 . x
+Si todavía quedan $ 600 Podríamos pensar que: 
+Lo que gasté + lo que me queda = Lo que tenía O sea 1/3 . x + 600 = x
+Estamos planteando una ecuación. Todavía no la vamos a resolver, 
+aunque si alguien se anima, sería genial!!! (Respuesta: Tenía $900…)
+Vamos con otra situación:
+Ejemplo Nº2: La resta de las edades de dos hermanos es 5 y la suma es 
+49. ¿Qué edades tienen?
+A las edades las podemos llamar por ejemplo A y B. 
+
+=== PAGE 4 ===
+Pág. 4
+Teniendo en cuenta el enunciado, podemos decir que si la diferencia es 
+5, entonces si uno de los hermanos tiene la edad A, el otro hermano va 
+a tener la edad A + 5 (ya que se llevan 5 años de diferencia).
+Además, como la suma de las edades es 49 entonces podríamos plan-
+tear algo como lo siguiente: 
+Edad del Hermano 1 + Edad del Hermano 2 = 49
+                 A                      +                    B                     = 49
+Pero como se llevan 5 años, podemos decir que: A + (A+5) = 49
+Si resolvemos tendríamos que: 2 . A + 5 = 49
+Si despejamos x en la ecuación… 
+2.A = 49 – 5 
+2A = 44 
+A = 44:2
+A = 22
+Es decir que la edad del hermano 1 es 22 y la edad del hermano 2 es (22 
++5) o sea 27. Si comprobamos los resultados de la ecuación planteada se-
+ría 22 + 27 = 49. O sea que la solución obtenida verifica la ecuación plan-
+teada por el problema, y la respuesta es coherente a lo que se planteó.
+Ejemplo Nº3: Tres empresarios aportan a una sociedad 12 millones de 
+pesos entre los tres. El doble de lo que aporta el primero más el triple 
+de lo que aporta el segundo es igual al cuádruple de lo que aporta el 
+tercero. ¿Cuáles son todas las posibles cantidades que pueden aportar 
+cada uno?
+Analicemos la situación y coloquemos nombre a los empresarios… Em-
+presario A, Empresario B y Empresario C
+• Una de las condiciones es que los tres empresarios aportan a la so-
+ciedad 12 millones de pesos… Eso se puede simbolizar de la siguiente 
+manera: A + B +C = 12 
+• Por otro lado, las segunda parte del problema: El doble de lo que apor-
+ta el primero: 2.A más el triple de lo que aporta el segundo: 3.B es igual 
+al cuádruple de lo que aporta el tercero. 4.C, es decir: 2.A + 3.B = 4.C
+Pasando en limpio las condiciones serían: 
+A + B +C = 12 
+2.A + 3.B = 4.C
+Y como las dos condiciones se deben cumplir simultáneamente, po-
+dríamos agruparlas así:
+   A + B +C = 12 
+   2.A + 3B = 4.C
+Estamos frente a un sistema de ecuaciones. (Más adelante veremos cómo 
+se resuelve).
+Los tipos de ecuaciones y sistemas que pueden presentarse son muy 
+diversos y de diferente dificultad. En esta unidad se estudiarán los más 
+sencillos: los sistemas de ecuaciones lineales.
+
+=== PAGE 5 ===
+Pág. 5
+ECUACIÓN 
+Una ecuación es una igualdad entre dos expresiones algebraicas que 
+sólo se satisface para determinados valores de la parte literal. (la parte 
+literal sería la o las incógnitas) Estos valores que satisfacen la igualdad 
+se denominan raíces o soluciones de la ecuación.
+Por ejemplo para nuestra primera ecuación 1/3. x + 600 = x
+Su raíz o solución sería: 900.
+Dada una ecuación, el objetivo es RESOLVERLA, esto es encontrar, si 
+tiene, sus raíces o soluciones.
+Como ya se dijo, de todos los tipos de ecuaciones sólo estudiaremos 
+las lineales. Ecuaciones lineales son aquellas en las que la suma de los 
+exponentes de la parte literal* es a lo sumo 1, en cada término.
+Las ecuaciones que hemos trabajado son lineales. Un ejemplo de ecua-
+ciones no lineales serían por ejemplo: x2 + 4x = -2     ó     3x4 + 2x3 -5x 
+= 2x en las cuales los exponentes de cada una de las partes literales es 
+mayor a 1.
+La parte literal de un término es la letra junto  
+a su exponente. Por ejemplo, si se tiene 3.a5 – 3.b2,  
+la parte literal del primer término es a5 y la del  
+segundo término es b2.
+Sistema general de ecuaciones lineales 
+Te propongo un paseo por diferentes problemas, para que a partir de 
+ellos vayamos viendo cómo se pueden resolver aquellos sistemas en los 
+cuales figuran varias ecuaciones y varias incógnitas y qué tipo de solu-
+ciones se puede ir obteniendo.
+Pero para que este paseo tenga un buen resultado, es necesario que vayas 
+leyendo absolutamente todo lo que vamos diciendo… Y obviamente que 
+entendiendo!!! Va a estar todo explicado como para que no tengas dudas, 
+de todas maneras, si algo no se entiende, realiza una segunda o tercera 
+lectura, o sino, consulta en el foro correspondiente a la unidad n° 3.
+Pero antes de empezar este recorrido, es necesario que conozcas algu-
+nos nombres particulares, y casos que se pueden presentar según sean 
+las posibles soluciones del sistema.
+DEFINICIONES
+Tipo de sistema
+Característica
+Ejemplo
+Sistema
+HOMOGÉNEO
+Cuando en un sistema todas las 
+ecuaciones tienen sus términos 
+independientes nulos.
+   2x + y - 4z = 0
+   3x - 2y + 4z = 0
+   x + y + 3z + w = 0
+Sistema es NO
+HOMOGÉNEO
+Cuando en un sistema, existe 
+por lo menos un término 
+independiente distinto de cero.
+   2x + y - 4z = 0
+   3x - 2y + 4z = 5
+   x + y + 3z + w = 4
+
+=== PAGE 6 ===
+Pág. 6
+Por si no queda claro, en el primer sistema de ecuaciones, todos los tér-
+minos independientes son nulos. En el segundo ejemplo, algunos tér-
+minos independientes son distintos de 0. Esta característica va a influir 
+en el tipo de solución que se va a poder obtener del sistema…. Pero lo 
+retomaremos más adelante.
+Por otro lado, es necesario que conozcas que tipo de soluciones puedes 
+obtener en un sistema de ecuaciones lineales, para poder comprender 
+como se debe llegar a la solución de cada uno. Aquí hay una primera defi-
+nición, que ampliaremos a medida que vayamos trabajando los ejemplos.
+Clasificación de los sistemas de ecuaciones
+COMPATIBLE. 
+El sistema de 
+ecuaciones tiene 
+solución.
+DETERMINADO:
+El sistema tiene una única solución.
+INDETERMINADO:
+El sistema tiene infinitas soluciones.
+INCOMPATIBLE.
+El sistema de 
+ecuaciones no 
+tiene solución.
+En este caso no se puede encontrar valores que 
+satisfagan las ecuaciones.
+Aclarados estos puntos, comencemos nuestro trabajo:
+Retomemos el ejemplo n° 3: Tres empresarios aportan a una sociedad 
+12 millones de pesos entre los tres. El doble de lo que aporta el primero 
+más el triple de lo que aporta el segundo es igual al cuádruple de lo que 
+aporta el tercero. ¿Cuáles son todas las posibles cantidades que pue-
+den aportar cada uno?
+El sistema que se había planteado anteriormente era el siguiente:
+   A + B + C = 12
+   2.A + 3B = 4.C
+Este es un sistema de ecuaciones lineales (ya que cada ecuación tiene 
+cada uno de sus términos de grado 1). Pero lo podemos rescribir de la 
+siguiente manera:
+   A + B + C = 12
+   2.A + 3B - 4.C = 0
+Lo que se hizo, fue acomodar el sistema, de tal manera que en el pri-
+mer miembro queden los términos con las incógnitas, y en el segundo 
+miembro los términos independientes.
+Acá podemos reconocer que como el sistema tiene algún término in-
+dependiente distinto de 0, es un sistema no homogéneo. Además, en 
+este ejemplo podemos observar que el sistema tiene 2 ecuaciones con 
+3 incógnitas (A, B y C).
+Resolver un sistema significa encontrar un conjunto de valores para 
+sus incógnitas que satisfagan todas las ecuaciones simultáneamente.
+Todavía no lo vamos a resolver, solo que vamos a empezar por el final. Es 
+decir, probando posibles soluciones, para que se entienda que es lo que 
+vamos a estar buscando cuando resolvemos un sistema de ecuaciones.
+
+=== PAGE 7 ===
+Pág. 7
+Si queremos saber, por ejemplo, si A = 2, B = 6, C = 4 es solución del 
+sistema. ¿Qué te parece que tendríamos que hacer?
+Piensa, y recuerda que se hacía si queríamos comprobar el resultado de 
+una ecuación… ¡Correcto!!! Reemplazamos cada valor obtenido en las 
+ecuaciones para saber si se verifica o no!
+Veamos como sería:
+Si la ecuación es A + B +C = 12 Y afirmamos que se obtuvo como solución 
+A = 2, B = 3, C = 5 (Vuelvo a aclarar, todavía no les dije como se resuelve 
+el sistema).
+Reemplazamos en la ecuación para ver que sucede:
+A + B +C = 12
+2 + 3 + 5 = 12 (aquí se reemplaza cada incógnita por el valor obtenido) 
+Pero es cierto la igualdad? 10 = 12? ¡Claro que no! Por lo tanto, los valo-
+res que les había dado, NO SON SOLUCIÓN de dicha ecuación.
+Probemos con otros valores. Por ejemplo A = 1, B = 6, C = 5
+Reemplazamos en la ecuación para ver que sucede:
+A + B + C = 12
+1 + 6+ 5 = 12 (aquí se reemplaza cada incógnita por el valor obtenido) 
+Pero es cierto la igualdad? 12 = 12? ¡En este caso SI! Por lo tanto, los 
+valores que dados, SI SON SOLUCION de dicha ecuación. Pero para ase-
+gurarnos, comprobemos con la otra ecuación también: 2.A + 3.B = 4.C 
+Reemplazamos...
+2. 1 + 3. 6 = 4.5 
+2 + 18 = 20 
+20 = 20
+Acá también se verifica la igualdad!!! Por lo tanto la solución era correcta!
+Si lo relacionamos con el problema planteado al comienzo, esto nos está 
+diciendo que el primer empresario (A) aporta 1 millón, el segundo empre-
+sario (B) aporta 6 millones y el tercer empresario(C) aporta 5 millones.
+Estos valores SON SOLUCIÓN DEL SISTEMA DE ECUACIONES, pero no 
+sabemos cuántas soluciones podemos obtener, por lo tanto lo único 
+que podeos asegurar hasta ahora es que el sistema tiene solución, por 
+lo tanto es un sistema COMPATIBLE.
+Como les había anticipado, empezamos por el final, o sea, por la solución.
+En la próxima clase vamos a ver como se puede resolver un sistema 
+lineal cualquiera.
+
+=== PAGE 8 ===
+Pág. 8
+Desempeño de Síntesis
+• Desempeño 1
+Luego de leer y repasar la clase 9, intenta responder las siguientes preguntas, sin ningún tipo de 
+ayuda… Cuando la hayas respondido, revisa si las respuestas son correctas. 
+a- ¿Cómo se llaman los valores que satisfacen una ecuación? 
+b- En esta unidad se trabajarán con sistemas de ecuaciones lineales ¿Por qué son lineales?
+c- Explica cuando un sistema es homogéneo y cuando no es homogéneo. 
+d- ¿Qué diferencia hay cuando la solución de un sistema es Compatible y cuando es Incompatible? 
+e- ¿Cuándo un sistema es Determinado? ¿Y cuándo es indeterminado? 
+f- ¿Cómo se puede comprobar si los valores de las incógnitas son solución de la ecuación o sis-
+tema planteado?
+g- ¿Qué significa que dos sistemas de ecuaciones sean equivalentes?
+• Desempeño 2
+Analiza y explica cuáles de los siguientes sistemas de ecuaciones son homogéneos.
+a-                                                             b-                                                            c-
+     x + y + z = 0                                          a + b + 2 = c                                          3 + 2q - p = 3 + r
+     x + 2y = 3z                                             2b - 3a = 4c                                          5r + p + q = 0
+     4y - 2x - 3z = z                                                                                                     p + q - 2r = 3p
+                                                                                                                                        10r - q = 5p
+d-                                                             e-
+     A - 2C + 3B = 4                                    3x + y - 4z  + w = 0
+     3A - 4B + 5C = 2                                  -x - 2y + 5z - 2w = 0
+     2A - 3B = 0                                            x + y + z + w = 0        
+     A - B + 5 = 0 
+• Desempeño 3
+Plantea los siguientes problemas utilizando un sistema de ecuaciones: (Aclaración: por ahora, 
+solo se deben plantear los sistemas. En clases posteriores se pedirá la resolución).
+a- En una caja hay tornillos pequeños que pesan 5g. cada uno y tornillos grandes que pesan 10g. 
+cada uno. En total hay 340 tornillos y pesan 2500 g. ¿Cuántos tornillos de cada tipo hay?
+b-En una bicicletería has 20 rodados entre bicicletas y triciclos. Si en total hay 48 ruedas. ¿Cuán-
+tas bicicletas y cuántos triciclos hay?
+c- Un médico argentino viajó a Nueva York, México y Toronto a un simposio sobre enfermeda-
+des cardiovasculares. En Nueva York gastó por día US$ 20 en hospedaje, US$ 30 en alimentos; 
+en México gastó por día US$ 30 en hospedaje y US$ 20 en alimentos y en Toronto gastó por día 
+US$ 15 en hospedaje y US$ 20 en alimentos. Además, por conceptos varios, gastó US$ 20 por día 
+en cada una de las tres ciudades.
+A su regreso, el registro de gastos indicó en total US$ 485 en hospedaje, US$ 540 en alimentos y 
+US$ 440 en gastos varios. ¿Cuántos días estuvo en cada ciudad?
+d- En un curso de 29 alumnos, hay cinco hinchas de River más que hinchas de Boca, y además, la 
+cantidad de hinchas de Boca, supera por tres a la cantidad de hinchas de otros clubes, sin contar 
+los de River. ¿Cuántos hinchas de River hay? ¿Cuántos de Boca? ¿Cuántos de otros clubes?
+
+=== PAGE 9 ===
+Pág. 9
+e- Se venden tres especies de cereales: trigo, cebada y mijo. Cada volumen de trigo se vende por 
+US$ 4, el de la cebada por US$ 2 y el de mijo por US$ 0.5. Si se vende 100 volúmenes en total y si 
+obtiene por la venta US$100, ¿cuántos volúmenes de cada especie se venden?    
+• Desempeño 4
+Dados los siguientes sistemas de ecuaciones, responde las preguntas que siguen a continuación. 
+a-                                                             b-                                                            c-
+     2x + 4y - z = 6                                    y - 1 = 0                                                 3x - 2 + z = 2y
+     -2x - 3y + w = -1                               x - 1 = 0                                                 2x + 2y - 4z = 0
+     3y + z - w = 1                                       z - 1 = 0                                                 x + y - 2z = 0
+                                                                                                          
+d-                                                            e-                                                             f-
+     -x + 5y + z = w                                    3x - 2y + z = 2                                     3x - 2y + z = 2
+     2x + 4y = z                                            5x - 3z = -2                                          2x + 2y - 4z = 0
+                                                                      x + y - 2z = 0                                        6x + y - 5z = 2
+1| ¿Cuál de los sistemas tiene tres incógnitas?
+2| ¿Cuáles de los sistemas dados son homogéneos?
+3| ¿De qué sistema es solución x = 1; y=1; z = 1?
+• Desempeño 5
+Dado el siguiente sistema de ecuaciones, indica cual es la solución a dicho sistema.
+     a + b + c = 84
+     2a = ¹/3 . (b + c)
+     b = ½ (a + c) + 12 
+          36                                             12                                            10                                             20
+a-     12                                   b-     36                                  c-     20                                  d-     30
+          36                                            36                                            54                                            44
+Respuestas a los Desempeños de Síntesis
+•  Desempeño n° 2 
+a, c y d son sistemas de ecuaciones homogéneos.
+•  Desempeño n° 3 
+Ante todo aclarar que a los tornillos pequeños los llamaremos “x” ya los tornillos grandes los 
+llamaremos “y”.
+     x + y = 340
+     5x + 10y = 2500
+a- Hay 160 tornillos pequeños y 180 tornillos grandes.
+b- Ante todo aclarar que a la cantidad de bicicletas la llamaremos “x” ya la cantidad de triciclos 
+la llamaremos “y”.
+
+=== PAGE 10 ===
+Pág. 10
+     x + y = 20
+     2x + 3y = 48
+c- Ante todo aclaremos que a la los gastos realizados en Nueva York lo llamaremos NY, los gas-
+tos realizados en México lo llamaremos M, y los gastos realizados en Toronto los llamaremos T. 
+Aclarado esto, planteamos el sistema de ecuaciones:
+     20NY + 30M + 15T = 485
+     30NY + 20M + 20T = 540
+     20NY + 20M + 20T = 440
+Estuvo 10 días en NY, 7 en México y 5 en Toronto.
+d- Llamaremos B (hinchas de Boca), R (hinchas de River) y OC ( hinchas de otros clubes).
+     B + R + OC = 29
+     R + 5 = B
+     B + 3 = OC
+e- Si llamamos:
+x = Volumen de trigo. 
+y = Volumen de cebada. 
+z = Volumen de mijo. 
+El sistema planteado sería:
+     x + y + z = 100
+     4x + 2y + 0.5z = 100
+• Desempeño n° 4 
+1| b-; c-; e-; f-
+2| d-
+3| b-; c-; f-
+• Desempeño n° 5
+          12
+d-    36
+         36
+Damos por concluida esta clase. No te quedes  
+con dudas. Si algo no se ha entendido, consulta  
+en el foro de dudas de la unidad n° 3 que hay  
+en el campus, y trata de no pasar a la siguiente  
+clase, sin haber entendido y ejercitado ésta.
+¡Nos vemos!

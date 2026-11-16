@@ -1,0 +1,21 @@
+{
+  "concepts": [
+    "Forma canónica de una función Booleana (suma o producto de términos canónicos; suma de minitérminos o producto de Maxitérminos)",
+    "Término canónico (expresión que relaciona a todas las variables, directa o complementada, una sola vez mediante una sola operación)",
+    "Maxitérmino o suma canónica (término canónico con operación suma; filas con resultado 0; variables en 1 negadas y en 0 directas)",
+    "minitérmino o producto canónico (término canónico con operación producto; filas con resultado 1; variables en 1 directas y en 0 negadas)",
+    "Reconocimiento de funciones en forma canónica (análisis de casos válidos e inválidos según cantidad, no repetición y operación de variables)",
+    "Existencia de la forma canónica de toda función Booleana (obtención por procedimiento algebraico o por tabla de verdad)",
+    "Obtención de la forma canónica a partir de la Tabla de Verdad: Productoria de Maxitérminos (PS / IIM), Sumatoria de minitérminos (SP / ∑m) y Número de secuencia decimal (Sec. Dec.)",
+    "Obtención de la forma canónica mediante procedimiento algebraico (aplicación de Axioma 3 neutro, Axioma 4 complemento, Axioma 2 distributiva e idempotencia)",
+    "Síntesis de una función Booleana a partir de los resultados deseados en una tabla de verdad (aplicación principal)",
+    "Simplificación de funciones Booleanas y relación con la eficiencia del circuito lógico (menos operaciones ⇒ menos compuertas lógicas ⇒ circuito más económico y más rápido)"
+  ],
+  "connections": [
+    "Conecta con la Clase 1, 2 y 3 (Unidad 1: Álgebra de Boole): utiliza los Axiomas 2 (conmutativa y distributiva), 3 (elementos neutros 0 y 1) y 4 (complemento), junto con teoremas (idempotencia, De Morgan, absorción) para simplificar funciones o llevarlas algebraicamente a su forma canónica.",
+    "Conecta las Tablas de Verdad (Clase 3) con las expresiones algebraicas en ambos sentidos: evaluar una función para armar su tabla y sintetizar la forma canónica (IIM o ∑m) a partir de los 0 y los 1 del resultado de la tabla.",
+    "Conecta la expresión algebraica simplificada con los circuitos lógicos y eléctricos (Clase 3): cada operación booleana representa una compuerta lógica, por lo que simplificar la función reduce la cantidad de compuertas y aumenta la eficiencia (menor costo y mayor velocidad)."
+  ],
+  "notes": "Se extrajo y verificó visualmente (PNG a 130 dpi) la totalidad de las 8 páginas de 4.pdf, recuperando todas las barras de negación (complementos) que el texto plano de PyMuPDF omitía. Se incluyeron citas textuales exactas palabra por palabra y se documentó además una errata de imprenta importante en la segunda columna del recuadro de simplificación de la página 6 del PDF oficial (donde F(A,B) = B̄ + A . B fue distribuida erróneamente como producto B̄ . A + B̄ . B = B̄ . A en lugar de la distributiva de la suma respecto del producto (B̄ + A) . (B̄ + B) = B̄ + A), explicando cómo verificarlo mediante la tabla de verdad de la página 5. Sin LaTeX ni HTML, 100% en Unicode limpio.",
+  "title": "Clase 4 — Funciones Booleanas (Forma Canónica y Simplificación)"
+}

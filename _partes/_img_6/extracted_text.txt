@@ -1,0 +1,779 @@
+=== PAGE 1 ===
+­_  
+MATRICES  
+Y DETERMINANTES 
+­_
+Al finalizar la clase los alumnos: 
+• Comprender las condiciones para poder 
+realizar las operaciones.
+• Manejar con destreza los 
+procedimientos para realizar operaciones 
+entre matrices.
+• Aplicar las operaciones entre 
+matrices a la resolución de situaciones 
+problemáticas concretas.
+• Operaciones con matrices
+Matemática Discreta 2
+MD2
+UNIDAD
+CLASE
+
+
+=== PAGE 2 ===
+Pág. 2
+INTRODUCCIÓN
+ADICIÓN
+En el álgebra de matrices, definiremos tres operaciones, que podemos 
+realizar entre ellas y además las propiedades que las mismas cumplen. 
+Pero veremos como aplicar cada operación a partir de resolver situa-
+ciones problemáticas. Así es que a no bajar los brazos y a pensar!
+Situación n° 5 
+Recordemos la Situación n° 3 de la clase n° 5:
+A Matías y a Florencia se le acreditaron durante los tres meses de verano 
+ciertas cantidades de dinero: a Matías $50 en diciembre, $90 en enero y 
+$100 en febrero. A Florencia $45, $100 y $70 respectivamente.
+Además ellos podían realizar un depósito por trabajos extras realizados, los 
+cuales fueron: por Matías $30 en diciembre, $15 en enero y $40 en febrero. 
+Por Florencia $10, $21 y $30 respectivamente.
+Por último tenían derecho a una extracción mensual que resultó para Ma-
+tías de $80, $90 y $30 y para Florencia de $25, $50 y $50.
+La consigna de la clase 5, era organizar la información. Ahora vamos a 
+ir por más… la consigna sería: Realiza lo necesario (organizar la infor-
+mación y también se pueden resolver operaciones) de tal manera que 
+se pueda saber cuánto se le acreditó a Matías y Florencia, cuánto depo-
+sitaron ellos y cuanto extrajeron a lo largo del verano.
+Piensa un rato, plantea lo que te parezca que hay que hacer, y “luego” 
+compara tus resultados con los siguientes:
+                          50   45          90   100           100   70     
+D + E + F =    30   10    +    15   21        +    40   30    
+                          80   25          90   50             30   50
+                           240   215     
+D + E + F =     85     61  
+                           200   125
+Responde lo siguiente: 
+a• ¿Cómo son los órdenes de las matrices que intervienen en la situación? 
+b• ¿Son matrices cuadradas? 
+c• Si quieres obtener el elemento por ejemplo, a12, ¿Cómo lo encontraste? 
+d• ¿De qué orden es la matriz resultado?
+Ayudando a tus respuestas, podemos afirmar entonces que:
+Para sumar dos matrices, (no necesariamente 
+cuadradas), éstas deben ser del mismo orden,  
+si esto es así se suman los elementos correspondientes.
+La matriz resultante tiene el mismo orden  
+que las matrices sumadas.
+                   
+                 
+                 
+               
+
+
+=== PAGE 3 ===
+Pág. 3
+                  a11   a12    a1n                                                    b11   b12    b1n
+Amx,n =     a21   a22    a2n                 Y             Bmx,n =     b21   b22    b2n
+                  am1  am2   amn                                                                                   bm1  bm2   bmn
+                             a11 + b11      a12 + b12      a1n + b1n
+(A + B)mx,n =     a21 + b21     a22 + b22     a2n + b2n
+                             am1 + bm1    am2 + bm2   amn + bmn
+En la sustracción de matrices se procede de igual 
+forma que en la adición, la única diferencia es que los 
+elementos se restan.
+                         
+                                                             
+                          
+Desempeño 24
+• Dadas las matrices A y B 
+            1   0  -1                                                                                  -2  -1   0
+A =     2   3 -4                                                                         B =     0   0   3
+a- Analiza si es posible sumarlas. 
+b- Realiza la suma de ambas matrices. (A + B) 
+c- Realiza la resta de ambas matrices. 
+Propiedades de la suma de matrices
+Veamos ahora un resumen de las propiedades que cumplen en la suma de matrices:
+Cada una de estas propiedades pueden ser utilizada en diferentes situaciones, lo importante es 
+tener en claro que significa cada una de ellas. Para esto, van algunas preguntas:
+Desempeño 25
+a• ¿Es posible resolver la suma de matrices en cualquier orden? ¿Cómo lo puedes comprobar? 
+b• ¿Es posible resolver la resta de matrices en cualquier orden? ¿Cómo lo puedes comprobar? 
+c• Dadas tres o más matrices. ¿Darán los mismos resultados si se cambia el orden de las matrices 
+a sumar?
+d• ¿Qué matriz será el elemento neutro de la Adición de matrices? (Primero tienes que averiguar 
+qué significa elemento neutro de una operación).
+e• ¿Qué significa que un elemento sea inverso de otro? 
+f• ¿Qué características tendrá una matriz que es inverso aditiva de otra matriz?
+                
+                 
+1| Propiedad Conmutativa:
+A + B = B + A
+2| Propiedad Asociativa:
+(A + B) + C = A + (B + C)
+3| Existencia de elemento neutro aditivo:
+A + 0 = A
+4| Existencia elemento inverso aditivito:
+A + (- A) = 0
+
+
+=== PAGE 4 ===
+Pág. 4
+En relación con la situación n° 5 inicial (la situación n° 3 de la clase n° 
+5), supongamos que se triplica el valor de cada movimiento realizado 
+(acreditación, depósito y extracción) en diciembre. ¿Qué operación po-
+drías hacer con la matriz D (diciembre)?
+            50   45     
+D =     30    10  
+            80   25
+Intenta dar un resultado, sin seguir leyendo.
+Si tu respuesta es correcta, los resultados serían:
+            150   135     
+D =     90    30  
+            240   75
+Que es el resultado de multiplicar cada uno de los valores por 3, ya que 
+se desea triplicar los valores de diciembre.
+                50   45     
+D = 3  .   30   10  
+                80   25
+Entonces se define que la multiplicación de una matriz 
+por un número, será igual a una nueva matriz del 
+mismo orden que la anterior, cuyos elementos son los 
+de la matriz original multiplicados por el número.
+En símbolos:
+          a11   ...   a1n                                                         ka11   ...   ka1n
+A =     ...    ...    ...                                             kA =     ...      ...    ...
+          am1  ...   amn                                                       kam1   ...   kamn
+Veamos las propiedades que se cumplen en esta operación:
+PRODUCTO DE UNA 
+MATRIZ POR UN 
+NÚMERO
+PROPIEDADES DE LA 
+MULTIPLICACIÓN 
+POR UN NÚMERO
+               
+               
+                  
+                      
+                           
+1| Distributiva respecto a la suma de 
+números:
+(α + β) . A = α . A + β . A
+2| Distributiva respecto a la suma de 
+matrices:
+B . (A + b) = β . A + β . B
+3| Asociativa respecto a los números:
+(α . β) . A = α . (β . α)
+4| Existencia del elemento neutro:
+1 . A = A
+Recordemos que las letras griegas (α, β, δ) representan números y las 
+de nuestro alfabeto representan matrices.
+Situación n° 6
+Una firma de automóviles dispone de dos plantas de fabricación, una en 
+capital y otra en el interior, las que fabrica dos modelos de coches (M1 y M2) 
+de tres colores (X, Y, Z). Su capacidad de producción diaria en cada planta 
+está dada por las siguientes matrices: (A para Capital, B para el interior):
+
+
+=== PAGE 5 ===
+Pág. 5
+              M1    M2                                                         M1     M2
+           300   95       X                                                190     90      X     
+A =     250   100     Y                                     B =     200   100     Y
+           200   100     Z                                               150     80      Z
+a• Calcula la cantidad de autos modelo/color que se fabrican entre las 
+dos plantas. 
+b• Si se eleva la producción en la capital un 20%, y se disminuye en el 
+interior un 10%, ¿qué matrices representa la nueva producción de cada 
+fábrica? 
+c• Teniendo en cuenta lo calculado en b• calcula la nueva cantidad de la 
+producción total de ambas fábricas.
+Respuestas:
+                        490   198                                                360   114  
+a• A + B =     450   200                              b• A' =    300   120          
+                        350   180                                                240   120
+                                                                      
+                          531   213                                                171      99
+c• A' + B' =    520   230                              d• B' =    220   110       
+                         405   208                                               165     88
+Estas propiedades, al igual a que las de la Adición 
+de matrices, sirven para facilitar algunos cálculos, 
+predecir algunos resultados y sobre todo entender lo 
+que se tiene que realizar en el momento de resolver 
+alguna situación determinada.                                                              
+Retomemos la actividad n° 4 de la clase 5. Ella decía: 
+Una empresa de Turismo dispone de viajes a Buenos Aires, Rosario, Men-
+doza y Tilisarao en tres categorías A, B y C.
+La empresa ha vendido de la categoría A 5 viajes a Bs. As., 7 a Rosario, 3 a 
+Mendoza y 6 a Tilisarao. De la categoría B a vendido 6, 4, 7 y 1 respectiva-
+mente y de la categoría C a vendido 1, 2, 1 y ninguno a Tilisarao.
+Cada viaje de la categoría A cuesta $60, de la B $50 y de la C $30. Además la 
+empresa debe afrontar un gasto adicional de $4 por cada viaje vendido de 
+la categoría A, $3 por los de la categoría B y $8 por los de la C.
+En la clase 5, se pidió que se organizara la información de dos maneras 
+diferentes. Ahora vamos a pedir otra cosa…
+Intenta buscar una manera de saber cuál es la cantidad de dinero re-
+caudado por ventas de viajes a cada una de las ciudades y cual es el total 
+de gastos generados. [1]
+MULTIPLICACIÓN 
+DE MATRICES
+                   
+                   
+                   
+                   
+                   
+                   
+
+
+=== PAGE 6 ===
+Pág. 6
+Si todo ha salido bien, debería haber dado el siguiente resultado. (No te 
+desanimes si no te ha salido, ya lo vas a entender).
+1
+Para resolver un problema, ten en cuenta lo siguente
+1| ENTENDER:
+Leer varias veces el 
+problema y tener en 
+claro que se quiere
+averiguar.
+2| PLANIFICAR
+Analizar como 
+se puede resolver 
+el problema. Que 
+operación es necesario
+aplicar.
+3| RESOLVER
+Realizar las 
+operaciones
+necesarias para 
+encontrar los
+resultados.
+4| REVISAR
+Comprobar el 
+resultado tratar
+de analizar si es 
+correcto o
+no, si es acorde al 
+problema
+planteado.
+A
+B
+C
+Buenos Aires
+5
+6
+1
+Rosario
+7
+4
+2
+Mendoza
+3
+7
+1
+Tilisarao
+$ (Costo)
+$ (Gasto adicional)
+A
+60
+4
+B
+50
+3
+C
+30
+8
+$ (Costo)
+$ (Gasto adicional)
+Buenos Aires
+630
+46
+Rosario
+680
+56
+Mendoza
+560
+41
+Tilisarao
+410
+27
+A
+B
+C
+Buenos Aires
+5
+6
+1
+Rosario
+7
+4
+2
+Mendoza
+3
+7
+1
+Tilisarao
+P =
+$ (Costo)
+$ (Gasto 
+adicional)
+A
+60
+4
+B
+50
+3
+C
+30
+8
+C =
+No hagas trampa, intenta resolver antes de seguir leyendo. Se debería 
+hacer la siguiente cuenta:
+Dinero recaudado por ciudad:
+Buenos Aires                                   5 . 60 + 6 . 50 + 1 . 30 = 630     [1]
+Rosario                                              7 . 60 + 4 . 50 + 2 . 30 = 680    [2]
+Mendoza                                           3 . 60 + 7 . 50 + 1 . 30 = 560     [3]
+Tilisarao                                            6 . 60 + 1 . 50 + 0 . 30 = 410     [4]
+Gastos generados por:
+Buenos Aires:                                  5 . 4 + 6 . 3 + 1 . 8 = 46     [5]
+Rosario:                                             7 . 4 + 4 . 3 + 2 . 8 = 56     [6]
+Mendoza:                                          3 . 4 + 7 . 3 + 1 . 8 = 41      [7]
+Tilisarao:                                           6 . 4 + 1 . 3 + 0 . 8 = 27     [8]
+Estos resultados los podemos expresar también a través de una matriz: 
+
+
+=== PAGE 7 ===
+Pág. 7
+Este ejemplo nos sugiere una forma de definir el producto entre matri-
+ces de tal manera que podamos decir que al multiplicar P por C nos da 
+R: P . C = R
+Pero antes de hacerlo analicemos el desarrollo del ejemplo anterior: 
+• En [1] se han multiplicado los elementos de la primer fila de P por los 
+de la primer columna de C y se han sumado esos productos. observe-
+mos que este resultado se ha colocado en la posición 1,1 de la matriz R. 
+• En [2] se han multiplicado los elementos de la segunda fila de P por los 
+de la primer columna de C y se han sumado esos productos. observemos 
+que este resultado se ha colocado en la posición 2,1 de la matriz R.
+• En [3] se han multiplicado los elementos de la tercer fila de P por los 
+de la primer columna de C y se han sumado esos productos. observe-
+mos que este resultado se ha colocado en la posición 3,1 de la matriz R. 
+• En [4] se han multiplicado los elementos de la cuarta fila de P por los 
+de la primer columna de C y se han sumado esos productos. observe-
+mos que este resultado se ha colocado en la posición 4,1 de la matriz R.
+Análogamente se ha trabajado con la segunda columna de C ([5] a [8]).
+Cada uno de estos 8 procedimientos se denomina PRODUCTO ESCALAR 
+y se realiza entre un vector fila y un vector columna, con igual cantidad 
+de elementos.
+Ejemplo:                                                    0
+                   Si A = [2 -3 2 1]     y    B =   3             
+                                                                      -1
+                                                                       4
+                       
+                        A . B = 2 . 0 + (-3) . 3 + 2 . (-1) + 1 . 4
+                                  = 0 – 9 – 2 + 4
+                                  = -7
+Observaciones: 
+1| El producto escalar entre dos vectores siempre da 
+por resultado un número, no una matriz. 
+2| El producto escalar sólo puede realizarse entre 
+vectores que tengan la misma cantidad de elementos. 
+3| Siempre se realiza entre un vector fila y otro 
+columna, nunca al revés.
+     
+Desempeño 26
+• Halla el producto escalar entre:
+                                               5
+A = [2   5 -2]    y     B =    2
+                                               0
+Ahora sí, entonces vamos a definir el producto entre matrices como la matriz que se obtiene al 
+realizar todos los productos escalares posibles entre las filas de la primera matriz y las colum-
+nas de la segunda.
+    
+
+
+=== PAGE 8 ===
+Pág. 8
+Desempeño 27
+• Dadas
+          1   3   2                          5   3   4   2  
+A =   4   2   0        y      B =   1   0   2   3 
+                                                 2   1    1   0
+Para realizar A . B debemos multiplicar cada una de las filas de A por cada una de las columnas 
+de B. Tendremos un total de 8 productos escalares, que dispondremos en una matriz según el 
+número de fila y de columna que hallamos multiplicado:
+Fila 1 por columna 1     *     1 . 5 + 3 . 1 + 2 . 2 = 12      *     lugar 1,1
+Fila 2 por columna 1    *     4 . 5 + 2 . 1 + 0 . 2 = 22    *     lugar 2,1
+Fila 1 por columna 2    *     1 . 3 + 3 . 0 + 2 . 1 = 5        *     lugar 1,2
+Fila 2 por columna 2   *     4 . 3 + 2 . 0 + 0 . 1 = 12     *     lugar 2,2
+Completa el resto y arma la matriz resultante: 
+Fila 1 por columna 3     *     ..........................................     *     lugar ......
+Fila 2 por columna 3    *     ..........................................     *     lugar ...... 
+Fila 1 por columna 4    *     ..........................................     *     lugar ......
+Fila 2 por columna 4    *     ..........................................     *     lugar ......
+La respuesta completa está al final de la clase.
+Desempeño 28
+• Un grupo de albañiles trabajan simultáneamente en la construcción de tres edificios. Para el 
+primero de ellos necesitan diariamente 1000 Kg. de cemento, 2350 ladrillos y 440 baldosines; 
+para el segundo necesitan cada día 800 Kg. de cemento, 1900 ladrillos y 380 baldosines, y para el 
+tercer edificio, las necesidades diarias son 2500 Kg. de cemento, 3000 ladrillos y 620 baldosines. 
+Suponiendo que la duración de la obra se espera que sea de 80, 60 y 120 días, respectivamente, 
+se pide expresa matricialmente y calcula las cantidades totales necesarias de cada uno de los 
+materiales empleados en los edificios.
+Indica a qué corresponde cada uno de las filas de la matriz resultado.
+Desempeño 29
+• Si tenemos las matrices:
+           5   4                                  3   1   1  
+A =    3  -2                y     B =   2   2   2 
+                     2 x 2                                     2 x 3
+a- Resuelve el producto de A x B 
+b- Resuelve luego el producto B x A 
+c- Analiza lo que sucedió en cada caso.
+d- Obtiene una conclusión.
+                   
+              
+              
+           
+
+
+=== PAGE 9 ===
+Pág. 9
+Conclusión
+"Para que dos matrices puedan multiplicarse es necesario que el nú-
+mero de columnas de la primera sea igual al número de filas de la se-
+gunda. A matrices con esta característica se las llama CONFORMABLES. 
+El resultado es la nueva matriz de orden igual al número de filas de la 
+primera por el número de columnas de la segunda y cuyo elemento "ij" 
+ésimo (esto expresa cualquier elemento de la matriz), es el producto 
+escalar del vector fila i de primera matriz por el vector columna j de la 
+segunda matriz".
+Resumiendo:
+A y B son conformables, pues son iguales 
+la cantidad de columnas de A con la 
+cantidad de filas de B
+m x p será Orden de la matriz resultante
+A mxn . B nxp = C mxp
+Solo se podrán multiplicar al ser el número de columnas (n) de la pri-
+mer matriz igual al número de filas de la segunda. La matriz resultante 
+será de orden mxp.
+
+
+=== PAGE 10 ===
+Pág. 10
+Situación 7
+Luego de leer y analizar las propiedades responde: 
+a• ¿Se cumple la propiedad conmutativa para el producto entre matrices? 
+b• En el caso que se pueda multiplicar una matriz por otra, ¿Qué condi-
+ción se debe cumplir para poder multiplicar las matrices? 
+c• ¿Cómo se llaman las matrices a las que se les puede multiplicar? 
+d• ¿Cuándo se podrá aplicar la propiedad asociativa? ¿Qué significa esta 
+propiedad? Explica con tus palabras. 
+e• Analiza los resultados del desempeño 30| a- y b- y escribe tu conclusión.
+Para tener en cuenta… 
+• Si dos matrices A y B tienen la particularidad  
+de que A . B = B . A se dice que son permutables. 
+• Una aclaración con la Propiedad cancelativa.
+Esta propiedad no se puede aplicar en el álgebra de matrices. El no - 
+cumplimiento de esta propiedad implica que sí: A . B = A . C NO pode-
+mos cancelar A y asegurar que B = C
+Desempeño 30
+• Practicamos un poco la operatoria de matrices. Dadas las siguientes
+matrices.
+             3                                   4   2   1                                           3    1
+A =      2                         B =    3   0   5                            C =      -2   0
+             1      3 x 1                                       2 x 3                             2  -1     3 x 2
+                                                                                                             
+• Obtiene, en caso de ser posible, los siguientes productos. En el caso que no sea posible, explica 
+porque no lo es.
+a- A x B
+b-B x A
+c-B x C
+d- C x B
+• Vamos a ver algunas propiedades del producto matricial muy importantes, pues son atípicas, o 
+sea no son comunes, a las que ya conocemos en las operaciones de números reales.
+Propiedades de la multiplicación de matrices
+1| Propiedad asociativa:
+(Anxp . Bpxm) . Cmxk = Anxp . (Bpxm . Cmxk)
+2| Propiedad conmutativa?
+Anxp . Bpxm =??? Bpxm . Anxp
+Si el producto A.B existe, el producto B.A no necesariamente existe. Además, si existiera no 
+necesariamente sería igual a A.B
+3| Propiedad distributiva del producto res-
+pecto a la suma (a derecha):
+Anxm . (Bmxp + Cmxp) = Anxm . Bmxp + Anxm . Cmxp
+4| Propiedad cancelativa?
+A . B = A . C , no podemos cancelar A y asegu-
+rar que B = C
+5| Elemento neutro multiplicativo:
+I . A = A . I = A
+6| Elemento inverso multiplicativo:
+A . A-1 = A-1. A = I
+            
+     
+              
+
+
+=== PAGE 11 ===
+Pág. 11
+Veamos por qué no. AB = AC
+Supongamos que restando A . C A.B – A.C = A.C – A.C a ambos miembros 
+resulta por A.B – A.C = 0 propiedad distributiva, esto es A ( B – C) = 0
+Aquí, usando el álgebra “clásica” diríamos que: “si un producto es 
+cero entonces algunos de los factores también lo es” (es decir A = 0 
+ó b – C = 0)
+Pero con matrices esto no ocurre. o sea que podemos multiplicar dos 
+matrices no nulas y obtener como resultado la matriz nula.
+Esto es extraño a lo que estamos habituados, pues con los números ocu-
+rre que si un producto da cero es porque por lo menos uno de los factores 
+es cero. Veamos con el siguiente ejemplo que con las matrices no es así:
+Dos matrices que no son nulas y su producto da la matriz nula.
+          -1   3            0   6            0   0
+A =     0   0     ∙     0   2     =     0   0
+La matriz identidad es el elemento neutro en la multiplicación de 
+matrices.
+I . A = A . I = A
+El Elemento inverso multiplicativo sólo existe para matrices cuadradas, 
+y no en todos los casos. Más adelante se verá en que caso existe y cómo 
+se calcula. Cuando existe la inversa de una matriz A se indica como A-1 
+y se verifica que el producto entre ellas da la Identidad.
+Simbólicamente: A . A-1 = A-1 . A = I
+Ejemplo:
+                     3   2                                               3  -2
+Para A =    4   3     la inversa es A-1 =     -4   3
+                               3   2             3  -2             1   0
+pues A . A-1 =     4   3     ∙     -4   3     =     0   1     
+          
+          
+          
+          
+          
+          
+           
+           
+Desempeño 31
+• Dadas A y B, encuentra su suma:
+               -2   1                            6   0
+a- A =     3   4         y     B =     3   4
+                 6   0                            2   2
+                -1   3   5                            2  -1   4
+b- A =     2   4 -3         y     B =    3  -4   3
+                
+                
+            
+          
+
+
+=== PAGE 12 ===
+Pág. 12
+Desempeño 32
+• Dadas las siguientes matrices:
+            3   5   8                     0 -5 -8                   0   1   7
+A =   -1   0  ½         B =     1   0   3         C =     0  ½ -9
+• Calcula:
+a- A + B - C
+b- A - (B + C)
+Desempeño 33
+• Determina en las siguientes matrices el valor de a, b, c y d, en cada caso.
+         a   b             4  -2              1   2                                               a   b            -5  -4              8  -1
+a-    c   d      -      1   5      =      0  -4                                   b-    c   d      -      3  -2      =      7 -5
+Desempeño 34
+• Si:
+            1 -2   7                     0   3   1                    2 -7   1
+M =    4   6   1         N =     1   5   0         C =     1 -7   4
+            3   9   0                    2  0   7                     0 -7   1
+• Determina el resultado de las siguientes operaciones:
+a- 3M - P =
+b- M - 2N + 3P =
+c- 2 . (M + N - 2P) =
+d- 3M - 3 . (N - P) =
+Desempeño 35
+Este desempeño es para que practiques las operaciones, en el caso que todavía no te salgan.
+• Dadas las matrices:
+            2  11                    1   3                     1   3   2                     1   1                     0 -1                      2   5   0
+A =     0   2          B =    1   2          C =    1   2   3          D =    3   2          E =    2   6          F =     0   1   4     
+                                                                                                      2   3                     5   0        
+• Calcula: A.B; B.C; A.C; C.D; C.E; E.F; A.F; B.F y C.F. (en el caso de ser posible).
+                 
+                 
+                 
+          
+            
+          
+          
+          
+          
+               
+               
+               
+          
+          
+         
+         
+              
+              
+
+
+=== PAGE 13 ===
+Pág. 13
+Desempeño 36
+• Si:
+                                                                                              11                          8/2
+M =    1   3   5   0     ;     N =    3 -5   1   7     ;     P =     2          ;     R =     1  
+                                                                                             -3                           2
+                                                                                               6                           0  
+• Calcula:
+a- M.P
+b- N.R
+c- P.M
+Desempeño 37
+• Calcula:
+              2   4                    2  -4                                                              0   0                    2  -4
+a-  =     4   8         ∙        -1   2                                                b-  =     0   0         ∙        -1   2   
+c- Compara a- con b- y comenta los resultados.
+Desempeño 38
+a• Elige una matriz de orden adecuado (no menor a 3) y verifica que la identidad es el elemento 
+neutro multiplicativo. (guíate con las propiedades de la multiplicación de matrices.)
+b• Determina cual de las siguientes matrices son inversas entre sí. Explica como se deber hacer.
+            1 -2   1                   -5   1   2                       1   -2   1
+A =     2   0   1          C =     2   0   1          D =     10 -20 9
+         -2   5 -2                   10 -1   0                    -2   5  -2
+          
+          
+          
+          
+                  
+                    
+       
+       
+                 
+                 
+                 
+
+
+=== PAGE 14 ===
+Pág. 14
+Desempeño 39
+• Un almacén surte de frutas a las tiendas A, B y C. 
+A la tienda A le venden 50kg de manzana, 60kg de peras y 35kg de banana. A la tienda B 38kg 
+de manzana, 80kg de peras y 40kg de bananas. A la tienda C 35kg de manzanas, 50kg de peras y 
+50kg de bananas.
+• Sabiendo que el precio de las manzanas es de $1, $1,2 las peras y $1,5 las bananas: 
+a- Expresa la situación en forma matricial, utilizando dos matrices. 
+b- Calcula utilizando operaciones con matrices lo que cada tienda tiene que pagar al almacén. 
+c- Calcula, utilizando las matrices que consideres necesarias, que cantidad de cada fruta vende 
+el almacén. 
+d- Determina a través de una operación con matrices la nueva matriz de precios si estos aumentan 
+un 10%.
+Desempeño 40
+• Cuando estés terminado la clase, cierra todo y sin mirar ni buscar respuestas, intenta contestar 
+las siguientes preguntas. Si no te salen, repasa lo dado en la clase. Te servirá para afianzar ideas 
+y expresarlas. 
+a- ¿Qué condición deben cumplir las matrices para poder sumarlas? 
+b- La suma de matrices ¿Es conmutativa? ¿Qué quiere decir esto? 
+c- ¿Es posible sumar matrices que no sean cuadradas? 
+d- Para multiplicar una matriz por un escalar, la matriz ¿Debe cumplir alguna condición en 
+especial? ¿y el escalar? 
+e- ¿Bajo qué condiciones podemos realizar el producto de dos matrices A y B? ¿cuál es el orden 
+de la matriz producto? 
+f- ¿Es posible multiplicar dos matrices filas? 
+g- ¿El producto de matrices es conmutativo? 
+h- Para pensar, y probar calculando… ¿Si el producto de dos matrices es la matriz nula, esto 
+significa que alguna de las matrices multiplicadas debe ser la matriz nula? 
+i- ¿Cuándo dos matrices son conformables? 
+j- ¿Cuándo dos matrices son permutables? 
+k- ¿Cuál es el elemento neutro de la suma de matrices? 
+l- ¿Cuál es el elemento neutro del producto de matrices? 
+m- ¿Cuál es el elemento inverso de la suma de matrices?
+n- ¿Cuál es el elemento inverso del producto de matrices?
+Respuestas de los desempeños de la clase n° 6
+• Desempeño n° 24
+a- Al ser del mismo orden la podemos sumar.
+                            -1  -1   0
+b-   A + B =     -2   3  -1
+                           3    1  -2
+c-   A + B =     2   3  -7
+                 
+                 
+
+
+=== PAGE 15 ===
+Pág. 15
+• Desempeño n° 25
+a- Si es posible. Si sumamos dos matrices en diferente orden, da el mismo resultado.
+b- No, no es posible. Si restamos dos matrices en diferente orden, da distinto resultado.
+c- Si. Se puede comprobar con ejemplos. 
+d- Nula. Se llama elemento neutro para una determinada operación (la suma en este caso) a un 
+elemento que al operar con él no cambia al otro. Por ejemplo para la suma de números, el neutro 
+es el cero; para el producto, es el uno. 
+e- Se llama elemento inverso, para una determinada operación a un elemento que al operar con 
+él nos da el neutro de la operación.
+f- Matriz opuesta (Todos los elementos son opuestos).
+• Desempeño n° 26
+A . B = 20
+• Desempeño n° 27
+                12    5    12    11
+A . B =   22   12   20   14
+• Desempeño n° 28
+         3   -1   -7                   3     9      9
+a-   -2  -1/2  25/2         b-   -2   -1/2   13/2
+• Desempeño n° 29
+        5   0                   3   -5
+a-    1   1         b-     10  -7
+• Desempeño n° 30
+          1      1   20                   7 -29   8                -6  30   12                     9 -38   21   
+a-    11   25   -1        b-     5 -25   13        c-     6   50 -14        d-     12 -18   15
+          9   34   -1                 -1 -12 -11                 10  46  10                    3     6  -18
+• Desempeño n° 32
+                  13   28                         4   9   11                          13   28   37                            14   13
+B . A =    -2   -4          B . C =   3   7   8          A . C =    -2   -4   -6          C . D =    13   14
+                16   17                         0  -1  -4                          4   21   44                          2   8  12
+C . E =    19   11          E . F =   4   16  24          A . F =   0  -2  -8           B . F =    2   7   8
+                                                     10  25  0   
+C . F = No existe
+• Desempeño n° 33
+                                                                                                                                           11  33  55  0
+a-  2 ;                                                    b- 5 ;                                                     c-       2   6   10   0
+                                                                                                                                          -3 -9 -15  0
+                                                                                                                                           6   18   30  0
+                              
+                      
+                        
+         
+              
+              
+                  
+               
+              
+                
+                     
+            
+                   
+                   
+                   
+                     
+                         
+
+
+=== PAGE 16 ===
+Pág. 16
+• Desempeño n° 34
+SI no te das cuenta, guíate para analizar los resultados con las propiedades de la multiplicación.
+• Desempeño n° 35
+b- C y D son inversas.
+• Desempeño n° 36
+A las respuestas de este desempeño, las trabajaremos en la clase, en el foro.
+• Desempeño n° 37
+Las respuestas a estas preguntas, las encontraras... en la clase n° 6...;) 
+Si detectás un error del tipo que fuere (falta un punto, un acento, 
+una palabra mal escrita, un error en código, etc.), por favor comu-
+nicate con nosotros a correcciones@issd.edu.ar e indicanos por 
+cada error que detectes la página y el párrafo. 
+MUCHAS GRACIAS POR TU APORTE.
+Damos por concluida esta clase. No te quedes  
+con dudas. Si algo no se ha entendido, consulta  
+en el foro de dudas de la unidad n° 2 que hay  
+en el campus, y trata de no pasar a la siguiente  
+clase, sin haber entendido y ejercitado ésta.
+¡Nos vemos!
+BIBLIOGRAFÍA
+• Ferreyra, Silvia Cristina - Lerda, Graciela Beatriz. Matematica 
+(ejercicios y aplicaciones).
+Editorial Aique. Carpeta de Matematica 1 (Nueva edición amplaida y 
+actualizada). Ediciones Eudecor.
+
+

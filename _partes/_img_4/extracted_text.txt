@@ -1,0 +1,331 @@
+=== PAGE 1 ===
+­_  
+FUNCIONES
+BOOLEANAS 
+­_
+Al finalizar la clase los alumnos: 
+• Escribir las funciones Booleanas en su 
+forma canónica.
+• Álgebra de Boole
+Matemática Discreta 2
+MD2
+UNIDAD
+CLASE
+
+
+=== PAGE 2 ===
+Pág. 2
+BIENVENIDOS
+FORMA CANÓNICA 
+DE UNA FUNCIÓN 
+BOOLEANA
+¿Cómo están? Y cómo van con las tres clases anteriores, al día al día..? 
+Espero que sea así, y si no le sugiero que lo vaya haciendo para poder 
+completar esta unidad con los contenidos de la clase hoy, que es conti-
+nuación de la semana pasada.
+En esta clase veremos cómo escribir las funciones Booleanas en su for-
+ma canónica, mediante un procedimiento algebraico y otro mediante 
+tabla de verdad. ¡Entonces, vamos con la última parte!!
+Una función Booleana está escrita en forma canónica, cuando es una 
+suma o un producto de términos canónicos.
+AHHH… Qué bueno… y qué serán los términos canónicos???
+Un término canónico es una expresión que relaciona a todas las varia-
+bles (ya sea directa o complementada) una sola vez mediante una sola 
+operación. Es decir si hay tres variables en la función sería cualquier 
+terna de ellas todas sumadas o todas multiplicadas.
+Cuando todas las variables se relacionan con la operación suma, a ese 
+término canónico se lo llama Maxitérmino.
+Un par de ejemplos de éstos para las variables X, Y, Z podrían ser: 
+X + Y + Z; X + Y + Z
+Del mismo modo, si todas las variables se relacionan con la operación 
+producto, a ese término canónico se lo llama minitérmino.
+Un par de ejemplos de minitérminos para esas tres variables podrían ser: 
+X . Y . Z; X . Y . Z
+Si volvemos a la definición de forma canónica, diremos que una fun-
+ción está en forma canónica cuando es una suma de minitérminos o es 
+un producto de Maxitérminos.
+Veamos algunos ejemplos así nos queda más claro: 
+F(A,B) = Ā . B + A 
+No está forma canónica, ya que el segundo término no es minitérmino 
+ya que no están las dos variables multiplicadas. 
+F(A,B) = (A + B) . (A + Ā) 
+No está en forma canónica ya que en el segundo factor no es un maxi-
+término, ya que una variable se repite y falta la otra.
+F (XYZ) = X . Z + Y . Z + X . Y 
+Tampoco está en forma canónica, ya que para ser una suma de mini-
+términos, estarían faltando en cada término una variable, ya que debe-
+ría haber 3 por cada minitérmino.
+F(A,B) = A . B 
+
+
+=== PAGE 3 ===
+Pág. 3
+Sí está en forma canónica, ya que sería un minitérmino solo.
+F (X,Y,Z) = (X + Y + Z) . (X + Y + Z) 
+Sí lo está, ya que es un producto de dos maxitérminos
+F (X,Y,Z) = XYZ + XYZ + XYZ + XYZ 
+También está en forma canónica porque es una suma de 4 minitérminos.
+FORMA CANÓNICA A 
+PARTIR DE LA TABLA 
+DE VERDAD
+Desempeño 10
+• Explique si las siguientes funciones están o no en forma canónica.
+F (XY) = X + Y 
+F (XYZ) = X . Y . Z 
+F (ABC) = ABC + ABC + BAC + CBĀ
+F (PQRS) = (P + Q) . (R + S)
+Toda función, aunque no esté escrita en la forma canónica, puede ser 
+llevada mediante procedimientos algebraicos o por medio de tablas de 
+verdad, a dicha forma. Debe quedar claro que toda función tiene su for-
+ma canónica.
+Como ya vimos, a partir de una función Booleana podemos encontrar 
+la tabla de verdad, ahora veremos cómo escribir su forma canónica uti-
+lizando los resultados de la tabla. Mediante un ejemplo con la función 
+F(A,B,C) = A + B . C
+Se construye una Tabla de Verdad de la función dada y se observa la 
+última columna que es la de resultado de la función: Las filas donde 
+la función da ‘0’ conformarán la expresión productoria de sumas y 
+las filas donde la función toma valor ‘1’ conformarán la expresión su-
+matoria de productos. Para ubicarnos mejor en la tabla, utilizamos el 
+número de secuencia decimal en el extremo izquierdo de la tabla, que 
+coincide con las combinaciones binarias de las variables. [1]
+
+
+=== PAGE 4 ===
+Pág. 4
+Entonces las formas canónicas de ƒ(A,B,C) = A + B • C  
+ 
+Son:  
+F (A,B,C) = IIM(0,1,2) = (A+B+C) • (A+B+ C ) • (A+ B +C) 
+F (A,B,C) = ∑m(3,4,5,6,7) = ĀBC + ABC + ABC + ABC + ABC
+Estas tres expresiones tienen la misma tabla de verdad. Observe que 
+las formas canónicas por lo general, son mucho más extensas que la 
+función original.
+En síntesis: 
+1| Las sumas canónicas son aquellas combinaciones para las cuales la 
+función vale 0 y conforman la productoria de maxitérminos.
+NOTA: Las variables que valen ‘1’ se leen negadas y las 
+que valen ‘0’, directas.
+2| Los productos canónicos son aquellas combinaciones para las cuales 
+la función vale 1 y conforman la sumatoria de minitérminos.
+NOTA: Las variables que valen ‘1’ se leen directas y las 
+que valen ‘0’, negadas.
+1
+Sec. Dec.
+A
+B
+C
+B . C
+A + B • C
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+2
+0
+1
+0
+0
+0
+3
+0
+1
+1
+1
+1
+4
+1
+0
+0
+0
+1
+5
+1
+0
+1
+0
+1
+6
+1
+1
+0
+0
+1
+7
+1
+1
+1
+1
+1
+Términos Producto 
+de Sumas.(PS)
+Términos Suma 
+de Productos.(SP)
+Producto de sumas IIM(0,1,2)
+IIM = (A+B+C) • (A+B+C) • (A+B+C)
+              0  0   0        0   0   1       0   1   0
+                 (0)                 (1)               (2)
+Suma de Productos ∑m(3,4,5,6,7)
+∑m = Ā B C + A B C + A B C + A B C + A B C
+          0 1  1       1 0 0      1 0  1      1  1 0      1  1  1
+            (3)          (4)          (5)          (6)          (7)
+
+
+=== PAGE 5 ===
+Pág. 5
+Desempeño 11
+• A partir de la construcción de la tabla de verdad, escriba las dos formas canónicas de la siguien-
+te función:
+F (A,B) = B + A . B
+Esta forma de escribir la función utilizando la tabla de verdad, nos per-
+mitirá realizar una de las principales aplicaciones, que consiste en en-
+contrar una función que logre llegar a los resultados que queremos. Es 
+decir si nosotros sabemos qué resultados deseamos a la salida para cada 
+combinación de entrada podremos determinar la función que lo provoca.
+Entonces ahora lo que haremos es mediante un ejemplo explicar con 
+más detalle lo que recién se dijo:
+Consideremos solo dos variables para hacerlo más sencillo. Suponga-
+mos que para cada combinación de entrada los resultados que desea-
+mos obtener son los que aparecen en la tabla siguiente:
+¿CÓMO ENCONTRAR 
+UNA FUNCIÓN 
+QUE LOGRE LOS 
+RESULTADOS QUE 
+QUEREMOS?
+A
+B
+F (A,B)
+0
+0
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+Bien bien … Retomemos, no tenemos la función, es lo que deseamos co-
+nocer, pero sí tenemos cuáles son los resultados que ella debe darnos, 
+como los que se muestran en este ejemplo en la tercer columna de la tabla.
+Ahora bien, por lo que vimos más arriba en la forma canónica a partir de 
+la tabla, podemos escribir entonces la forma canónica de la función que 
+deseamos encontrar, tomando los 1, o los 0 del resultado. Si usamos los 
+1 tendríamos la suma de productos, y si usamos los 0 tendríamos el pro-
+ducto de las sumas. Ambas serían formas canónicas de la misma fun-
+ción. Tomemos los 1, lo que significa que tendríamos tres minitérminos 
+para la primera, tercera y cuarta combinación de entradas. Esto sería:
+0 0 1 minitérmino Ā . B
+1 0 1 minitérmino A . B
+1 1 1 minitérmino A . B
+Por lo que la forma canónica de la función sería:
+F(A,B) = Ā . B + A . B + A . B
+De esta manera habríamos resuelto el problema, porque ya encontra-
+mos la función que nos arroja los resultados que queríamos. Pero no nos 
+vamos a quedar con eso, y vamos a ir un poquito más lejos...jaaa... sísí, 
+no se desesperen que esto sería lo último. ¿Y qué sería el paso más allá 
+que daremos? Si recordamos que una función tiene un circuito lógico, 
+
+
+=== PAGE 6 ===
+Pág. 6
+que podría ser además un circuito eléctrico, mientras menos elemen-
+tos haya en el circuito, más económico será y más rápido llegaremos 
+al resultado, es decir que mientras menos elementos haya, sería más 
+eficiente el circuito. ¿Pero cuáles eran los elementos del circuito? Las 
+compuertas lógicas, y esas compuertas representan las operaciones 
+entre las variables, por lo que si queremos que hayan menos compuer-
+tas en el circuito, deberán haber menos operaciones en la función. En 
+conclusión, el paso que daremos ahora es el de simplificar la función. 
+SIMPLIFICACIÓN DE FUNCIONES 
+Si ustedes recuerdan, cuando vimos la forma canónica mediante la ta-
+bla, al llegar a las formas canónicas observamos que esas expresiones 
+son más extensas que la función original, entonces simplificar las fun-
+ciones significa buscar escribir las mismas de una manera más reduci-
+da, mediante la utilización de los axiomas y teoremas enunciados como 
+propiedades.
+Debe tener presente que siempre que cambie el formato de una expre-
+sión, ese cambio debe estar justificado por alguna de las propiedades 
+enunciadas, ¡NO Vale Inventar Nuevas!
+Utilicemos la función encontrada en el último ejemplo a partir del re-
+sultado de la tabla.
+F (A,B) = Ā . B + A . B + A . B
+Por Axioma 2                                       Por Axioma 2
+F (A,B) = B . ( Ā + A) + A . B             F (A,B) = B . A + B . B
+Por axioma 4                                       Por Axioma 4
+F (A,B) = B . 1 + A . B                           F (A,B) = B . A + 0
+Por Axioma 3                                       Por Axioma 3
+F (A,B) = B + A . B                                F (A,B) = B . A
+De este modo podemos ver que la misma función escrita de otra mane-
+ra quedó reducida, con lo que tendremos un circuito lógico mucho más 
+eficiente como dijimos arriba.
+Desempeño 12
+• Lleva a la forma canónica solicitada en cada caso, mediante procedimiento algebraico o utili-
+zando las tablas de verdad:
+a- En forma algebraica: 
+i• F (A,B,C) = A • B • C + Ā • B • C + B • C 
+ii• G (A,B,C) = (A + B) • (Ā + C) • (B + C)
+b- Por tabla: 
+i• F (A,B,C) = Ā • B• C + A • B •C
+ii• G (A,B) = B + Ā •B
+
+
+=== PAGE 7 ===
+Pág. 7
+Desempeño 13
+• Dada la siguiente función: F (A,B,C) = (A + B) . (B + C) + A + C
+a- Obtener una fórmula más sencilla. Especifica los axiomas o teoremas que se utilicen. 
+b- Obtener las dos formas canónicas (utilizando métodos diferentes: una algebraicamente y la 
+otra por tabla). 
+c- Hacer el circuito lógico correspondiente. 
+d- Hacer las dos tablas (función original y función simplificada) y compararlas y comentar re-
+sultados.
+Desempeño 14
+• Demostrar por tabla y algebraicamente la siguiente igualdad. Escribe los axiomas y/o teoremas 
+utilizados en cada caso.
+Ā . (B + C) + (A + C) . B = B + Ā . C
+Desempeño 15
+• Simplificar la siguiente expresión (mencionando los axiomas y teoremas utilizados):
+a . (b + ā + c) + b . a . c
+Desempeño 16
+• Dada la siguiente función: F (A,B,C) = (Ā + B) . (B+ C) + A + C
+a- Obtener una fórmula más sencilla. Especifica los axiomas o teoremas que utilice. 
+b- Hacer las dos tablas (función original y función simplificada) y compararlas y comentar re-
+sultados. 
+c- Encuentre las dos formas canónicas de la función, empleando los dos procedimientos. 
+d- Implemente la función original y la simplificada.
+
+
+=== PAGE 8 ===
+Pág. 8
+Si detectás un error del tipo que fuere (falta un punto, un acento, 
+una palabra mal escrita, un error en código, etc.), por favor comu-
+nicate con nosotros a correcciones@issd.edu.ar e indicanos por 
+cada error que detectes la página y el párrafo. 
+MUCHAS GRACIAS POR TU APORTE.
+Con esto damos por concluida la unidad  
+correspondiente al Álgebra de Boole, esperamos  
+que haya sido de su agrado y le pueda dar utilidad  
+más allá de nuestra Matemática Discreta. 
+Ahora si lo dejamos con el desempeño de esta clase,  
+para que pueda practicar una vez que haya  
+incorporado los conceptos nuevos. Como le hemos  
+dicho en otras oportunidades, no se quede con dudas,  
+si surgen las anota y las consulta a su profesor. 
+Ha sido un gusto presentarle los temas desarrollados, 
+hasta pronto y la semana próxima cambiaremos  
+el Álgebra de Boole y comenzamos con el Álgebra  
+de Matrices.
+¡Hasta entonces!
+
+

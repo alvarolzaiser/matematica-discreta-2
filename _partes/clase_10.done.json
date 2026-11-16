@@ -1,0 +1,24 @@
+{
+  "concepts": [
+    "Preparación del sistema de ecuaciones: sistema completo y ordenado (primer miembro con incógnitas, segundo miembro con términos independientes)",
+    "Las tres matrices del sistema: Matriz de los coeficientes (A, de orden n×m), Matriz o vector de los términos independientes (B, de orden n×1) y Matriz o vector de las incógnitas (X, de orden m×1)",
+    "Forma matricial del sistema de ecuaciones lineales: A_(n×m) · X_(m×1) = B_(n×1)",
+    "Matriz ampliada del sistema de ecuaciones: A° = [ A : B ] y propiedad de equivalencia de sistemas bajo operaciones elementales de fila",
+    "Algoritmo del Método General de Resolución de sistemas de ecuaciones lineales (los 5 pasos: 1° Completar y ordenar, 2° Armar la matriz ampliada, 3° Llevar a la forma canónica, 4° Clasificar el sistema, 5° Armar el vector solución X*)",
+    "Definición de Sistema Compatible y Sistema Compatible Determinado según sus soluciones (única solución, cada incógnita toma un único valor)",
+    "Definición de Rango de una matriz: ρ(A) es el número de filas no nulas de la canónica equivalente, y cómo observar ρ(A) y ρ(A°) en la matriz ampliada canónica (sin y con la última columna)",
+    "Criterio matricial de compatibilidad (Rouché-Frobenius): Compatible si ρ(A) = ρ(A°) vs. Incompatible si ρ(A) ≠ ρ(A°), sin restricciones sobre número de ecuaciones, variables o términos independientes",
+    "Criterio matricial de determinación (dentro de los compatibles): Determinado si ρ(A°) = m (o ρ(A) = m) vs. Indeterminado si ρ(A°) < m, donde m es la cantidad de incógnitas",
+    "Cuadro sinóptico general de clasificación de sistemas de ecuaciones lineales A_(n×m) · X_(m×1) = B_(n×1)",
+    "Sistemas de ecuaciones lineales homogéneos (A · X = 0): compatibilidad siempre asegurada (A° = [ A : 0 ] implica ρ(A°) = ρ(A)), solución trivial (X = 0, dar valor cero a todas las variables) y soluciones no triviales (X ≠ 0)",
+    "Sistemas homogéneos cuadrados (A de orden n×n): criterio del determinante (|A| = 0 para soluciones no triviales / sistema indeterminado con ρ(A) < n; |A| ≠ 0 para única solución trivial / sistema determinado con ρ(A) = n)",
+    "Validación de la respuesta en situaciones problemáticas: diferencia entre solución al sistema planteado y solución al problema planteado"
+  ],
+  "connections": [
+    "Conecta con la Clase 7 y Clase 8 (orden de matrices, vectores columna, multiplicación de matrices, operaciones elementales de fila H_i(k), H_(i,j)(k), H_(i,j), matriz canónica equivalente y rango de una matriz)",
+    "Conecta con la Clase 8 y Clase 9 (cálculo y propiedades de determinantes de matrices cuadradas, relación entre determinante nulo y rango menor que n, planteo de sistemas de ecuaciones a partir de enunciados y clasificación general según las soluciones)",
+    "Conecta con la Clase 11 (resolución completa y parametrización del conjunto solución de sistemas compatibles indeterminados e incompatibles, anticipados al final del Desempeño 4e de la Clase 10)"
+  ],
+  "notes": "Se extrajo y verificó visualmente la totalidad de las 11 páginas de 10.pdf (PNGs en _partes/_img_10). Se documentaron también dos detalles de edición del PDF original importantes para el alumno: (1) en el cuadro resumen de la Pág. 8, la punta de la flecha vertical bajo 'Compatible' pisa la barra superior del signo '=' en ρ(A) = ρ(A°); (2) en la Pág. 8 aparece un número errático '12' antes de 'A.X = 0' en el subtítulo de sistemas homogéneos cuadrados, y en la Pág. 6 recuadro [2] figura H1,3(-1) donde se aplicó H2,3(-1). El archivo clase_10.md fue verificado con 0 signos $, 0 barras invertidas de LaTeX y 0 etiquetas HTML.",
+  "title": "Clase 10 — Sistemas de Ecuaciones (Método General de Resolución y Sistemas Compatibles Determinados)"
+}

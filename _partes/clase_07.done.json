@@ -1,0 +1,20 @@
+{
+  "concepts": [
+    "Matriz canónica por filas (definición y las 4 características)",
+    "Elemento conductor (primer elemento no nulo de cada fila, igual a 1)",
+    "Disposición en escalera de los elementos conductores y ubicación de filas nulas al final",
+    "Rango de una matriz ρ(matriz) (número de filas no nulas en la forma canónica)",
+    "Casos particulares de matriz canónica: la matriz nula (cumple todas las condiciones) y la matriz identidad",
+    "Operaciones elementales en una matriz (aplicadas a filas): 1º Permutar filas Hij, 2º Multiplicar fila por constante no nula Hi(k), 3º Sumar a una fila otra multiplicada por constante no nula Hij(k)",
+    "Matrices equivalentes (A ~ B): definición, simbología y diferencia con la igualdad de matrices",
+    "Procedimiento algorítmico para hallar la matriz canónica por filas y uso de operaciones simultáneas",
+    "Columna de control: construcción como suma de elementos de cada fila, operatoria y verificación paso a paso"
+  ],
+  "connections": [
+    "Conecta con la Clase 5 (Matrices especiales: matriz rectangular, matriz cuadrada, fila nula, matriz nula, matriz identidad e igualdad de matrices)",
+    "Conecta con la Clase 6 (Operaciones entre matrices vs. operaciones elementales entre las líneas/filas de una misma matriz)",
+    "Conecta con las clases siguientes sobre Determinantes, Matriz Inversa y Sistemas de Ecuaciones Lineales (uso de matrices equivalentes, forma canónica y rango ρ(A) para analizar y resolver sistemas)"
+  ],
+  "notes": "Se extrajo el texto completo de 7.pdf y se inspeccionaron visualmente las 11 páginas renderizadas en _partes/_img_7/ (page_01.png a page_11.png). Se verificó palabra por palabra que las 24 citas textuales coincidan literalmente con el PDF, que todos los conceptos teóricos y preguntas conceptuales del Desempeño 46 estén cubiertos, y que el documento no contenga LaTeX ($) ni etiquetas HTML. Además se dejó advertencia sobre el desfasaje de numeración en la sección de respuestas de los Desempeños 41-46 de las páginas 10 y 11 del PDF original.",
+  "title": "Clase 7 — Matrices y Determinantes: Matriz Canónica por Filas y Operaciones Elementales"
+}

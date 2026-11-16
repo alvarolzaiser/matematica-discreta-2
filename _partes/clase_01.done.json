@@ -1,0 +1,26 @@
+{
+  "concepts": [
+    "Conjuntos discretos (finitos o infinitos pero numerables) y relación con la Lógica Simbólica Proposicional (MD1)",
+    "Sistema de numeración binario, codificación binaria y unidad elemental de información (0 ó 1)",
+    "Circuito lógico como sistema (señales de entrada y señales de salida)",
+    "Variables lógicas (opciones excluyentes 0 ó 1 y asignación de estados en tuberías y circuitos eléctricos)",
+    "Operaciones lógicas (concepto general y diferencias con el Álgebra clásica)",
+    "Suma Lógica (+): definición, relación con la disyunción (∨), tabla de verdad y circuito en paralelo (F = A + B)",
+    "Producto lógico (.): definición, relación con la conjunción (∧), tabla de verdad y circuito en serie (F = A . B)",
+    "Negación o Complemento (Ā): definición, relación con la negación (¬), tabla de verdad y circuito inversor (F = Ā)",
+    "Propiedades del Álgebra de Boole: distinción entre Axiomas y Teoremas",
+    "Axioma A1: Propiedad Conmutativa (suma y producto)",
+    "Axioma A2: Propiedad Distributiva (del producto respecto de la suma y de la suma respecto del producto)",
+    "Axioma A3: Elemento Neutro (propiedad de identidad para la suma y el producto)",
+    "Axioma A4: Complemento (para la suma y el producto)",
+    "Método de demostración algebraica de igualdades booleanas mediante axiomas"
+  ],
+  "connections": [
+    "Conecta hacia atrás con la Unidad 3 de Matemática Discreta 1 (Lógica Simbólica Proposicional): proposiciones (V/F) → variables lógicas (1/0); conectores disyunción (∨), conjunción (∧) y negación (¬) → suma lógica (+), producto lógico (.) y complemento (Ā).",
+    "Conecta con Teoría de Conjuntos y Sistemas de Numeración: definición de conjuntos discretos (finitos o infinitos numerables) y sistema de numeración binario (0 y 1).",
+    "Conecta hacia adelante con la Clase 2 (Teoremas del Álgebra de Boole y Compuertas Lógicas): los 4 axiomas (A1 Conmutativa, A2 Distributiva, A3 Elemento Neutro, A4 Complemento) son la base para demostrar lógicamente todos los teoremas (Idempotencia, Involución, Elemento Nulo, Absorción, Asociativa, De Morgan) y las 3 operaciones lógicas definen las compuertas básicas OR, AND y NOT.",
+    "Conecta hacia adelante con las Clases 3 y 4 (Funciones Booleanas, Formas Canónicas y Simplificación): el modelo de circuito lógico como sistema de entradas y salidas y la aplicación de los axiomas fundamentan el diseño y minimización de circuitos digitales."
+  ],
+  "notes": "Se verificaron mediante renderizado PNG las 7 páginas de 1.pdf. Se documentaron fielmente todas las citas textuales palabra por palabra y se advirtieron explícitamente en las secciones de Precisiones tres erratas de imprenta presentes en el PDF original: (1) en pág. 4, el encabezado de la tabla de Producto lógico dice 'A + B' en lugar de 'A . B'; (2) en pág. 5, la tabla [3] de Negación/Complemento tiene impresos los valores '0->0' y '1->1' en lugar de los valores invertidos '0->1' y '1->0', además de omitir las palabras 'interruptor es' al pie del circuito; y (3) en pág. 6 (Desempeños 1 y 2), la tipografía del PDF omitió la barra superior de negación en algunas letras (N, Y, K, B) aunque el desarrollo algebraico impreso aplica el axioma de complemento A4. Archivo verificado sin signos de dólar, sin LaTeX y sin etiquetas HTML.",
+  "title": "Clase 1 — Álgebra de Boole"
+}

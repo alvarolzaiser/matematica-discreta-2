@@ -1,0 +1,735 @@
+=====PAGE 1=====
+­_  
+MATRICES  
+Y DETERMINANTES 
+­_
+Al finalizar la clase los alumnos: 
+• Conocer el concepto de matriz.
+• Organizar diversos datos en una matriz.
+• Escribir matrices como vectores fila o 
+columna.
+• Distinguir diversos tipos de matrices.
+• Matrices
+• Concepto
+• Clasificación
+Matemática Discreta 2
+MD2
+CLASE
+UNIDAD
+
+=====PAGE 2=====
+Pág. 2
+BIENVENIDOS
+CLAVES DE ESTUDIO
+MATRICES 
+Y DETERMINANTES
+En la clase de hoy vamos a dar comienzo a un tema súper práctico a la 
+hora de organizar información, las matrices. Veremos cómo las pode-
+mos definir, como las podemos nombrar, como así también conoce-
+remos algunos tipos especiales de matrices. Pero por sobre todas las 
+cosas, veremos la aplicación que tienen las matrices, tanto para orga-
+nizar determinados tipos de información como para resolver diferen-
+tes situaciones utilizando el concepto de matriz.
+• Leer detenidamente los temas correspondientes a la clase n° 5 (que es 
+la primera parte de la unidad 2).
+• Ir resolviendo cada uno de las situaciones problemáticas planteadas 
+en el desarrollo de la clase. (aunque a veces cueste pensar cada situa-
+ción, esto ayudará a comprender mejor cada uno de los conceptos de-
+sarrollados). 
+• Participar activamente de las actividades planteadas en la clase (fo-
+ros, desempeños, etc.)
+• Resolver los desempeños correspondientes, que figuran en el trabajo 
+práctico, luego de haber leído, resuelto y comprendido cada uno de los 
+temas propuestos.
+• Compara tus resultados con las respuestas planteadas al final del 
+práctico.
+ESQUEMA DE LA UNIDAD 
+En esta unidad vas a distinguir dos secciones.
+Definición
+Básicas
+Producto
+Concepto
+Cálculo
+Producto por 
+un número
+Métodos
+Propiedades
+Matríz canónica
+Adición
+Operaciones
+Elementales
+DETERMINANTES
+MATRICES
+En la primera se define el ente matemático objeto de estudio de esta 
+unidad: LA MATRIZ. Aquí se aclara terminología, se definirán las ope-
+raciones matemáticas básicas: adición, sustracción y multiplicación y 
+operaciones elementales, que no son las habituales, por el contrario 
+son características de las matrices.
+En la segunda sección estudiaremos el determinante de las matrices 
+cuadradas, su definición y métodos para calcularlos, así como algunas 
+propiedades.
+
+=====PAGE 3=====
+Pág. 3
+En muchas ocasiones la información numérica sobre algunas situacio-
+nes viene acompañada por un sin número de palabras, que si bien son 
+necesarias para entender que representan dichos números, a la hora de 
+operar con ellos, confunden.
+Intenta, 5 (pero intenta en serio) resolver la siguiente actividad:
+Situación 1
+Una empresa fabrica tres modelos de estanterías: A, B y C. En cada uno 
+de los tamaños, grande y pequeño. Produce diariamente 1000 estanterías 
+grandes y 8000 pequeñas de tipo A, 8000 grandes y 6000 pequeñas de tipo 
+B, y 4000 grandes y 6000 pequeñas de tipo C. Cada estantería grande lleva 
+16 tornillos y 6 soportes, y cada estantería pequeña lleva 12 tornillos y 4 
+soportes, en cualquiera de los tres modelos.
+COMENZAMOS 
+NUESTRO TRABAJO
+1| Representar esta información en forma organizada y sencilla.
+Esta primera actividad, podrás compartirla con tus compañeros de cla-
+se, y podremos ver que hay diferentes formas de presentar la infor-
+mación. No creas que hay una única manera. Además, podremos com-
+partir los resultados de la cantidad de tornillos y de soportes pedidos. 
+No te quedes con las respuestas de los demás, intenta buscarla por tus 
+propios medios.
+Ayudita: Si todavía tienes dudas, tratar de organizar la información, 
+por ejemplo, de la siguiente manera…
+Que un grupo de datos, tenga la información correspondiente a los tipos 
+de estanterías y el tamaño, y el otro grupo de datos tenga la información 
+de los tamaños y la cantidad de tornillos y soportes utilizados para cada 
+uno… Acá va una de las posibles formas, si es que todavía no lo pudiste 
+hacer. En el caso que si te haya salido, no lo borres, solo fíjate que pue-
+den presentarse de diferentes maneras, y no por eso estar mal. Mientras 
+que la idea de “organizar la información” esté, no hay problema.
+Grandes
+Pequeñas
+A
+1000
+8000
+B
+8000
+6000
+C
+4000
+6000
+Tornillos
+Soportes
+Grandes
+16
+6
+Pequeñas
+12
+4
+
+=====PAGE 4=====
+Pág. 4
+Situación 3
+A Matías y a Florencia se le acreditaron durante los tres meses de verano 
+ciertas cantidades de dinero: a Matías $50 en diciembre, $90 en enero y 
+$100 en febrero. A Florencia $45, $100 y $70 respectivamente.
+Además ellos podían realizar un depósito por trabajos extras realizados, los 
+cuales fueron: por Matías $30 en diciembre, $15 en enero y $40 en febrero. 
+Por Florencia $10, $21 y $30 respectivamente.
+Por último tenían derecho a una extracción mensual que resultó para Ma-
+tías de $80, $90 y $30 y para Florencia de $25, $50 y $50.
+a• Ordena la información de tal manera que sea fácil comprender y 
+organizarla.
+Aclaración: Lo realizamos con números pequeños como 
+para que sea más sencilla la representación de matrices.
+Situación 2 
+Una fábrica produce dos modelos de lavadoras, A y B, en tres terminaciones: 
+N, L y S. Produce del modelo A: 400 unidades en la terminación N, 200 uni-
+dades en la terminación L y 50 unidades en la terminación S. Produce del 
+modelo B: 300 unidades en la terminación N, 100 unidades en la termina-
+ción L y 30 unidades en la terminación S. La terminación N lleva 25 horas de 
+taller y 1 hora de administración. La terminación L lleva 30 horas de taller 
+y 1.2 horas de administración. La terminación S lleva 33 horas de taller y 1.3 
+horas de administración.
+1| Representa la información correspondiente a los modelos de lavado-
+ra en sus tres terminaciones. 
+2| Expresa la información de las horas de taller y de administración 
+empleadas para cada uno de las terminaciones.
+Al igual que la actividad anterior, compartiremos los resultados obteni-
+dos por cada uno. No tienen porque ser iguales. Creatividad permitida!!!
+Una alternativa puede ser: (no mirar hasta que no lo hayas resuelto… ;) )
+Horas taller
+Administración
+N
+25
+1
+L
+30
+1,2
+S
+33
+1,3
+N
+L
+S
+A
+400
+200
+50
+B
+300
+100
+30
+
+=====PAGE 5=====
+Pág. 5
+Aclaramos nuevamente, los números utilizados son 
+sólo a modo de ejemplo. Obviamente que no es acorde 
+a la realidad, pero es para más fácil interpretación y 
+resolución de la situación.
+Según la organización presentada, podrías decir:  
+a- ¿Qué significa el 2?  
+b- ¿y el 0?  
+c- ¿Y el 30?  
+d- ¿Y el 8?
+Después que hayas organizado la información, sigue leyendo…
+Toda esta información puede organizarse por ejemplo de la siguiente 
+manera:
+Aquí va “una de las propuestas” para organizar esta 
+información que en el texto resulta bastante más 
+complicado de leerlo y entenderlo.
+Además, en esta forma organizada podremos operar y 
+sacar conclusiones más fácilmente que en la forma de 
+enunciado. 
+Situación 4 
+Una empresa de Turismo dispone de viajes a Buenos Aires, Rosario, Mendo-
+za y Tilisarao en tres categorías A, B y C.
+La empresa a vendido de la categoría A 5 viajes a Bs. As., 7 a Rosario, 3 a 
+Mendoza y 6 a Tilisarao. De la categoría B a vendido 6, 4, 7 y 1 respectiva-
+mente y de la categoría C a vendido 1, 2, 1 y ninguno a Tilisarao.
+Cada viaje de la categoría A cuesta $60, de la B $50 y de la C $30. Además la 
+empresa debe afrontar un gasto adicional de $4 por cada viaje vendido de 
+la categoría A, $3 por los de la categoría B y $8 por los de la C.
+a• Organiza la información de dos maneras diferentes.
+Diciembre
+Enero
+Febrero
+M
+F
+M
+F
+M
+F
+acreditación
+50
+45
+90
+100
+100
+70
+depósito
+30
+10
+15
+21
+40
+30
+extracción
+80
+25
+90
+50
+30
+50
+A
+B
+C
+Buenos Aires
+5
+6
+1
+Rosario
+7
+4
+2
+Mendoza
+3
+7
+1
+Tilisarao
+6
+1
+0
+        $ (Costo)      $ (Gasto adicional)
+A            60                              4
+B            50                              3
+C            30                              8
+
+=====PAGE 6=====
+Pág. 6
+Ahora presentamos la misma información pero de otra manera:
+Buenos Aires
+Rosario
+Mendoza
+Tilisarao
+A
+5
+7
+3
+6
+B
+6
+4
+7
+1
+C
+1
+2
+1
+0
+A
+B
+C
+$ (Costo)
+60
+50
+30
+$ (Gasto adicional)
+4
+3
+8
+Ahora responde las mismas preguntas a), b) c) y d) planteadas ante-
+riormente y analiza las respuestas...
+Si tu análisis es correcto, tu respuesta tendría que ser la misma para las 
+dos situaciones. Ahora… que cambió al ordenar los elementos...(piensa 
+la respuesta...)
+Si! Correcto, cambia la forma de ordenar estos elementos, que tie-
+nen que ver con lo que se elige como “fila” o como “columna” de la 
+matriz. Pero como la matriz se puede ordenar según la necesidad de 
+lo que hay que plantear, mientras se tenga en claro eso, el orden pue-
+de variar, asignándole un significado a cada fila o a cada columna… 
+PASANDO EN LIMPIO… 
+Hay infinidad de situaciones donde es conveniente arreglar la infor-
+mación numérica en filas y columnas:  
+• Notas obtenidas en distintas evaluaciones por un grupo de alumnos. 
+• Los puntos del monitor de una computadora. 
+• La tabla de cotizaciones de la Bolsa en cada uno de los días de la semana. 
+• La ubicación de personas en un espectáculo. 
+• Gastos realizados en distintos rubros durante el mes. 
+• Cantidad de casos clínicos de ciertas enfermedades en distintas regiones 
+del país. 
+• Etc…
+Esta disposición rectangular de números se denomina MATRIZ.
+Vamos entonces a definirla formalmente: 
+DEFINICIONES
+Matrices 
+Definiremos MATRIZ, n x m a un conjunto de n.m números dispuestos 
+en n filas y m columnas. Diremos que n x m es el ORDEN de la matriz 
+(se lee “ene por eme”).
+Una matriz 2 x 3 es un conjunto de 2 . 3 = 6 números dispuestos en 2 
+filas y 3 columnas. Es de orden 2 x 3.
+
+=====PAGE 7=====
+Pág. 7
+A los elementos de las matrices los pondremos entre corchetes (pueden 
+ser paréntesis o doble barra) y las designaremos con letras mayúsculas.
+Las matrices de la actividad n° 3 podrían ser: [1] Las matrices de este 
+ejemplo son de orden 3 x 2. (Es decir, tienen 3 filas y 2 columnas cada 
+una de las matrices.)
+1
+            50   45                     90   100                   100 70 
+D =     30   10          E =     15     21          F =     40   30 
+            80   25                     90   50                     30   50
+               
+             
+               
+                                        
+               
+               
+           5   6   1                      60  4
+P =     7   4   2          C =    50   3  
+           3   7   1                      30   1
+           6   1   0
+                 a11   a12   a13  ...   a1m
+                 a21   a22   a23  ...   a2m
+                 a31   a32   a33  ...   a3m   
+Anxm =      : 
+                   : 
+                   :
+                 an1   an2   an3  ...   anm
+Para la actividad n° 4 podríamos tener las siguientes matrices:
+Aquí P es de orden 4 x 3 (tiene 4 filas y 3 columnas) y C es de orden 3 x 2 
+(tiene 3 filas y 2 columnas).
+El orden de una matriz y los números que la forman pueden ser cuales-
+quiera, por esto en forma general a una matriz n x m la escribiremos:
+No es para asustarse, solo para generalizar la expresión de cualquier 
+matriz.
+En donde los elementos a11, a12, a13 ... anm representan cualquier número.
+Observemos además que el elemento a11 que está en la fila 1 y la colum-
+na 1. El a12 en la fila 1, columna 2. El a23 es el está está en la fila 2 columna 
+3. Es decir que los subíndices nos indican la posición del elemento.
+
+=====PAGE 8=====
+Pág. 8
+En general, el elemento aij de la fila i y la columna j. En resumen:
+ 
+En la matriz D3 x 2 de la actividad n° 3, tenemos por ejemplo que 
+d11 = 50 y d12 = 45.
+Cantidad de columnas
+N° de columna
+Cantidad de filas
+N° de fila
+Anxm
+Y
+aij
+Ejemplo de vector columna
+VECTORES (UN CASO PARTICULAR DE MATRICES)
+Cuando una matriz tiene 1 columna o 1 fila se la llama VECTOR.
+Es decir que un vector es una matriz de orden n x 1 ó 1 x n. En el caso de 
+tener una columna (n x 1) se lo llama vector columna. Ejemplo:
+                              1
+                              3
+                              5
+                             -4     4 x 1
+En general:     a11
+                             a21
+                               :
+                               :     n x 1
+                             an1 
+       
+       
+En caso de tener una fila (1 x n) se llama vector fila.
+Ejemplo: [1 0 4 8 2] 1 x 5
+En general: [a11 a21 ... an1 ] 1 x n
+MATRICES (OTRA DEFINICIÓN)
+  
+Suele ser útil ver a las matrices como un conjunto de vectores. Esto da 
+lugar a otra definición: 
+• Una matriz es un conjunto ordenado de vectores filas ó 
+• Una matriz es un conjunto ordenado de vectores columnas.
+En los ejemplos analizados podemos pensar a las matrices formadas 
+por vectores filas o por vectores columnas.
+La ventaja de visualizar de esta manera a las matrices es en cada fila o co-
+lumna hay reunida información del mismo tipo. En las matrices de la acti-
+vidad n° 3, los vectores columnas contienen información de cada persona, 
+
+=====PAGE 9=====
+Pág. 9
+en cambio los vectores filas contienen información acerca del dinero acre-
+ditado (fila 1), del dinero depositado (fila 2) y del dinero extraído (fila 3).
+Desempeño 17
+• Con lo analizado hasta aquí ya puedes realizar los siguientes desempeños. Las respuestas de 
+todos los desempeños están al final de cada clase, pero a no hacer trampas!
+Dadas las matrices:
+           -3   2   1   5   6                                                                           3   8 -2   7
+P =      0  -1   3   2   1                                                             M =      7   3   1   1
+           -4 -3   1   2   3                                                                          0   4   5   0
+           -2   0   1 -2 -1                                                                          9   3   7   3
+                                                                                                                12  1 -7   0
+a- ¿Cuál es el orden de P? ¿y de M? 
+b- Escribe los elementos de la 2º columna de M. 
+c- Escribe los elementos de la 3º fila de M. 
+d- Escribe los elementos de la lº fila de P. 
+e- Escribe los elementos de la 4º columna de P 
+f- Escribe los elementos:(3;4), (1;4) y (3;1) de P.
+g- Escribe los elementos: (3;2),(1;3) y (3;4) de M.
+Desempeño 18
+• Un shopping de nuestra ciudad cuenta entre sus instalaciones con tres salas de cine. De lunes a 
+jueves, el precio de la entrada para un adulto es de $6, para jubilados y estudiantes de $4 y para 
+menores de $3.
+La siguiente matriz A muestra la asistencia a las salas del lunes pasado, donde hubo una pro-
+gramación especial.
+            43   58   81     Sala I
+A =     24   43   94    Sala II
+            33   21   67     Sala III
+La primera columna representa la cantidad de menores en cada sala, la segunda la cantidad de 
+estudiantes y jubilados, y la tercera la cantidad de adultos. 
+a- Escribe el elemento a32 de la matriz de asistencia, e indica su significado.
+b- Escribe el elemento a23 de la matriz de asistencia, e indica su significado.
+c- Escribe el elemento a14 de la matriz de asistencia, e indica su significado.
+d- Define la matriz columna B, de precios. 
+e- Si te animas, andá pensando y calculando cual es el ingreso total en concepto de entradas…
+más adelante lo necesitaremos…
+                            
+                       
+                      
+
+=====PAGE 10=====
+Pág. 10
+Entre la gran variedad de matrices que podemos considerar, existen 
+algunas que por tener características especiales reciben nombres es-
+peciales y aparecen con frecuencia en diversas situaciones y también 
+en el desarrollo de los contenidos teóricos. Concretamente es posible 
+realizar una clasificación de ellas según su forma y según los elemen-
+tos que tengan.
+Las matrices, en general son RECTANGULARES pero según cuales 
+sean sus elementos o cantidad de filas y columnas tengan, reciben un 
+nombre en particular que las identifica: 
+MATRIZ NULA
+  
+Una matriz cuyos elementos son todos ceros se llama matriz nula y se 
+simboliza por 0 Una matriz nula no necesita ser cuadrada.
+En símbolos:  
+A n x m es nula ⇔ aij  = 0 para todo i,j
+Ejemplo:  
+ 
+                0   0   0   
+03x3 =     0   0   0                 01x3 =     0   0   0  
+                0   0   0 
+ 
+La matriz nula puede ser también una matriz fila o una matriz columna. 
+MATRIZ CUADRADA
+Llamaremos matriz cuadrada a aquella que tiene el mismo número de 
+filas que de columnas.
+Ejemplo:
+                2   8   7   
+A3x3 =     1   3   5  
+                3   2   1  
+En general, será una matriz del tipo:
+                 a11   a12   ...   a1m
+                 a21   a22   ...   a2m 
+Anxm =               : 
+                           :     ...
+                 an1   an2   ...   anm
+Desempeño 19
+a• ¿Cuántos elementos hay en una matriz 1x1?
+b• ¿Cuántos elementos hay en una matriz 3x5?
+c• ¿Cuántos elementos hay en una matriz mxn?
+d• ¿Cuántos elementos hay en una matriz rxr?
+MATRICES ESPECIALES
+                
+                
+                               
+                
+
+=====PAGE 11=====
+Pág. 11
+En el caso de una matriz cuadrada no es necesario indicar el número de 
+filas y de columnas porque ambas son iguales. Basta decir que es una 
+matriz cuadrada de orden n.
+Además, en una matriz cuadrada distinguimos la diagonal principal y la 
+secundaria. Los elementos de la “diagonal principal” son los que están 
+desde el ángulo superior izquierdo al inferior derecho y los elementos de 
+la “diagonal secundaria” son los que están desde el ángulo inferior iz-
+quierdo al superior derecho. Esto es válido sólo para matrices cuadradas.
+Diagonal
+Diagonal secundaria
+* colores disponibles 
+en clase versión digital
+      Diagonal                 Diagonal 
+      Principal              Secundaria
+Por si quedó duda: 
+MATRIZ DIAGONAL  
+ 
+Es una matriz cuadrada en la que los elementos que NO pertenecen a 
+la diagonal principal son nulos (o sea iguales a 0). Ejemplo: (dicen que 
+una imagen dice más que mil palabras…) 
+ 
+MATRIZ ESCALAR
+Es una matriz diagonal, con todos sus elementos de la diagonal, iguales. 
+            12   0                      5   0   0 
+Q =     0   12          T =     0   5   0
+                                            0   0   5
+               
+            
+
+=====PAGE 12=====
+Pág. 12
+MATRIZ IDENTIDAD O MATRIZ UNIDAD
+Definiremos matriz identidad como una matriz cuadrada que tiene los 
+elementos de la diagonal principal iguales a uno y los restantes son ceros.
+En símbolos:  
+A n x n es identidad ⇔    aij = 1 cuando i = j 
+                                              aij = 0 cuando i ≠ j
+Se la simboliza en general con una i mayúscula y un subíndince para 
+indicarnos el orden: I n.
+En cada orden matricial existe una matriz unidad, por ejemplo:
+            1   0                     1   0   0
+I2 =     0   1          I3=     0   1   0   
+                                        0   0   1 
+ 
+ 
+MATRIZ TRIANGULAR  
+ 
+Es una matriz cuadrada que tiene nulos todos los elementos que están 
+a un mismo lado de la diagonal principal. Las matrices triangulares 
+pueden ser de dos tipos: 
+Triangular Superior: Si los elementos que están por debajo de la diago-
+nal principal son todos nulos. ( En símbolos: aij > j )
+               
+         
+Triangular Inferior: Si los elementos que están por encima de la diago-
+nal principal son todos nulos. (En símbolos: aij = 0 para todo i < j )
+
+=====PAGE 13=====
+Pág. 13
+IGUALDAD DE MATRICES 
+Dada dos matrices A y B, estas serán iguales si: 
+1| Son del mismo orden.  
+2| Si los elementos correspondientes (los que ocupan el mismo lugar) 
+son iguales.
+Elementos correspondientes en matrices son aquellos que tienen igual 
+par de subíndices ij.
+Desempeño 20
+• Identifica cada una de las siguientes matrices y escribe que nombre recibe de acuerdo a sus 
+características. Indica también el orden en cada caso.
+            2   0   0                                3  -2                                          3   0   0   0                                6
+A =     0 -1   0                       B =   6   0                               C =     0 -5   0   0                  D =     -1
+            0   0   5                                5   4                                           0   0   0   0                                0
+                                                                                                             0   0   0   7
+                                                           7   0                                           2   0   0                                    1   0   0
+E =     3 -2   5   6   1             F =   0   2                               G =     0   2   0                        H =     0   1   0     
+                                                                                                              0   0   2                                    0   0   1 
+           3   1   2   3                              4   0   0   0                                1   0   0   0                             -7   0   0   0
+I =     0   5   0 -1                   J =     7   4   0   0                    K =     0   1   0   0                  L =       0 -7   0   0
+          0   0   6   π                           -1   π   1   0                                0   0   1   0                               0   0 -7   0
+          0   0   0 -2                             0   2   2   9                                0   0   0   1                               0   0   0 -7
+                                                                                                             
+Matriz escalonada
+            2   1   0   7  -3   
+A =     0   5   1  -4   1
+            0   0   0   3   0
+Y les presento otro tipo de matriz que veremos más adelante Matriz canónica o escalonada.
+               
+                            
+               
+               
+       
+           
+         
+                          
+                      
+                      
+                      
+                      
+                      
+          a11   a12  ...   a1n
+          a21   a22  ...   a2n
+A =    ...                              Y
+          am1   am2 ...  amn
+          b11   b12  ...   b1n
+          b21   b22  ...   b2n
+B =    ...
+          bm1   bm2 ...  bmn
+                              
+                              
+Son elementos correspondientes a11 y b11 a12 y b12; a21 y b21; a22 y b22; ... am1 
+y bm1; ... am2 y bm2, etc. No son correspondientes por ejemplo: a21 y b12; a32 
+y b23; ... amn y bnm, etc.
+No necesariamente, para hablar de igualdad de matrices tenemos que 
+referirnos a matrices cuadradas.
+En símbolos diremos que: A = B ⇔ aij = bij para todo i,j.
+
+=====PAGE 14=====
+Pág. 14
+Desempeño 21
+• Una compañía de muebles fabrica butacas, mecedoras y sillas, y cada una de ellas de tres mo-
+delos: E (económico), M (medio) y L (lujo).
+Cada mes produce 20 modelos E, 15 M y 10 L de butacas; 12 modelos E, 8 M y 5L de mecedoras, y 
+18 modelos E, 20 M y 12 L d sillas.
+a- Representa esta información en una matriz, identificando a que corresponden las filas y las 
+columnas. 
+b- Intenta calcular la producción de los distintos tipos de sillas en un año. Para esto te encon-
+traras con una operación que puedes hacer de una manera muy sencilla.
+Desempeño 23
+• Cuando estés terminado la clase, cierra todo y sin mirar ni buscar respuestas, intenta contestar 
+las siguientes preguntas. Si no te salen, repasa lo dado en la clase. Te servirá para afianzar ideas 
+y expresarlas. 
+1| ¿Qué es una matriz? 
+2| ¿Qué es el orden de una matriz? 
+3| ¿A qué se llama vector? 
+4| ¿Qué es una matriz rectangular? 
+5| ¿Cuándo una matriz es cuadrada? 
+6| ¿Cuál es la diagonal principal? ¿y la secundaria? 
+7| ¿Cuál es la matriz identidad? ¿y la matriz nula?
+Respuestas de los desempeños de la clase n° 5
+• Desempeño n° 17
+a- P: 4 x 5   M: 5 x 4
+b- 8, 3, 4, 3, 1
+c- 0, 4, 5, 0
+d- -3, 2, 1, 5, 6
+e- 5, 2, 2, -2
+f- p3;4 = 2 ; p1;4 = 5 ; p3;1 = -4
+g- m3;2 = 4 ; m1;3 = -2 ; m3;4 = 3
+Desempeño 22
+• Teniendo en cuenta que dos matrices son iguales si tienen el mismo orden y sus elementos 
+correspondientes son iguales, calcula el valor de x y el de y:
+          x - 1             2
+a-     5 + y    =     0 
+           x + 1    3 + x            3   5
+b-   -2 + y -3 + y    =     0 -1
+           
+                         
+         
+      
+
+=====PAGE 15=====
+Pág. 15
+• Desempeño n° 18
+a- a32 = 21 (significa que el lunes fueron 21 personas, entre estudiantes y jubilados) al cine en la 
+sala III.
+b- a23 = 94 (significa que el lunes fueron 94 adultos al cine en la sala II.
+c- Ese elemento no existe, no pertenece a la matriz A.
+d. 
+            3   
+B =     4
+            6
+(fíjense que está organizada, teniendo en cuenta el orden de las columnas de la matriz A).
+• Desempeño n° 19
+a- 1
+b- 15
+c- mxn
+d- r2
+• Desempeño n° 20
+A: Matriz diagonal de orden 3
+B: Matriz rectangular de orden 3x2
+C: Matriz diagonal de orden 4
+D: Vector columna de orden 3 (3x1)
+E: Vector fila de orden 5 (1x5)
+F: Matriz diagonal de orden 2
+G: Matriz escalar de orden 3
+H: Matriz Identidad de orden 3
+I: Matriz triangular superior de orden 4
+J: Matriz triangular inferior de orden 4
+K: Matriz Identidad de orden 4
+L: Matriz escalar de orden 4
+• Desempeño n° 21
+                             E    M     L
+Butacas             20   15   10
+Mecedoras      12    8     5
+Sillas                  18   20  12
+Producción en un año: 
+                                                                       E       M       L
+            20   15   10        Butacas            240   180  120
+12   .   12     8     5   =   Mecedoras      144    96   60
+            18   20  12        Sillas                  216   240  144
+• Desempeño n° 22
+a- x= 3; y = -5
+b- x = 2; y = 2
+• Desempeño n° 23
+Busca las respuestas en la clase 5… ;) 
+       
+                      
+                     
+                             
+
+=====PAGE 16=====
+Pág. 16
+Si detectás un error del tipo que fuere (falta un punto, un acento, 
+una palabra mal escrita, un error en código, etc.), por favor comu-
+nicate con nosotros a correcciones@issd.edu.ar e indicanos por 
+cada error que detectes la página y el párrafo. 
+MUCHAS GRACIAS POR TU APORTE.
+Con esto damos por concluida la primera clase  
+del Álgebra Matricial. Después de concluir el trabajo  
+con esta clase, tendría que quedar aprendido  
+el concepto de matriz, los diferentes casos que  
+se pueden presentar, y la posibilidad de  
+organizar información utilizando matrices.
+No te quedes con dudas. Si algo no se ha entendido, 
+consulta en el foro de dudas de la unidad  
+n° 2 que hay en el campus, y trata de no pasar  
+a la siguiente clase, sin haber entendido y  
+ejercitado ésta. La próxima clase aprenderemos  
+a resolver operaciones con matrices, y por supuesto 
+aplicarlas a la resolución de situaciones problemáticas.
+¡Nos encontramos en la clase próxima!
+BIBLIOGRAFÍA
+• Ferreyra, Silvia Cristina - Lerda, Graciela Beatriz. Matematica 
+(ejercicios y aplicaciones).
+Editorial Aique. Carpeta de Matematica 1 (Nueva edición amplaida y 
+actualizada). Ediciones Eudecor.

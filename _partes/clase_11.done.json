@@ -1,0 +1,25 @@
+{
+  "concepts": [
+    "Sistema Incompatible y condición matricial por rangos (ρ(A) ≠ ρ(A°))",
+    "Detección temprana de incompatibilidad por contradicción (0 = k con k ≠ 0, ej. 0 = 8) sin llegar a la matriz canónica",
+    "Reacomodamiento (ordenamiento) del sistema y definición de coeficientes",
+    "Las tres matrices del sistema: Matriz de los coeficientes (A), Matriz o vector de los términos independientes (B) y Matriz o vector de las incógnitas (X)",
+    "Forma matricial del sistema de ecuaciones (A_(n×m) • X_(m×1) = B_(n×1))",
+    "Matriz ampliada del sistema (A°) y equivalencia de sistemas por operaciones elementales de fila",
+    "Sistema Compatible (ρ(A) = ρ(A°)) y Sistema Compatible Indeterminado (ρ(A) = ρ(A°) < m)",
+    "Variables libres o independientes, variables dependientes y regla para determinar la cantidad de variables libres (m − ρ(A°))",
+    "Solución General del Sistema de Ecuaciones (Vector solución X*)",
+    "Soluciones Particulares de un Sistema Compatible Indeterminado (infinitas soluciones particulares)",
+    "Método General de Resolución aplicado a sistemas incompatibles e indeterminados",
+    "Sistemas homogéneos (A • X = 0) como sistemas con solución asegurada y solución trivial (X* = 0)",
+    "Validación e interpretación de la Solución General en el contexto de problemas aplicados (restricción a números naturales, múltiplos por divisibilidad y reales no negativos mediante inecuaciones)"
+  ],
+  "connections": [
+    "Clases 6, 7 y 8: Multiplicación de matrices conformables, operaciones elementales por fila H_(i,j)(k), columna de control, matriz canónica y rango de una matriz ρ(A)",
+    "Clase 9: Definición de ecuación lineal, sistemas de ecuaciones lineales, sistemas equivalentes, sistemas homogéneos y clasificación general según sus soluciones ( retoma y resuelve matricialmente el problema de los empresarios del Ejemplo 3 de la Clase 9)",
+    "Clase 10: Método General de Resolución, Sistemas Compatibles Determinados (ρ(A) = ρ(A°) = m), criterio de rangos (Teorema de Rouché-Frobenius) y demostración de compatibilidad de sistemas homogéneos (y retoma en el Desempeño 3 el problema de los tres cereales de la Clase 10)",
+    "Clase 12: Regla de Cramer para sistemas cuadrados compatibles determinados (contraste con el método general de las Clases 10 y 11, único aplicable cuando el sistema es rectangular, incompatible o compatible indeterminado)"
+  ],
+  "notes": "Se extrajo y verificó visual y textualmente la totalidad de las 12 páginas de 11.pdf (renderizadas a PNG en _partes/_img_11/). Todas las citas textuales fueron incluidas palabra por palabra y se señalaron expresamente las pequeñas erratas tipográficas del PDF original (como la repetición de X_(3x1) en la pág. 4, el valor C = 8 con el vector de C = 3 al pie de la pág. 5 que luego la pág. 6 corrige, y la palabra 'mayo' por 'menor' antes de la desigualdad 0 ≤ z ≤ 9/5 en la pág. 11) para que el alumno esté prevenido en el examen oral. Archivo redactado en Unicode limpio sin LaTeX ni HTML.",
+  "title": "Clase 11 — Sistemas de Ecuaciones: Sistemas Incompatibles y Sistemas Compatibles Indeterminados"
+}

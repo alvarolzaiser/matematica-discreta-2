@@ -1,0 +1,22 @@
+{
+  "concepts": [
+    "Método particular de resolución de sistemas de ecuaciones",
+    "Sistema de ecuaciones cuadrado (sistema cuadrado)",
+    "Condiciones de aplicabilidad de la Regla de Cramer (sistema cuadrado y |A| ≠ 0 / matriz Regular)",
+    "Matriz de los coeficientes (A), vector de las incógnitas (X) y vector de los términos independientes (B)",
+    "Matriz cuadrada A_j (reemplazo de la columna j de A por el vector B)",
+    "Enunciado general y algoritmo de la Regla de Cramer: x_j = |A_j| / |A|",
+    "Unicidad de la solución y clasificación como Sistema Compatible Determinado (SCD)",
+    "Inaplicabilidad de la Regla de Cramer cuando |A| = 0 (el sistema no es Compatible Determinado y requiere el método general)",
+    "Requisito previo: sistema completo y ordenado bajo la forma A . X = B",
+    "Modelo económico de Insumo-Producto: matriz de insumo-producto, coeficientes de insumo, matriz productiva, matriz de producción, matriz de demanda externa y ecuación (I - A) . X = D",
+    "Síntesis e integración teórica de la Unidad 3 (Verdadero/Falso oficial sobre rangos, sistemas homogéneos, solución trivial, variables libres y sistemas equivalentes)"
+  ],
+  "connections": [
+    "Unidad 1 (Matrices): Matriz cuadrada de orden n, matriz Identidad I, matriz Regular, operaciones matriciales A . X e (I - A) . X = D",
+    "Unidad 2 (Determinantes): Cálculo de determinantes |A| y |A_j|, Regla de Sarrus para orden 3, matriz adjunta e inversa A⁻¹ = (1/|A|)·Adj(A), cambio de signo al permutar columnas",
+    "Unidad 3 — Clases 9, 10 y 11 (Sistemas de Ecuaciones Lineales): Método general de resolución (Gauss-Jordan), Teorema de Rouché-Frobenius (rangos de A y A'), clasificación en SCD, SCI y SI, sistemas homogéneos y solución trivial, sistemas equivalentes y cálculo del número de variables libres (n - r)"
+  ],
+  "notes": "Se extrajo y verificó visualmente la totalidad de las 9 páginas de 12.pdf (renderizadas en _partes/_img_12/page_01.png a page_09.png). Se incluyeron todas las citas textuales exactas del cuerpo teórico (págs. 1-4) así como las definiciones teóricas del modelo de Insumo-Producto (pág. 8) y los cuestionarios integradores de la Unidad 3 con sus respuestas oficiales de cátedra (págs. 5, 6 y 8). Se documentaron además las erratas tipográficas del PDF en las páginas 3 y 8 para evitar confusiones durante el estudio para el examen oral. Verificado con 0 signos $, 0 barras invertidas de LaTeX y 0 etiquetas HTML.",
+  "title": "Clase 12 — Sistemas de Ecuaciones: Método Particular de Resolución (Regla de Cramer)"
+}

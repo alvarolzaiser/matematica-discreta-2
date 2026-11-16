@@ -1,0 +1,21 @@
+{
+  "concepts": [
+    "Teoremas del Álgebra de Boole (diferencia con los Axiomas)",
+    "Teorema 1: Ley de Acotación (A + 1 = 1 y A • 0 = 0)",
+    "Teorema 2: Ley de Idempotencia (A + A = A y A • A = A)",
+    "Teorema 3: Ley de Absorción (A + (A • B) = A y A • (A + B) = A)",
+    "Teorema 4: Ley de Asociatividad (suma lógica y producto lógico)",
+    "Teorema 5: Ley de Involución (doble negación A̿ = A)",
+    "Teorema 6: Ley de De Morgan (negación de suma y producto lógico)",
+    "Demostración algebraica en el Álgebra de Boole",
+    "Demostración por Tablas de Verdad (distribución de valores de verdad)",
+    "Comprensión estructural e independencia simbólica de axiomas y teoremas"
+  ],
+  "connections": [
+    "Conecta directamente con la Clase 1: los 6 teoremas se demuestran a partir de los 4 Axiomas del Álgebra de Boole (Ax 1 Conmutativa, Ax 2 Distributiva, Ax 3 Elemento Neutro, Ax 4 Complemento) y de las tablas de definición de las operaciones lógicas (+, •, negación).",
+    "Conecta con Matemática Discreta 1 (Unidad 3: Lógica proposicional): equivalencia estructural entre las leyes booleanas, las leyes lógicas proposicionales (idempotencia, absorción, involución/doble negación, leyes de De Morgan) y las tablas de verdad.",
+    "Sienta las bases para las Clases 3 y 4: simplificación algebraica de funciones booleanas, obtención de formas canónicas (minitérminos y maxitérminos usando De Morgan, Distributiva, Complemento e Idempotencia) y diseño/simplificación de circuitos combinacionales y mapas de Karnaugh."
+  ],
+  "notes": "Se extrajo y verificó visualmente (PNG a 130 dpi) la totalidad de las 5 páginas de 2.pdf. Se corrigieron en Unicode limpio las barras de negación simple, doble (Teorema 5: Ley de Involución, A̿ = A) y de expresión completa (Teorema 6: Ley de De Morgan) que el texto plano de PyMuPDF omitía. Se documentó además la omisión tipográfica de paréntesis en el paso 3 de la demostración impresa del Teorema 1 (pág. 3 del PDF) sin alterar la cita textual.",
+  "title": "Clase 2 — Álgebra de Boole: Teoremas del Álgebra de Boole"
+}

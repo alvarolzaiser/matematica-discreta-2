@@ -1,0 +1,472 @@
+=====PAGE 1=====
+­_  
+SISTEMAS  
+DE ECUACIONES 
+­_
+Al finalizar la clase los alumnos: 
+• Aplicar el método general de resolución 
+de sistemas de ecuaciones. 
+• Buscar soluciones a problemas y validar 
+su respuesta. 
+• Clasificar los sistemas de ecuaciones de 
+acuerdo a las soluciones obtenidas.
+• Método General de Resolución
+• Sistemas Compatibles Determinados
+Matemática Discreta 2
+MD2
+UNIDAD
+CLASE
+
+=====PAGE 2=====
+Pág. 2
+INTRODUCCIÓN
+MÉTODOS DE 
+RESOLUCIÓN
+Hoy vamos a comenzar con nuevas aplicaciones de lo que aprendimos 
+sobre las matrices. Veremos que nos pueden ser de gran utilidad en la 
+resolución de sistemas de ecuaciones sobre todo cuando las ecuaciones 
+son varias al igual que las incógnitas. No es que no se puedan resolver 
+de otras formas, pero con las matrices es muchísimo más práctico.
+Método general de resolución de sistema de ecuaciones lineales.
+Ejemplo Nº4: Lee y plantea la siguiente situación: Una persona posee 
+$1175. En total tiene 95 billetes entre los de $ 5, $ 10 y $ 20. (Aclaran-
+do…. Tomamos valores pequeños como para no complicarnos al mo-
+mento del cálculo). Además, la suma de los de $5 y los de $20 más 10, 
+es igual al doble de la cantidad de los de $10. ¿Cuántos billetes de cada 
+denominación posee?
+Ante todo tenemos que determinar cómo llamaremos a la cantidad de 
+billetes de cada tipo. Por ejemplo:
+• Llamamos “x” a la cantidad de billetes de $ 5. 
+• Llamamos “y” a la cantidad de billetes de $ 10. 
+• Llamamos “z” a la cantidad de billetes de $ 20. 
+Teniendo en cuenta esto, podemos armar las ecuaciones: 
+• Hay en total 95 billetes, entonces podemos plantear: x + y + z = 95 (o 
+sea: la cantidad de billetes de 5, más la cantidad de billetes de10, más la 
+cantidad de billetes de 20 es igual a 95).
+• Por otro lado, hay $ 1175, por lo que podemos escribir de la siguiente 
+manera: 5.x + 10.y + 20.z = 1175 ($5 por la cantidad de billetes de 5, más 
+$ 10 por la cantidad de billetes de 10, más $20 por la cantidad de billetes 
+de 20, hace un total de $ 1175.
+• Teniendo en cuenta la última condición, podríamos escribir: x + z + 
+10 = 2y (la suma de los de $5 y los de $20 más 10, es igual al doble de la 
+cantidad de los de $10).
+Una vez escritas las ecuaciones, armamos nuestro sistema:
+     x + y + z = 95
+     5.x + 10.y + 20.z = 1175
+     x + z + 10 = 2y
+• Para comenzar con este método general, reacomodamos el sistema de 
+tal manera que en el primer miembro queden los términos con las in-
+cógnitas, y en el segundo miembro queden los términos independien-
+tes. (si es necesario, se completa).
+     x + y + z = 95
+     5.x + 10.y + 20.z = 1175
+     x - 2y + z = -10
+• Lo que hay que hacer a continuación es armar tres matrices: La matriz 
+de los coeficientes, el vector de los términos independientes y el vector 
+de las incógnitas. Al hacer esto vamos a estar en cierta forma “desar-
+mando” el sistema, para armar matrices. Las matrices quedarían así:
+
+=====PAGE 3=====
+Pág. 3
+            1   1   1                                                     95                                                          x
+A =     5  10  20                                   B =     1175                                             X =     y
+            1  -2   1                                                  -10                                                         z
+A la matriz A la llamaremos Matriz de los coeficientes, a la matriz B 
+la llamaremos Matriz (o vector) de los términos independientes y a la 
+matriz X la llamaremos matriz (o vector) de las incógnitas. (Por si no 
+quedó claro, los coeficientes son los números que multiplican a cada 
+una de las incógnitas).
+Vamos a ver qué sucede si resolvemos el siguiente producto. (para esto 
+tendremos que recordar cómo se resuelve la multiplicación de matrices).
+En nuestro caso sería:
+A nxm . X mx1 = Bnx1
+A 3x3 . X 3x1 = B3x1
+Esto es la forma matricial *del sistema de ecuaciones y será la que nos 
+permita resolverlo con el método general.
+En este caso la forma matricial es:
+     1   1   1              x               95
+     5 10 20     •     y     =     1175    
+     1 -2  1              z              -10
+Para tener en cuenta: Para armar la forma matricial es 
+importante que el sistema este completo y ordenado.
+• A continuación vamos a armar una nueva matriz: la matriz ampliada 
+del sistema de ecuaciones dado, que se forma a partir de la matriz de los 
+coeficientes y del vector de los términos independientes, quedando de 
+la siguiente manera:
+Para el sistema dado, la matriz ampliada es: Aº = [ A : B ]
+Donde Aº es el símbolo que representa a la matriz ampliada. O sea:
+              1    1    1      :    95
+A° =     5  10  20   :   1175
+              1 -2   1      :   -10   
+A partir de esta matriz ampliada, encontraremos, si tiene, la o las solu-
+ciones del sistema. Esto lo haremos llevándola a canónica y obteniendo 
+así un sistema equivalente más sencillo de resolver, del cual sacaremos 
+la o las soluciones.
+Podemos asegurar que el sistema que se obtiene es equivalente ya que 
+si aplicamos operaciones elementales a la matriz ampliada, a cada una 
+de las ecuaciones no le cambiarán las soluciones.
+Veamos como la llevamos a canónica (aunque ya me imagino que es un 
+tema más que aprendido!). [1]
+               
+                                 
+               
+     
+         
+          
+      
+
+=====PAGE 4=====
+Pág. 4
+Una vez que llegamos a la matriz canónica, es posible que rearmemos 
+nuevamente el sistema de ecuaciones, quedando en este caso:
+     1.x + 0.y + 0.z = 25
+     0.x + 1.y + 0.z = 35
+     0.x + 0.y + 1.z = 35
+Y si tenemos en cuenta que cualquier número multiplicado por 0, da 
+como resultado 0, y además que un número multiplicado por 1 da como 
+resultado el mismo número, entonces el sistema quedaría:
+     x = 25
+     y = 35
+     z = 35
+Que es la solución del sistema de ecuaciones planteado. Es decir que hay: 
+25 billetes de $5, 
+35 billetes de $ 10 y
+35 billetes de $ 20.
+Este es un sistema que tiene solución, por lo que es un sistema COM-
+PATIBLE, y además es un sistema que tiene una única solución (es de-
+cir, que cada una de las incógnitas, puede tomar un único valor) por lo 
+tanto es un sistema DETERMINADO.
+En resumen, para resolver un sistema de ecuaciones 
+utilizando el método general hay que:  
+1ero| Completar y ordenar el sistema dado. 
+2do| Armar la matriz ampliada correspondiente. 
+3ero| Llevar dicha matriz a la forma canónica. 
+4to| Clasificar el sistema. 
+5to| Armar el vector solución.
+1
+              1    1    1     :    95                1   1   1    :     95
+A° =     5  10  20   :   1175     ~     0   5  15   :   700     ~
+              1 -2    1     :    -10              0 -3   0   :  -105
+                                              H2,1(-5)                                 H2(1/5)
+                                              H3,1(-1)
+        1   1   1    :    95               1   0 -2  :  -45
+~     0   1   3   :   140     ~     0   1   3   :   140     ~
+        0 -3   0  : -105             0  0   9   :   315
+                                     H1,2(-1)                              H3(1/9)
+                                     H3,2(3)
+        1   0 -2   :  -45              1   0   0   :   25
+~     0   1   3   :   140     ~     0   1   0   :   35     ~
+        0   0   1   :    35              0   0   1   :   35
+                                     H1,3(2)
+                                     H2,3(-3)
+                                
+                              
+                              
+                                
+                             
+                           
+
+=====PAGE 5=====
+Pág. 5
+Ejemplo Nº 5: Vamos a ver la resolución de otro ejemplo (sin planteo de 
+problema) para que quede en claro la forma de resolución.
+Tomemos un nuevo sistema de ecuaciones:
+     x - 2y = 2z
+     x = 8z - 2y
+     4y + 4z = 150 - x
+• Para comenzar con este método general, reacomodamos el sistema. 
+Recordemos que en el primer miembro deben quedar los términos con 
+las incógnitas, y en el segundo miembro los términos independientes. 
+(si es necesario, se completa).
+     x - 2y - 2z = 0
+     x + 2y - 8z = 0
+     x + 4y + 4z = 150
+• Armamos las tres matrices: La matriz de los coeficientes, el vector de 
+los términos independientes y el vector de las incógnitas. Las matrices 
+quedarían así:
+            1 -2 -2                                                 0                                                              x
+A =     1   2 -8                                      B =     0                           y                     X =     y
+            1   4   4                                                 150                                                          z
+En este caso la forma matricial es:
+     1 -2 -2           x                0
+     1   2 -8     ∙     y       =      0
+     1   4   4            z              150
+• A continuación vamos a armar una nueva matriz: la matriz ampliada 
+del sistema de ecuaciones dado, que se forma a partir de la matriz de los 
+coeficientes y del vector de los términos independientes, quedando de 
+la siguiente manera: Aº = [ A : B ]
+O sea:
+     1 -2 -2   :   0
+     1   2 -8   :    0
+     1   4   4   :   150
+Recordemos: A la matriz A la llamamos Matriz de 
+los coeficientes, a la matriz B la llamamos Matriz (o 
+vector) de los términos independientes y a la matriz X 
+la llamamos matriz (o vector) de las incógnitas. (Por 
+si no quedó claro, los coeficientes son los números que 
+multiplican a cada una de las incógnitas)
+A partir de esta matriz ampliada, encontraremos, si tiene, la o las solu-
+ciones del sistema. Esto lo haremos llevándola a canónica y obteniendo 
+así un sistema equivalente más sencillo de resolver, del cual sacaremos 
+la o las soluciones. [2]
+               
+               
+                              
+         
+         
+      
+      
+
+=====PAGE 6=====
+Pág. 6
+Y llegamos a este nuevo sistema de ecuaciones, equivalente al primero, 
+pero mucho más sencillo para dar la solución al sistema. Rearmamos 
+nuevamente el sistema:
+     1.x - 0.y + 0z = 50                               x = 50
+     0.x + 1.y - 0z = 15          es decir:     y = 15
+     0x + 0y + 1z = 10                                  z = 10
+Nuevamente encontramos un sistema de ecuaciones que tiene una 
+única solución, por lo que es un Sistema Compatible Determinado en el 
+que: x = 50   y = 15   y   z = 10
+Esto que vamos a explicar ahora, ayuda a clasificar el sistema de ecuacio-
+nes una vez que se ha encontrado la matriz canónica de la matriz ampliada.
+Antes de comenzar es conveniente tener en claro algunos detalles:
+Para ello vamos a tomar como ejemplo, el último resuelto, el ejemplo nº 5:
+     x - 2y = 2z
+     x = 8z - 2y
+     4y + 4z = 150 - x
+Y luego de trabajar la matriz de los coeficientes se llegó a:
+     1  0   0   :   50
+     0   1  0   :   15
+     0   0  1   :   10
+Voy a hacer una serie de preguntas que tienes que tratar de ir respon-
+diéndote, y controlando si la respuesta es correcta:
+2
+             1 -2 -2   :     0             1 -2 -2    :     0
+A° =     1   2 -8  :     0     ~     0   4 -6   :     0     ~
+             1   4   4   :   150          0   6   6    :   150
+                                        H2,1(-1)                              H3(1/6)
+                                        H3,1(-1)
+        1 -2 -2    :   0              1 -2 -2   :   0
+~     0   4 -6  :    0     ~     0   1   1    :   25     ~
+        0   1   1    :   25            0   4 -6  :    0
+                                    H2,3                             H1,2(2)
+                                                                        H3,2(-4)
+         1   0    0   :   50              1   0   0   :   50
+~     0    1    1    :    25     ~     0   1   1    :   25     ~
+        0   0 -10  : -100            0   0   1   :   10
+                                     H3(-1/10)                          H1,3(-1)
+        1   0   0   :   50
+~     0   1   0   :   15
+        0   0   1   :   10
+                             
+                           
+                               
+                           
+                              
+                           
+                           
+CLASIFICACIÓN DE LOS 
+SISTEMAS DE ECUA-
+CIONES (TENIENDO EN 
+CUENTA LA MATRIZ 
+AMPLIADA)
+                          
+
+=====PAGE 7=====
+Pág. 7
+a• ¿Cuántas ecuaciones tiene el sistema de ecuaciones? 
+b• ¿Cuántas incógnitas tiene el sistema? 
+c• ¿Cuál es el rango de la matriz A, o sea la matriz de los coeficientes? 
+d• ¿Cuál es el rango de la matriz Ao, o sea la matriz ampliada?
+El RANGO de una matriz es el número  
+de filas no nulas de la canónica equivalente.
+Comprueba ahora con tus respuestas…
+a• El sistema tiene 3 ecuaciones 
+b• El sistema tiene 3 incógnitas 
+c• El rango de la matriz A es 3 
+d• El rango de la matriz Ampliada es 3
+Una vez llevada la matriz ampliada a la canónica, el 
+rango de A se observa sin tener en cuenta la última 
+columna. Para obtener el rango de la ampliada si se 
+tiene en cuenta dicha columna.
+El sistema de ecuaciones será Compatible (es decir, 
+tendrá solución) si el rango de la matriz de los 
+coeficientes es igual al rango de la matriz ampliada.
+Si esta igualdad no se verifica, el sistema es 
+Incompatible, (es decir, no tendrá solución).
+En este caso tanto el rango de la matriz A como el rango de la matriz 
+ampliada es 3, por lo tanto es compatible.
+Esta condición se aplica a cualquier sistema de ecuaciones lineales 
+puesto que no impone ninguna restricción sobre el número de ecuacio-
+nes, el número de variables ni el valor de los términos independientes, 
+utilizando sólo el concepto de rango de una matriz.
+Por otro lado, podemos analizar lo siguiente:
+Si el sistema es compatible, sabemos que puede ser DETERMINADO o 
+INDETERMINADO. Para que un sistema sea determinado o indetermi-
+nado, debe cumplir, también ciertas condiciones.
+Un sistema es determinado si el rango de la matriz 
+ampliada es igual al número de incógnitas.
+Si dicho rango es menor que el número de incógnitas, 
+entonces el sistema es indeterminado.
+En este caso el rango de la matriz Ampliada es 3, al igual que el núme-
+ro de incógnitas, por lo tanto el sistema es Determinado. Obviamente, 
+que cuando encontramos la solución de dicho sistema, encontramos la 
+única solución que tenía (x = 50 y = 15 y z = 10).
+Así es posible clasificar cualquier sistema de ecuaciones que se resuelva 
+por el método general de resolución, para de esta manera saber la so-
+lución de dicho sistema.
+
+=====PAGE 8=====
+Pág. 8
+En resumen:
+                                                                               Determinado
+                                         Compatible                  ρ(A) = m
+                                           ρ(A) - ρ(A°)             Indeterminado
+An x m ∙ Xm x 1 = Bn x 1 
+                                                                                       ρ(A°) < m
+                                         Incompatible
+                                            ρ(A) ≠ ρ(A°)
+Donde m es la cantidad de incógnitas.
+¿Qué sucede con los sistemas homogéneos? Sistemas homogéneos, 
+siempre compatibles.
+Sea A.X = 0 un sistema de ecuaciones lineales homogéneo la matriz A 
+es de orden (nxm).
+Si un sistema de ecuaciones es homogéneo siempre tiene solución, o 
+sea el sistema siempre es compatible.
+La explicación es sencilla, puesto que la matriz ampliada es de la for-
+ma: Aº = [ A : 0 ]
+Y el rango de la misma es igual al rango de A, puesto que el vector que 
+se agrega es el vector nulo, no pudiendo en consecuencia aumentar el 
+rango de la matriz Aº.
+El hecho de que un sistema de ecuaciones homogéneo siempre sea 
+compatible, quiere decir que en todos los casos existe por lo menos 
+un vector solución. En cualquier sistema de ecuaciones homogéneo el 
+vector nulo siempre es solución, ya que A.0 = 0
+Cualquiera sea la matriz A.
+Esta solución del sistema, que significa dar el valor cero a todas las va-
+riables, se denomina solución trivial y generalmente no interesa.
+Las soluciones que interesan son las llamadas no triviales, y que están 
+representadas por vectores distintos del vector nulo y se obtienen uti-
+lizando el método general.
+Sistemas homogéneos cuadrados 
+Sea el sistema de ecuaciones homogéneo cuadrado: 12 A.X = 0 donde A 
+es de orden (nxn).
+La condición que debe cumplirse para que el sistema dado tenga solu-
+ciones no triviales, es que el determinante de la matriz A sea igual a cero.
+
+=====PAGE 9=====
+Pág. 9
+Esto surge del hecho que si el determinante de A es igual a cero, el ran-
+go de A es menor que n, luego se cumple la condición para que el siste-
+ma sea indeterminado.
+Debe notarse que en este caso existen infinitas soluciones para el sis-
+tema dado, una de las cuales es la solución trivial que es solución de 
+todo el sistema de ecuaciones homogéneo, en tanto que las otras son 
+soluciones no triviales.
+Si la condición dada no se cumple, es decir, el determinante de A es 
+distinto de cero, el rango de A es igual a n, luego se cumple la condición 
+para que el sistema sea determinado. En este caso, la única solución 
+que existe, es la solución trivial.
+Desempeño de Síntesis
+• Desempeño 1
+Luego de realizar una lectura y análisis completo de la clase, intenta responder cada pregunta, 
+sin consultar. Luego verifica tus respuestas con lo desarrollado en la clase: 
+a- ¿Qué condición debe cumplir una matriz para ser canónica? 
+b-¿Qué es el rango de una matriz? 
+c- ¿Qué se debe hacer (pasos) para resolver un sistema por el método general? 
+d-. ¿Cuándo un sistema de ecuaciones es Compatible? (desde el punto de vista matricial).
+e- ¿Qué condición debe cumplir un sistema de ecuaciones para ser Determinado? (desde el pun-
+to de vista matricial).
+f- ¿Cuándo un sistema es Incompatible, analizando la matriz ampliada?
+g- ¿Qué se puede asegurar de un sistema homogéneo?
+h- ¿Qué es la solución trivial? 
+i- ¿Cómo se puede saber qué tipo de solución tiene un sistema homogéneo cuadrado? 
+j- ¿Puede ser el rango de la matriz de los coeficientes mayor que el rango de la matriz ampliada?
+• Desempeño 2
+Resuelve los siguientes sistemas de ecuaciones empleando el método general de resolución. 
+Clasifica la solución obtenida.
+a-                                                                                              b-
+     2a + b = c + 1                                                                         5x + 4 = 15 + y
+     3c - b = 6 + a                                                                         x + y = 1
+     4b - 2c = 2
+• Desempeño 3
+Sin la necesidad de resolver los sistemas homogéneos diga si son determinados o indeterminados.
+          4x + 2y = 3z                                           a + b + c = d                                          3p + 2q = r
+a-     2z - x = 3y                                   b-     b - a - 2c = 0                              c-     3q + r + p = 0
+          3x - y - z = 0                                        3c + 2b = c + d                                      4p + 5q = 0
+• Desempeño 4
+En la clase 9 se propusieron diferentes problemas para plantear un sistema de ecuaciones, pero 
+no se pedía resolver. En este caso, utilizando el planteo realizado anteriormente, se pide resol-
+ver cada uno de los sistemas, dando la solución a cada uno, verificándolos.
+a- En una caja hay tornillos pequeños que pesan 5g. cada uno y tornillos grandes que pesan 10g. 
+cada uno. En total hay 340 tornillos y pesan 2500 g. ¿Cuántos tornillos de cada tipo hay?
+
+=====PAGE 10=====
+Pág. 10
+b- En una bicicletería hay 20 rodados entre bicicletas y triciclos. Si en total hay 48 ruedas. 
+¿Cuántas bicicletas y cuántos triciclos hay?
+c- Un médico argentino viajó a Nueva York, México y Toronto a un simposio sobre enfermeda-
+des cardiovasculares. En Nueva York gastó por día US$ 20 en hospedaje, US$ 30 en alimentos; 
+en México gastó por día US$ 30 en hospedaje y US$ 20 en alimentos y en Toronto gastó por día 
+US$ 15 en hospedaje y US$ 20 en alimentos.
+Además, por conceptos varios, gastó US$ 20 por día en cada una de las tres ciudades. A su regre-
+so, el registro de gastos indicó en total US$ 485 en hospedaje, US$ 540 en alimentos y US$ 440 
+en gastos varios. ¿Cuántos días estuvo en cada ciudad?
+d- En un curso de 29 alumnos, hay cinco hinchas de River más que hinchas de Boca, y además, la 
+cantidad de hinchas de Boca, supera por tres a la cantidad de hinchas de otros clubes, sin contar 
+los de River. ¿Cuántos hinchas de River hay? ¿Cuántos de Boca? ¿Cuántos de otros clubes?
+e- Se venden tres especies de cereales: trigo, cebada y mijo. Cada volumen de trigo se vende por 
+US$ 4, el de la cebada por US$ 2 y el de mijo por US$ 0.5. Si se vende 100 volúmenes en total y si 
+obtiene por la venta US$100, ¿cuántos volúmenes de cada especie se venden?
+• Desempeño 5
+Resuelve los siguientes sistemas de ecuaciones. Verifica la solución obtenida y clasifica el sistema.
+          x + y - z + 2t                                         2x1 + x2 + 2x3 = 1                                  x + 5y + 5z = -3
+a-     2x + z + t =                                  b-     x2 = x3                                            c-     2x - 3y - 2z = 5
+          y - z + 3t =                                            3x3 + 4x1 = 5                                           y - 3z = 7
+        -x + 2y - 3z
+Respuestas a los Desempeños de Síntesis
+•  Desempeño n° 2 
+a- a = 1; b = 2, c = 
+b- x = 2; y = -1
+•  Desempeño n° 3 
+Los tres sistemas son indeterminados.
+•  Desempeño n° 4 
+a- Hay 160 tornillos pequeños y 180 tornillos grandes.
+b- Hay 12 bicicletas y 8 triciclos. 
+c- Estuvo 10 días en Nueva York, 7 en México y 5 en Toronto.
+d- La solución obtenida es: B = 31/3 R = 16/3 y OC = 40/3 Como se puede observar, el sistema 
+tiene solución y es única, es decir que es un sistema compatible Determinado. Pero si se pres-
+ta atención al resultado, y se vuelve a leer el problema planteado, no es posible que haya 31/3 
+hinchas de Boca, (ni 16/3 hinchas de River, como tampoco 40/3 hinchas de otros clubes). Este 
+nos está indicando que el sistema SI tiene solución y es única, pero no es acorde al problema 
+planteado, por lo tanto, no es solución al problema, aunque si sea solución al sistema planteado. 
+Esto significa validar la respuesta. La solución obtenida, tiene que estar acorde a la situación 
+problemática trabajada.
+e- Cuando se comienza a trabajar con este sistema de ecuaciones, se llega a una matriz que hasta 
+ahora no fue trabajada. Es decir, no corresponde a un sistema compatible determinado… Este 
+problema será resuelto en la clase siguiente.
+
+=====PAGE 11=====
+Pág. 11
+•  Desempeño n° 5 
+                       ½                                                              2                                                             2
+a-   X* =     -2                                      b-   X* =     -1                                       c-   X* =     1
+                      -3/2                                                            -1                                                           -2  
+                       ½   
+Si detectás un error del tipo que fuere (falta un punto, un acento, 
+una palabra mal escrita, un error en código, etc.), por favor comu-
+nicate con nosotros a correcciones@issd.edu.ar e indicanos por 
+cada error que detectes la página y el párrafo. 
+MUCHAS GRACIAS POR TU APORTE.
+Damos por concluida esta clase. No te quedes  
+con dudas. Si algo no se ha entendido, consulta  
+en el foro de dudas de la unidad n° 2 que hay  
+en el campus, y trata de no pasar a la siguiente  
+clase, sin haber entendido y ejercitado ésta.
+¡Nos vemos!
+BIBLIOGRAFÍA
+• Ferreyra, Silvia Cristina - Lerda, Graciela Beatriz. Matematica 
+(ejercicios y aplicaciones).
+Editorial Aique. Carpeta de Matematica 1 (Nueva edición amplaida y 
+actualizada). Ediciones Eudecor.

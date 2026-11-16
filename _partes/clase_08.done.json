@@ -1,0 +1,31 @@
+{
+  "concepts": [
+    "Alcance de Determinante y Matriz Inversa (exclusivo para matrices cuadradas)",
+    "Concepto de Determinante de una matriz cuadrada de orden n (suma algebraica de productos de n elementos de distinta fila y columna)",
+    "Observaciones del concepto de Determinante y Notación con barras verticales |A| (determinante de enésimo orden)",
+    "Método particular A: Cálculo del determinante de una matriz cuadrada de orden 2 (diagonal principal menos diagonal secundaria)",
+    "Método particular B: Cálculo del determinante de una matriz de orden 3 y Regla de Sarrus (forma 1 repitiendo las dos primeras filas y forma 2 por diagonales y vértices opuestos)",
+    "Clasificación de las Propiedades de los Determinantes (referidas a operaciones elementales y cuando un determinante vale cero)",
+    "1º Propiedad de los determinantes (intercambio de dos filas H_i,j: cambia de signo pero no de valor absoluto, |A| = -|B|)",
+    "2º Propiedad de los determinantes (multiplicación de una fila por constante no nula H_i(k): queda multiplicado por ese número, |B| = k · |A|)",
+    "3º Propiedad de los determinantes (suma a una fila de otra multiplicada por constante no nula H_i,j(k): el determinante no varía, |A| = |B|)",
+    "Columna de control en operaciones elementales por fila (obtención y verificación paso a paso)",
+    "4º Propiedad de los determinantes (todos los elementos de una línea —fila o columna— son nulos: determinante nulo)",
+    "5º Propiedad de los determinantes (dos líneas paralelas iguales: determinante nulo)",
+    "6º Propiedad de los determinantes (dos líneas paralelas proporcionales: determinante nulo) y definición de líneas proporcionales",
+    "Matriz Regular o No Singular (matriz cuadrada con determinante no nulo, |A| ≠ 0)",
+    "Método general: Regla de Chío (algoritmo en tres pasos para determinantes de cualquier orden n)",
+    "Condición de existencia de la Matriz Inversa (una matriz tiene inversa si es regular)",
+    "Método de cálculo de la Matriz Inversa por operaciones elementales o Gauss-Jordan ([A : I] ~ [I : A⁻¹]) y verificación (A · A⁻¹ = I)",
+    "Cuestionario teórico oficial resuelto (Desempeño 56 completo y preguntas teóricas de Desempeños Finales DF 4, DF 5, DF 8)"
+  ],
+  "connections": [
+    "Prerrequisitos de Clases 5, 6 y 7: orden de una matriz, matriz cuadrada, diagonal principal y secundaria, matriz identidad, propiedad 6 del producto de matrices (inversa), operaciones elementales por fila (H_i,j, H_i(k), H_i,j(k)), matrices equivalentes, rango y método de Gauss-Jordan",
+    "Conexión interna: el concepto general de determinante fundamenta las fórmulas de orden 2 y orden 3 (Sarrus), las 6 propiedades y el desarrollo por una columna con un único elemento no nulo en la Regla de Chío",
+    "Conexión interna: las Propiedades 1, 2 y 3 vinculan las operaciones elementales por fila con la Regla de Chío (especialmente la 3º Propiedad, que permite lograr ceros sin alterar el determinante) y permiten deducir las Propiedades 5 y 6",
+    "Conexión interna: el determinante no nulo define matriz regular (o no singular), que es la condición necesaria y suficiente para la existencia de la matriz inversa calculada por Gauss-Jordan sobre [A : I]",
+    "Proyección hacia la Unidad 3 (Clase 9 en adelante): el determinante y la matriz inversa permitirán determinar cuándo los sistemas de ecuaciones lineales cuadrados tienen solución única y resolverlos matricialmente"
+  ],
+  "notes": "Se extrajeron y leyeron las 19 páginas completas de 8.pdf (texto e imágenes renderizadas a 130 DPI en _partes/_img_8). Se verificó palabra por palabra cada cita textual del material, se documentaron y aclararon pequeñas erratas de imprenta del PDF original (como signos en la expresión [1] de pág. 4, corchetes en lugar de barras en esquemas de págs. 3 y 10, el texto intercalado de la columna de control en pág. 7 y etiquetas en el Ejemplo 4 de pág. 12), se respondieron las 15 preguntas teóricas del Desempeño 56 y los ítems teóricos de los Desempeños Finales, y se comprobó que el archivo clase_08.md contiene 0 signos $, 0 comandos LaTeX y 0 etiquetas HTML.",
+  "title": "Clase 8 — Matrices y Determinantes: Determinantes y Matriz Inversa"
+}
